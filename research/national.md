@@ -376,3 +376,4 @@ Reference
 - Luxon ruled out any arrangement with the Opportunity Party on 27 July 2026, confirmed to include confidence and supply (office spokesperson, and again on 24 August with Simeon Brown).
 - National will campaign on referendums on MMP and a four-year parliamentary term (6 Aug 2026) and on three budget responsibility rules (9 Aug).
 - RNZ-Reid Research (24 Sep-1 Oct 2026): National 25.9% (lowest since 2020), Luxon preferred PM 17.1%, net performance -23.7. National internal polling reportedly nearer 30%.
+- Pass-2 crawl: Luxon has said remaining in the Paris Agreement would be a bottom line in coalition negotiations (RNZ), while coalition partner NZ First campaigns on withdrawal. National's 'nine new taxes' attack line bundles Labour's CGT with its prospective partners' wealth, inheritance, land and carbon proposals; Ipsos asked National to withdraw an inaccurate claim about its polling on tax (The Spinoff).

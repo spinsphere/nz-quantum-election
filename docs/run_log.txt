@@ -9,7 +9,7 @@ Party          Vote %  Seats  Score/80     w_i
 National         28.5     35        41   0.512
 Labour           28.0     34        44   0.550
 Green            14.4     17        44   0.550
-ACT               9.7     12        33   0.412
+ACT               9.7     12        34   0.425
 NZFirst           9.8     12        26   0.325
 TePatiMaori       1.8      4        39   0.487
 TOP               6.4      8        53   0.662
@@ -36,14 +36,14 @@ rank  objective  seats  coalition
 3        0.6500     69  National + Labour
 4        0.4875     81  National + Labour + NZFirst
 5        0.3000     86  National + Labour + Green
-6        0.2625     73  National + Labour + TePatiMaori
-7        0.2625     81  National + Labour + ACT
+6        0.2750     81  National + Labour + ACT
+7        0.2625     73  National + Labour + TePatiMaori
 8        0.2188     94  National + Labour + Green + TOP
 9        0.2000     63  Labour + Green + NZFirst
 10       0.1812     89  National + Labour + NZFirst + TOP
 
 Sensitivity of the optimum to the friction coefficient mu:
-  mu=0.0   -> National + Labour + Green + ACT + NZFirst + TePatiMaori + TOP seats=122  obj=3.5
+  mu=0.0   -> National + Labour + Green + ACT + NZFirst + TePatiMaori + TOP seats=122  obj=3.5125
   mu=0.5   -> Labour + Green + TePatiMaori + TOP            seats=63  obj=1.7312
   mu=0.75  -> Labour + Green + TePatiMaori + TOP            seats=63  obj=1.4719
   mu=1.0   -> Labour + Green + TePatiMaori + TOP            seats=63  obj=1.2125
@@ -71,7 +71,7 @@ Qubits: 7 party + 4 slack = 11
 
 Minimize
  obj: - 0.512500000000 National - 0.550000000000 Labour - 0.550000000000 Green
-      - 0.412500000000 ACT - 0.325000000000 NZFirst - 0.487500000000 TePatiMaori
+      - 0.425000000000 ACT - 0.325000000000 NZFirst - 0.487500000000 TePatiMaori
       - 0.662500000000 TOP + [ 0.825000000000 National*Labour
       + 1.312500000000 National*Green + 0.387500000000 National*ACT
       + 0.237500000000 National*NZFirst + 1.287500000000 National*TePatiMaori
@@ -106,36 +106,36 @@ Binaries
 End
 
 Penalty weight lambda = 0.42  (smallest scan value with correct ground state, x1.4)
-Ising Hamiltonian: 11 qubits, 66 Pauli terms, offset 45.788
+Ising Hamiltonian: 11 qubits, 66 Pauli terms, offset 45.782
 Normalised by max |coefficient| = 26.880; ground state == constrained optimum: True
 Normalised spectral gap above ground state: 0.01469
 
 ========================================================================
   STEP 5  QAOA angle optimisation on Aer statevector simulator
 ========================================================================
-p=1: <H>=-1.3351  P(optimum)=0.0016 (3.19x uniform)  rank=67  P(exact feasible)=0.090  P(seats>=maj)=0.811  [161 evals, 1.2s]
-p=2: <H>=-1.4667  P(optimum)=0.0021 (4.27x uniform)  rank=110  P(exact feasible)=0.117  P(seats>=maj)=0.883  [2113 evals, 22.3s]
-p=3: <H>=-1.5337  P(optimum)=0.0025 (5.2x uniform)  rank=64  P(exact feasible)=0.138  P(seats>=maj)=0.884  [2399 evals, 36.4s]
-p=4: <H>=-1.5611  P(optimum)=0.0028 (5.75x uniform)  rank=21  P(exact feasible)=0.152  P(seats>=maj)=0.874  [2400 evals, 400.3s]
+p=1: <H>=-1.3351  P(optimum)=0.0016 (3.19x uniform)  rank=67  P(exact feasible)=0.090  P(seats>=maj)=0.811  [186 evals, 1.3s]
+p=2: <H>=-1.4667  P(optimum)=0.0021 (4.26x uniform)  rank=110  P(exact feasible)=0.117  P(seats>=maj)=0.883  [1995 evals, 22.0s]
+p=3: <H>=-1.5337  P(optimum)=0.0025 (5.19x uniform)  rank=59  P(exact feasible)=0.138  P(seats>=maj)=0.882  [2400 evals, 39.1s]
+p=4: <H>=-1.5631  P(optimum)=0.0028 (5.76x uniform)  rank=18  P(exact feasible)=0.153  P(seats>=maj)=0.873  [2400 evals, 50.2s]
 
 Best depth by P(optimum): p = 4
 
 ========================================================================
   STEP 6  Sample the optimised circuit with qiskit_aer SamplerV2
 ========================================================================
-Shots 8192, unique bitstrings 830
-P(exact optimum bitstring) = 0.0033   P(optimal coalition, any slack) = 0.0109   P(majority coalition) = 0.8771
+Shots 8192, unique bitstrings 828
+P(exact optimum bitstring) = 0.00232   P(optimal coalition, any slack) = 0.0106   P(majority coalition) = 0.8726
 Best feasible sample: Labour + Green + TePatiMaori + TOP  seats=63  objective=1.2125  == classical optimum: True
 
 ========================================================================
   STEP 7  IBM Quantum hardware execution (job mode) with 10-minute fallback
 ========================================================================
-Connected in 19.8s. Backends and queue: {'ibm_fez': 0, 'ibm_kingston': 14, 'ibm_marrakesh': 2}
+Connected in 10.7s. Backends and queue: {'ibm_fez': 0, 'ibm_kingston': 0, 'ibm_marrakesh': 0}
 Selected ibm_fez (156 qubits), 0 pending jobs
-Transpiled p=2 circuit: depth 591, 2q gates 405, 2q depth 194, ops {'sx': 777, 'rz': 515, 'cz': 405, 'x': 23, 'measure': 11, 'barrier': 1}
-Submitted job db20ak47f06c73ap5s10; waiting up to 600s ...
-Hardware result in 11.9s: shots 4096, unique 1620
-P(exact optimum) hw=0.00024 vs ideal=0.00208; P(majority) hw=0.6731 vs ideal=0.8826; TVD(coalition marginal)=0.231
+Transpiled p=2 circuit: depth 587, 2q gates 405, 2q depth 194, ops {'sx': 769, 'rz': 509, 'cz': 405, 'x': 21, 'measure': 11, 'barrier': 1}
+Submitted job db21nrs7f06c73ap7g1g; waiting up to 600s ...
+Hardware result in 12.5s: shots 4096, unique 1646
+P(exact optimum) hw=0.00122 vs ideal=0.00208; P(majority) hw=0.6602 vs ideal=0.8826; TVD(coalition marginal)=0.246
 Hardware best feasible sample: Labour + Green + TePatiMaori + TOP seats=63 objective=1.2125 == classical optimum: True
 
 ========================================================================
@@ -148,5 +148,5 @@ Total seats:          63 / 122   majority 62: yes
 Objective score:      1.2125   (classical optimum 1.2125, match: True)
 Qubits / QAOA depth:  11 / p=4 (hardware p=2)
 Hardware executed:    True  ibm_fez 
-Saved -> /home/soliax/Documents/github/spinsphere/nz-quantum-election/quantum_results.json   (493.5s)
+Saved -> /home/soliax/Documents/github/spinsphere/nz-quantum-election/quantum_results.json   (137.0s)
 EXIT 0

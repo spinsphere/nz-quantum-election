@@ -13,7 +13,7 @@ This repository answers that question with a Quantum Approximate Optimization Al
 
 **Labour + Green + Te Pāti Māori + TOP: 63 of 122 seats (majority 62), objective 1.2125.**
 
-Sampled from the QAOA circuit on `ibm_fez` (job `db20ak47f06c73ap5s10`, 3 seconds of QPU time; an earlier run on `ibm_marrakesh`, job `db1u21hmmimc73fnvhk0`, gave the same answer) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without TOP, which National has ruled out; NZ First has in turn ruled out Labour. The answer hinges on TOP staying above the 5% threshold: it polls between 4.5% and 9.5%, and every September projection with TOP under 5% produces a National-led majority instead.
+Sampled from the QAOA circuit on `ibm_fez` (job `db21nrs7f06c73ap7g1g`, 3 seconds of QPU time; earlier runs on `ibm_fez` (`db20ak47f06c73ap5s10`) and `ibm_marrakesh` (`db1u21hmmimc73fnvhk0`) gave the same answer) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without TOP, which National has ruled out; NZ First has in turn ruled out Labour. The answer hinges on TOP staying above the 5% threshold: it polls between 4.5% and 9.5%, and every September projection with TOP under 5% produces a National-led majority instead.
 
 The answer holds for every friction coefficient between 0.5 and 1.5. At 2.0 and above the optimiser prefers the National + Labour grand coalition because it has the fewest partners. See the full executive report in [`docs/REPORT.md`](docs/REPORT.md).
 
@@ -22,7 +22,7 @@ The answer holds for every friction coefficient between 0.5 and 1.5. At 2.0 and 
 | National | 28.5 | 35 | 41 |
 | Labour | 28.0 | 34 | 44 |
 | Green | 14.4 | 17 | 44 |
-| ACT | 9.7 | 12 | 33 |
+| ACT | 9.7 | 12 | 34 |
 | NZ First | 9.8 | 12 | 26 |
 | Te Pāti Māori | 1.8 | 4 | 39 |
 | TOP | 6.4 | 8 | 53 |
@@ -55,16 +55,16 @@ Full details, including every modelling choice and its limitations, are in [`MET
 
 ## What the quantum part does and does not show
 
-QAOA learns the majority constraint well: 88% of ideal samples and 67% of hardware samples are majority coalitions, against 60% for uniform random sampling. At depths 1 to 4 it only weakly resolves the policy objective (the optimum bitstring carries about six times the uniform probability), because the penalty term dominates the energy spectrum even after rescaling. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is brute-forced in the same script as a check. The point of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
+QAOA learns the majority constraint well: 88% of ideal samples and 66% of hardware samples are majority coalitions, against 60% for uniform random sampling. At depths 1 to 4 it only weakly resolves the policy objective (the optimum bitstring carries about six times the uniform probability), because the penalty term dominates the energy spectrum even after rescaling. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is brute-forced in the same script as a check. The point of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
 
 Hardware run summary (depth 2, 11 qubits, `ibm_fez`; the `ibm_marrakesh` run is in the git history):
 
 | Metric | Hardware | Ideal simulation |
 |---|---|---|
 | Two-qubit (CZ) gates after transpilation | 405 | – |
-| P(majority coalition) | 0.673 | 0.883 |
-| P(exact optimum bitstring) | 0.0002 | 0.0021 |
-| Total variation distance of coalition marginal | 0.231 | 0 |
+| P(majority coalition) | 0.660 | 0.883 |
+| P(exact optimum bitstring) | 0.0012 | 0.0021 |
+| Total variation distance of coalition marginal | 0.246 | 0 |
 | Best feasible sample | Lab + Grn + TPM + TOP | Lab + Grn + TPM + TOP |
 
 ## Run it yourself

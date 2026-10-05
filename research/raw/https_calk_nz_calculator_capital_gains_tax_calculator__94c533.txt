@@ -1,0 +1,386 @@
+URL: https://calk.nz/calculator/capital-gains-tax-calculator/
+TAG: result:Treasury estimate Labour capital gains tax 28 percent revenue 2026
+TITLE: NZ CGT Calculator — 28% Estimator (Proposed 2027) | Calk NZ
+FETCHED: 2026-10-06 09:22
+
+Calk.nz
+Tax
+Pay & Salary
+KiwiSaver
+Mortgage & Property
+Loans
+Business
+Guides
+More
+Te Reo
+Home
+/
+Tax
+/
+Capital Gains Tax (CGT) Calculator
+Back to Tax
+Capital Gains Tax (CGT) Calculator
+
+Estimate Labour's proposed 28% CGT (from July 2027 if elected) on residential investment and commercial property. Family homes, farms, shares and businesses are excluded.
+
+By Konstantin Iakovlev
+·
+Published 28 March 2026
+·
+Last reviewed 27 September 2026
+Data stays on your device
+IRD sourced data
+
+About this calculator
+
+This calculator implements Labour's proposed CGT policy (an election policy, not enacted) from New Zealand Labour Party (party policy, not law). Last consulted 27 September 2026. Verify the figures yourself by following the link.
+
+Proposed NZ CGT rates (not yet law)
+Labour policy — depends on the 7 November 2026 election; would take effect 1 July 2027
+•
+Proposed CGT rate: 28%
+•
+Family home: Exempt
+•
+Gains accrued pre-1 Jul 2027: Not taxed (valuation day)
+•
+Investment property: Subject to CGT after 1 Jul 2027
+•
+Current bright-line: 2 years (sales from 1 Jul 2024)
+•
+Status: Proposed — not law as of 2026
+
+Source: IRD — Bright-line property rule
+
+Note: The NZ Capital Gains Tax is a Labour policy proposed to start on 1 July 2027. It is not law: whether it proceeds depends on the November 2026 general election. This calculator is educational only.
+Purchase Price
+$
+Sale Price
+$
+Date Acquired
+Date of Sale
+Allowable Costs (legal, agent, improvements)
+$
+Value on 1 July 2027 (optional — rateable value or registered valuation)
+$
+This is my family home or a farm (excluded under proposed CGT)
+
+Estimated CGT @ 28%
+
+$8,416.10
+
+on the post-1 Jul 2027 portion of your gain
+
+Total gain
+
+$120,000.00
+
+Taxable gain (post-2027)
+
+$30,057.49
+
+Copy Results
+Share
+Copy link
+Save as PDF
+
+Disclaimer
+
+This calculator provides estimates for general information purposes only. Results should not be relied upon as professional financial, tax, or legal advice. Tax rates and thresholds are based on publicly available IRD data and may change. Always consult a qualified tax agent or financial adviser for advice specific to your circumstances.
+
+How the proposed NZ Capital Gains Tax would work
+
+Labour's proposed CGT (28% from 1 July 2027, if elected) would tax gains on residential investment and commercial property sold after that date. Family home and farms exempt; shares and businesses not covered. Gains earned before July 2027 use valuation day rules.
+
+1
+Calculate the total capital gain
+Gain = sale_price − purchase_price − allowable_costs (legal, agent, improvements)
+
+Costs include conveyancing, agent fees, building improvements (not maintenance/repairs).
+
+2
+Apportion gain by holding period
+Taxable_gain = total_gain × (days_owned_after_1Jul2027 ÷ total_days_owned)
+
+Only the portion of gain accrued AFTER 1 July 2027 would be taxed.
+
+3
+Apply 28% CGT rate
+CGT = taxable_gain × 28%
+
+Flat rate — does NOT stack on marginal income tax. Family home exempt regardless of value.
+
+Worked example
+
+Inputs: Bought rental $500k July 2020, sold $800k July 2030
+
+Result: Total gain = $300k. Days after 1 Jul 2027 = ~30%. Taxable = $90k × 28% = $25,200 CGT.
+
+Frequently Asked Questions
+Does New Zealand have a capital gains tax in 2026?
+What would Labour’s proposed 28% CGT cover?
+How is the bright-line test different from CGT?
+
+New Zealand currently has no comprehensive Capital Gains Tax (CGT). However, the Labour Party has proposed introducing a 28% CGT on profits from selling residential investment property and commercial property, taking effect from 1 July 2027 if Labour wins the 2026 election. This calculator estimates what your tax bill would look like under that proposed regime. It is educational — not yet law.
+
+How this calculator works
+
+Enter the asset purchase price, sale price, and date acquired. The calculator works out the gain (sale - purchase - allowable costs), then applies the proposed 28% rate to the gain made after 1 July 2027 (the proposed start date). If you enter the property's value on that date (its rateable value or a registered valuation, as Labour's policy proposes), the taxable gain is the sale price less that value; otherwise the gain is split by time owned. The family home and farms are excluded, and shares, businesses and KiwiSaver are not covered.
+
+Proposed NZ CGT (Labour 2026 policy)
+Rate	28% (flat)
+Start date	1 July 2027 (proposed)
+Family home	Excluded
+Investment property	Included
+Commercial property	Included
+Farms, shares, businesses, KiwiSaver, inheritances	Excluded
+
+This is a Labour Party policy only — it is not law as of September 2026. Always check the latest IRD guidance.
+
+Worked Examples
+
+Investment property bought 2020 for $500k, sold July 2030 for $800k
+
+Approx CGT: $25,200 (28% of gain attributable to post-2027 period)
+
+Total gain: $800,000 - $500,000 = $300,000
+Years held post-1 July 2027: 3 of 10 years total = 30% of gain
+Taxable gain: $300,000 × 30% = $90,000
+CGT: $90,000 × 28% = $25,200
+Note: bright-line test may also apply if held under 2 years (separate rules).
+
+Built and maintained by Konstantin Iakovlev. Data sourced from the IRD and official New Zealand government sources.
+
+Last reviewed: 27 September 2026
+
+Official Sources
+IRD — Bright-line Test (current rule) ↗
+NZ Labour Party — Capital gains tax policy (party policy, not law) ↗
+People Also Use
+
+Pay Calculator
+
+Pay & Salary
+
+Minimum Wage Calculator
+
+Pay & Salary
+
+KiwiSaver Calculator
+
+KiwiSaver
+
+KiwiSaver First Home Withdrawal Calculator
+
+KiwiSaver
+
+Mortgage Repayment Calculator
+
+Mortgage & Property
+
+How Much Can I Borrow Calculator
+
+Mortgage & Property
+
+Related Calculators
+Income Tax Calculator 2026-27
+
+NZ income tax calculator FY 2026-27. All 5 PAYE brackets (10.5/17.5/30/33/39%), no tax-free threshold. Calculate your tax in seconds — IRD-verified.
+
+GST Calculator
+
+Free NZ GST calculator. Add 15% GST to a price, or remove it from a GST-inclusive total. Instant results for invoices, quotes, and IRD GST returns.
+
+Student Loan Repayment Calculator
+
+Work out your student loan deduction each pay at 12% over $24,128, how long until it's paid off with pay rises and extra repayments, and the balance-based minimum if you move overseas.
+
+Secondary Tax Calculator
+
+Calculate the correct tax code and deductions for your second job. Choose the right secondary tax code to avoid a bill at the end of the year.
+
+Tax Return Estimator
+
+Free NZ tax refund estimator. Find out if IRD owes you a refund or if you owe tax. Includes IETC (up to $520), donations credit, and 2026-27 brackets.
+
+Provisional Tax Calculator
+
+Work out your provisional tax and instalment dates using the standard, estimation or AIM options. For self-employed Kiwis and businesses whose residual income tax last year was over $5,000.
+
+More Tax Calculators
+→ Resident Withholding Tax Calculator
+→ Working for Families Calculator
+→ Schedular Payments Calculator (IR330C)
+→ FamilyBoost Rebate Calculator
+→ Best Start Payment Calculator
+→ Accommodation Supplement Calculator
+View all Tax calculators →
+Browse by Category
+Pay & Salary
+KiwiSaver
+Mortgage & Property
+Loans
+Business
+Financial & Investment
+Auto
+Health & Lifestyle
+Building & DIY
+Education
+Agriculture & Farming
+Immigration
+Calk.nz
+
+Free online calculators for Kiwis. Tax, pay, mortgage, KiwiSaver and more — all based on current IRD rates and New Zealand regulations.
+
+info@calk.nz
+App Store
+Google Play
+CALCULATORS
+Tax
+Pay & Salary
+KiwiSaver
+Mortgage & Property
+Loans
+Business
+Financial & Investment
+Auto
+Health & Lifestyle
+Building & DIY
+Education
+Agriculture & Farming
+Immigration
+Tools & Converters
+POPULAR
+Income Tax Calculator
+Pay Calculator
+GST Calculator
+KiwiSaver Calculator
+Mortgage Calculator
+LEGAL
+Privacy Policy
+Terms of Use
+Methodology
+About Us
+Contact
+Updates
+Embed widgets
+
+Calculations are based on current IRD rates and are for general guidance only. Always consult a qualified tax professional for advice specific to your situation.
+
+© 2026 Calk.nz. All rights reserved.
+
+Data sourced from IRD & NZ Government
+
+|
+
+Free online calculators for Kiwis
+
+We and Google use cookies for analytics and ads. You can decline at any time — see our Privacy Policy.
+
+Decline
+Accept
+
+--- LINKS ---
+Calk.nz | https://calk.nz/
+Tax | https://calk.nz/category/tax/
+Pay & Salary | https://calk.nz/category/pay/
+KiwiSaver | https://calk.nz/category/kiwisaver/
+Mortgage & Property | https://calk.nz/category/mortgage/
+Loans | https://calk.nz/category/loans/
+Business | https://calk.nz/category/business/
+Guides | https://calk.nz/guides/
+Home | https://calk.nz/
+Tax | https://calk.nz/category/tax/
+Back to Tax | https://calk.nz/category/tax/
+Konstantin Iakovlev | https://calk.nz/about/
+Labour's proposed CGT policy (an election policy, not enacted) | https://www.labour.org.nz/capitalgainstax
+IRD — Bright-line property rule | https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test
+Konstantin Iakovlev | https://calk.nz/about/
+IRD | https://www.ird.govt.nz/
+IRD — Bright-line Test (current rule) ↗ | https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test
+NZ Labour Party — Capital gains tax policy (party policy, not law) ↗ | https://www.labour.org.nz/capitalgainstax
+Pay Calculator
+
+Pay & Salary | https://calk.nz/calculator/pay-calculator/
+Minimum Wage Calculator
+
+Pay & Salary | https://calk.nz/calculator/minimum-wage-calculator/
+KiwiSaver Calculator
+
+KiwiSaver | https://calk.nz/calculator/kiwisaver-calculator/
+KiwiSaver First Home Withdrawal Calculator
+
+KiwiSaver | https://calk.nz/calculator/kiwisaver-first-home-calculator/
+Mortgage Repayment Calculator
+
+Mortgage & Property | https://calk.nz/calculator/mortgage-repayment-calculator/
+How Much Can I Borrow Calculator
+
+Mortgage & Property | https://calk.nz/calculator/borrowing-power-calculator/
+Income Tax Calculator 2026-27
+
+NZ income tax calculator FY 2026-27. All 5 PAYE brackets (10.5/17.5/30/33/39%), no tax-fr | https://calk.nz/calculator/income-tax-calculator/
+GST Calculator
+
+Free NZ GST calculator. Add 15% GST to a price, or remove it from a GST-inclusive total. Instant results | https://calk.nz/calculator/gst-calculator/
+Student Loan Repayment Calculator
+
+Work out your student loan deduction each pay at 12% over $24,128, how long until it' | https://calk.nz/calculator/student-loan-repayment-calculator/
+Secondary Tax Calculator
+
+Calculate the correct tax code and deductions for your second job. Choose the right secondary  | https://calk.nz/calculator/secondary-tax-calculator/
+Tax Return Estimator
+
+Free NZ tax refund estimator. Find out if IRD owes you a refund or if you owe tax. Includes IETC ( | https://calk.nz/calculator/tax-return-estimator/
+Provisional Tax Calculator
+
+Work out your provisional tax and instalment dates using the standard, estimation or AIM opt | https://calk.nz/calculator/provisional-tax-calculator/
+→ Resident Withholding Tax Calculator | https://calk.nz/calculator/rwt-calculator/
+→ Working for Families Calculator | https://calk.nz/calculator/working-for-families-calculator/
+→ Schedular Payments Calculator (IR330C) | https://calk.nz/calculator/schedular-payments-calculator/
+→ FamilyBoost Rebate Calculator | https://calk.nz/calculator/familyboost-calculator/
+→ Best Start Payment Calculator | https://calk.nz/calculator/best-start-payment-calculator/
+→ Accommodation Supplement Calculator | https://calk.nz/calculator/accommodation-supplement-calculator/
+View all Tax calculators → | https://calk.nz/category/tax/
+Pay & Salary | https://calk.nz/category/pay/
+KiwiSaver | https://calk.nz/category/kiwisaver/
+Mortgage & Property | https://calk.nz/category/mortgage/
+Loans | https://calk.nz/category/loans/
+Business | https://calk.nz/category/business/
+Financial & Investment | https://calk.nz/category/investment/
+Auto | https://calk.nz/category/auto/
+Health & Lifestyle | https://calk.nz/category/health/
+Building & DIY | https://calk.nz/category/building/
+Education | https://calk.nz/category/education/
+Agriculture & Farming | https://calk.nz/category/farming/
+Immigration | https://calk.nz/category/immigration/
+Calk.nz | https://calk.nz/
+App Store | https://apps.apple.com/nz/app/id6774464665
+Google Play | https://play.google.com/store/apps/details?id=nz.calk.app
+Tax | https://calk.nz/category/tax/
+Pay & Salary | https://calk.nz/category/pay/
+KiwiSaver | https://calk.nz/category/kiwisaver/
+Mortgage & Property | https://calk.nz/category/mortgage/
+Loans | https://calk.nz/category/loans/
+Business | https://calk.nz/category/business/
+Financial & Investment | https://calk.nz/category/investment/
+Auto | https://calk.nz/category/auto/
+Health & Lifestyle | https://calk.nz/category/health/
+Building & DIY | https://calk.nz/category/building/
+Education | https://calk.nz/category/education/
+Agriculture & Farming | https://calk.nz/category/farming/
+Immigration | https://calk.nz/category/immigration/
+Tools & Converters | https://calk.nz/category/tools/
+Income Tax Calculator | https://calk.nz/calculator/income-tax-calculator/
+Pay Calculator | https://calk.nz/calculator/pay-calculator/
+GST Calculator | https://calk.nz/calculator/gst-calculator/
+KiwiSaver Calculator | https://calk.nz/calculator/kiwisaver-calculator/
+Mortgage Calculator | https://calk.nz/calculator/mortgage-repayment-calculator/
+Privacy Policy | https://calk.nz/privacy/
+Terms of Use | https://calk.nz/terms/
+Methodology | https://calk.nz/methodology/
+About Us | https://calk.nz/about/
+Contact | https://calk.nz/contact/
+Updates | https://calk.nz/updates/
+Embed widgets | https://calk.nz/widgets/
+Privacy Policy | https://calk.nz/privacy

@@ -6,7 +6,7 @@ This document explains every modelling choice in the project so that the result 
 
 Eight research passes were run on 6 October 2026, one for polling and one per party (National, Labour, Green, ACT, NZ First, Te Pāti Māori, TOP). Each pass was asked for stated 2026 policy, numbers and dates across the eight domains, with a URL for every claim, plus independent assessments (Treasury, Reserve Bank, OECD, Ministry of Justice, ERO, Waitangi Tribunal and so on). The outputs are the files in `research/`.
 
-**Coverage was uneven in the first pass and was then patched.** The National file was complete from the start (~90 sources including Treasury's PREFU, ERO, Ministry of Justice projections and the boot-camp evaluation). The other six passes ran after the session's web-search quota was exhausted and could only fetch official pages and Wikipedia. On 6 October 2026 the project owner supplied the text of 28 primary pages, the full policy PDFs of TOP, the Greens and Te Pāti Māori were downloaded and converted, and a Playwright crawl (DuckDuckGo plus direct pages, raw text in `research/raw/`) added news coverage: the RNZ-Reid Research poll of 6 October, the Infometrics review of the Greens' tax plan, the Wikipedia seat-projection table, coalition rule-outs and more. Each research file ends with an 'Update 6 Oct 2026' section recording what changed. Where independent evidence is still missing, the rationale text in `policy_data.json` draws on published work known to the author (OECD tax reviews, the 2019 Tax Working Group, Productivity Commission, Ministry of Justice programme evaluations) and says so.
+**Coverage was uneven in the first pass and was then patched.** The National file was complete from the start (~90 sources including Treasury's PREFU, ERO, Ministry of Justice projections and the boot-camp evaluation). The other six passes ran after the session's web-search quota was exhausted and could only fetch official pages and Wikipedia. On 6 October 2026 the project owner supplied the text of 28 primary pages, the full policy PDFs of TOP, the Greens and Te Pāti Māori were downloaded and converted, and a Playwright crawl (DuckDuckGo plus direct pages, raw text in `research/raw/`) added news coverage: the RNZ-Reid Research poll of 6 October, the Infometrics review of the Greens' tax plan, the Wikipedia seat-projection table, coalition rule-outs and more. Each research file ends with an 'Update 6 Oct 2026' section recording what changed, including a second crawl pass (67 pages: ACT's policy sub-pages, the Infometrics review of the Greens' costings, Westpac and Cotality assessments of TOP's land tax, Labour's positions on boot camps, Three Strikes and Te Aka Whai Ora, Māori-electorate polls, and the mutual Labour-NZ First rule-out). Where independent evidence is still missing, the rationale text in `policy_data.json` draws on published work known to the author (OECD tax reviews, the 2019 Tax Working Group, Productivity Commission, Ministry of Justice programme evaluations) and says so.
 
 ## 2. Scoring matrix
 
@@ -27,7 +27,7 @@ The aggregate weight is `w_i = sum of domain scores / 80`, so `w_i` lies in (0, 
 | National | 6 | 7 | 5 | 5 | 6 | 4 | 5 | 3 | **41** |
 | Labour | 7 | 5 | 4 | 5 | 6 | 6 | 5 | 6 | **44** |
 | Green | 6 | 5 | 5 | 4 | 5 | 5 | 6 | 8 | **44** |
-| ACT | 5 | 5 | 4 | 5 | 5 | 3 | 4 | 2 | **33** |
+| ACT | 6 | 5 | 4 | 5 | 5 | 3 | 4 | 2 | **34** |
 | NZ First | 4 | 3 | 4 | 3 | 3 | 3 | 4 | 2 | **26** |
 | Te Pāti Māori | 6 | 5 | 4 | 4 | 4 | 4 | 4 | 8 | **39** |
 | TOP | 7 | 6 | 7 | 8 | 6 | 6 | 7 | 6 | **53** |
@@ -99,4 +99,4 @@ QAOA learns the majority constraint well: at `p = 2` more than 85% of the probab
 3. The incumbent/opposition asymmetry (Section 2) likely flatters TOP.
 4. Seat numbers depend on one polling scenario (six-poll mean, Te Pāti Māori with 4 electorates). A 2-point swing changes bloc arithmetic materially, and TOP falling under 5% flips the result to a National-led majority.
 5. The friction model treats every domain equally; in reality tax and Te Tiriti dominate coalition talks.
-6. Hardware results from an 11-qubit, depth-2 circuit with about 405 two-qubit gates after routing are noisy (total variation distance 0.23 from the ideal coalition distribution); they are reported next to the ideal distribution, not in place of it.
+6. Hardware results from an 11-qubit, depth-2 circuit with about 405 two-qubit gates after routing are noisy (total variation distance 0.25 from the ideal coalition distribution); they are reported next to the ideal distribution, not in place of it.

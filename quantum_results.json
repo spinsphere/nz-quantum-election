@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T20:15:24+00:00",
+  "generated_at": "2026-10-05T21:51:55+00:00",
   "election_date": "2026-11-07",
   "data_as_of": "2026-10-06",
   "house": {
@@ -45,7 +45,7 @@
       "National": 0.5125,
       "Labour": 0.55,
       "Green": 0.55,
-      "ACT": 0.4125,
+      "ACT": 0.425,
       "NZFirst": 0.325,
       "TePatiMaori": 0.4875,
       "TOP": 0.6625
@@ -54,7 +54,7 @@
       "National": 41.0,
       "Labour": 44.0,
       "Green": 44.0,
-      "ACT": 33.0,
+      "ACT": 34.0,
       "NZFirst": 26.0,
       "TePatiMaori": 39.0,
       "TOP": 53.0
@@ -91,7 +91,7 @@
         "tiriti_maori": 8
       },
       "ACT": {
-        "health": 5,
+        "health": 6,
         "education": 5,
         "crime_justice": 4,
         "housing_rental": 5,
@@ -328,21 +328,21 @@
         ]
       },
       {
+        "objective": 0.275,
+        "seats": 81,
+        "coalition": [
+          "National",
+          "Labour",
+          "ACT"
+        ]
+      },
+      {
         "objective": 0.2625,
         "seats": 73,
         "coalition": [
           "National",
           "Labour",
           "TePatiMaori"
-        ]
-      },
-      {
-        "objective": 0.2625,
-        "seats": 81,
-        "coalition": [
-          "National",
-          "Labour",
-          "ACT"
         ]
       },
       {
@@ -378,7 +378,7 @@
     "sensitivity_to_mu": [
       {
         "mu": 0.0,
-        "objective": 3.5,
+        "objective": 3.5125,
         "coalition": [
           "National",
           "Labour",
@@ -492,7 +492,7 @@
     "num_qubits": 11,
     "penalty_lambda": 0.42,
     "ising_pauli_terms": 66,
-    "ising_offset": 45.7881,
+    "ising_offset": 45.7819,
     "normalisation_scale": 26.88,
     "normalised_spectral_gap": 0.014695,
     "qubo_variables": [
@@ -515,14 +515,14 @@
     "depth_sweep": [
       {
         "p": 1,
-        "energy": -1.335082,
-        "evaluations": 161,
-        "seconds": 1.2,
+        "energy": -1.335125,
+        "evaluations": 186,
+        "seconds": 1.3,
         "betas": [
-          2.722078
+          -0.419515
         ],
         "gammas": [
-          0.526713
+          0.52672
         ],
         "prob_optimum": 0.001558,
         "prob_optimum_over_uniform": 3.19,
@@ -532,76 +532,76 @@
       },
       {
         "p": 2,
-        "energy": -1.466675,
-        "evaluations": 2113,
-        "seconds": 22.3,
+        "energy": -1.466712,
+        "evaluations": 1995,
+        "seconds": 22.0,
         "betas": [
-          2.685018,
-          2.960087
+          -0.456559,
+          -0.1815
         ],
         "gammas": [
-          0.372407,
-          1.03598
+          0.372406,
+          1.035952
         ],
-        "prob_optimum": 0.002083,
-        "prob_optimum_over_uniform": 4.27,
+        "prob_optimum": 0.002082,
+        "prob_optimum_over_uniform": 4.26,
         "rank_of_optimum": 110,
         "prob_exact_feasible": 0.1165,
         "prob_majority_coalition": 0.8826
       },
       {
         "p": 3,
-        "energy": -1.533728,
-        "evaluations": 2399,
-        "seconds": 36.4,
+        "energy": -1.533663,
+        "evaluations": 2400,
+        "seconds": 39.1,
         "betas": [
-          0.658261,
-          0.233938,
-          -0.198209
+          0.656046,
+          0.233977,
+          -0.197176
         ],
         "gammas": [
-          -0.396949,
-          -0.637835,
-          1.373789
+          -0.394124,
+          -0.638022,
+          1.367232
         ],
-        "prob_optimum": 0.002539,
-        "prob_optimum_over_uniform": 5.2,
-        "rank_of_optimum": 64,
-        "prob_exact_feasible": 0.138,
-        "prob_majority_coalition": 0.8837
+        "prob_optimum": 0.002534,
+        "prob_optimum_over_uniform": 5.19,
+        "rank_of_optimum": 59,
+        "prob_exact_feasible": 0.1379,
+        "prob_majority_coalition": 0.8825
       },
       {
         "p": 4,
-        "energy": -1.561112,
+        "energy": -1.56308,
         "evaluations": 2400,
-        "seconds": 400.3,
+        "seconds": 50.2,
         "betas": [
-          0.682827,
-          0.279604,
-          -0.231969,
-          -0.100615
+          0.684977,
+          0.265648,
+          -0.22959,
+          -0.097989
         ],
         "gammas": [
-          -0.331068,
-          -0.425876,
-          0.785027,
-          1.645951
+          -0.332261,
+          -0.444153,
+          0.830486,
+          1.668765
         ],
-        "prob_optimum": 0.002807,
-        "prob_optimum_over_uniform": 5.75,
-        "rank_of_optimum": 21,
-        "prob_exact_feasible": 0.1523,
-        "prob_majority_coalition": 0.8741
+        "prob_optimum": 0.002811,
+        "prob_optimum_over_uniform": 5.76,
+        "rank_of_optimum": 18,
+        "prob_exact_feasible": 0.1527,
+        "prob_majority_coalition": 0.8727
       }
     ],
     "selected_p": 4
   },
   "aer_sampling": {
     "shots": 8192,
-    "unique_bitstrings": 830,
-    "prob_optimum_exact_bitstring": 0.0033,
-    "prob_majority_coalition": 0.8771,
-    "prob_optimal_coalition_any_slack": 0.0109,
+    "unique_bitstrings": 828,
+    "prob_optimum_exact_bitstring": 0.00232,
+    "prob_majority_coalition": 0.8726,
+    "prob_optimal_coalition_any_slack": 0.0106,
     "best_feasible_sample": {
       "objective": 1.2125,
       "bitstring_party_order": "0110011",
@@ -616,23 +616,9 @@
     },
     "top_coalitions": [
       {
-        "bitstring_party_order": "1101100",
-        "count": 174,
-        "probability": 0.0212,
-        "coalition": [
-          "National",
-          "Labour",
-          "ACT",
-          "NZFirst"
-        ],
-        "seats": 93,
-        "feasible": true,
-        "objective": -0.1375
-      },
-      {
         "bitstring_party_order": "1101001",
-        "count": 171,
-        "probability": 0.0209,
+        "count": 164,
+        "probability": 0.02,
         "coalition": [
           "National",
           "Labour",
@@ -641,12 +627,42 @@
         ],
         "seats": 89,
         "feasible": true,
-        "objective": -0.2812
+        "objective": -0.2688
+      },
+      {
+        "bitstring_party_order": "1111010",
+        "count": 161,
+        "probability": 0.0197,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
+          "ACT",
+          "TePatiMaori"
+        ],
+        "seats": 102,
+        "feasible": true,
+        "objective": -2.2125
+      },
+      {
+        "bitstring_party_order": "1101101",
+        "count": 159,
+        "probability": 0.0194,
+        "coalition": [
+          "National",
+          "Labour",
+          "ACT",
+          "NZFirst",
+          "TOP"
+        ],
+        "seats": 101,
+        "feasible": true,
+        "objective": -1.0875
       },
       {
         "bitstring_party_order": "1110000",
-        "count": 162,
-        "probability": 0.0198,
+        "count": 158,
+        "probability": 0.0193,
         "coalition": [
           "National",
           "Labour",
@@ -657,52 +673,35 @@
         "objective": 0.3
       },
       {
-        "bitstring_party_order": "1101011",
-        "count": 158,
-        "probability": 0.0193,
+        "bitstring_party_order": "1100101",
+        "count": 157,
+        "probability": 0.0192,
         "coalition": [
           "National",
           "Labour",
-          "ACT",
-          "TePatiMaori",
+          "NZFirst",
           "TOP"
         ],
-        "seats": 93,
+        "seats": 89,
         "feasible": true,
-        "objective": -1.725
+        "objective": 0.1812
       },
       {
-        "bitstring_party_order": "1111100",
-        "count": 154,
-        "probability": 0.0188,
+        "bitstring_party_order": "1110100",
+        "count": 152,
+        "probability": 0.0186,
         "coalition": [
           "National",
           "Labour",
           "Green",
-          "ACT",
           "NZFirst"
-        ],
-        "seats": 110,
-        "feasible": true,
-        "objective": -1.95
-      },
-      {
-        "bitstring_party_order": "1110011",
-        "count": 151,
-        "probability": 0.0184,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "TePatiMaori",
-          "TOP"
         ],
         "seats": 98,
         "feasible": true,
-        "objective": -0.45
+        "objective": -0.475
       },
       {
-        "bitstring_party_order": "1110110",
+        "bitstring_party_order": "1110111",
         "count": 151,
         "probability": 0.0184,
         "coalition": [
@@ -710,30 +709,17 @@
           "Labour",
           "Green",
           "NZFirst",
-          "TePatiMaori"
+          "TePatiMaori",
+          "TOP"
         ],
-        "seats": 102,
+        "seats": 110,
         "feasible": true,
-        "objective": -1.525
-      },
-      {
-        "bitstring_party_order": "1110010",
-        "count": 151,
-        "probability": 0.0184,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "TePatiMaori"
-        ],
-        "seats": 90,
-        "feasible": true,
-        "objective": -0.15
+        "objective": -2.2437
       },
       {
         "bitstring_party_order": "1110001",
-        "count": 149,
-        "probability": 0.0182,
+        "count": 151,
+        "probability": 0.0184,
         "coalition": [
           "National",
           "Labour",
@@ -745,18 +731,34 @@
         "objective": 0.2188
       },
       {
-        "bitstring_party_order": "1101010",
+        "bitstring_party_order": "1111100",
         "count": 148,
         "probability": 0.0181,
         "coalition": [
           "National",
           "Labour",
+          "Green",
           "ACT",
-          "TePatiMaori"
+          "NZFirst"
         ],
-        "seats": 85,
+        "seats": 110,
         "feasible": true,
-        "objective": -0.9625
+        "objective": -1.9375
+      },
+      {
+        "bitstring_party_order": "1111001",
+        "count": 147,
+        "probability": 0.0179,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
+          "ACT",
+          "TOP"
+        ],
+        "seats": 106,
+        "feasible": true,
+        "objective": -1.6625
       }
     ],
     "backend": "qiskit_aer SamplerV2 (statevector)",
@@ -771,24 +773,24 @@
     "queue_estimate_seconds": 0,
     "all_backends_pending": {
       "ibm_fez": 0,
-      "ibm_kingston": 14,
-      "ibm_marrakesh": 2
+      "ibm_kingston": 0,
+      "ibm_marrakesh": 0
     },
-    "connect_seconds": 19.8,
+    "connect_seconds": 10.7,
     "qaoa_p": 2,
-    "isa_depth": 591,
+    "isa_depth": 587,
     "isa_two_qubit_gates": 405,
     "isa_ops": {
-      "sx": 777,
-      "rz": 515,
+      "sx": 769,
+      "rz": 509,
       "cz": 405,
-      "x": 23,
+      "x": 21,
       "measure": 11,
       "barrier": 1
     },
     "isa_two_qubit_depth": 194,
-    "job_id": "db20ak47f06c73ap5s10",
-    "wall_seconds": 11.9,
+    "job_id": "db21nrs7f06c73ap7g1g",
+    "wall_seconds": 12.5,
     "qpu_usage_seconds": 3.0,
     "job_metrics_usage": {
       "qpu_charge_time_seconds": 3,
@@ -807,10 +809,10 @@
       ]
     },
     "shots": 4096,
-    "unique_bitstrings": 1620,
-    "prob_optimum_exact_bitstring": 0.00024,
-    "prob_majority_coalition": 0.6731,
-    "prob_optimal_coalition_any_slack": 0.0071,
+    "unique_bitstrings": 1646,
+    "prob_optimum_exact_bitstring": 0.00122,
+    "prob_majority_coalition": 0.6602,
+    "prob_optimal_coalition_any_slack": 0.0093,
     "best_feasible_sample": {
       "objective": 1.2125,
       "bitstring_party_order": "0110011",
@@ -825,24 +827,56 @@
     },
     "top_coalitions": [
       {
-        "bitstring_party_order": "1101101",
-        "count": 69,
-        "probability": 0.0168,
+        "bitstring_party_order": "1111011",
+        "count": 74,
+        "probability": 0.0181,
         "coalition": [
           "National",
           "Labour",
+          "Green",
+          "ACT",
+          "TePatiMaori",
+          "TOP"
+        ],
+        "seats": 110,
+        "feasible": true,
+        "objective": -3.1688
+      },
+      {
+        "bitstring_party_order": "1111101",
+        "count": 66,
+        "probability": 0.0161,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
           "ACT",
           "NZFirst",
           "TOP"
         ],
-        "seats": 101,
+        "seats": 118,
         "feasible": true,
-        "objective": -1.1
+        "objective": -3.0937
+      },
+      {
+        "bitstring_party_order": "1110011",
+        "count": 62,
+        "probability": 0.0151,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
+          "TePatiMaori",
+          "TOP"
+        ],
+        "seats": 98,
+        "feasible": true,
+        "objective": -0.45
       },
       {
         "bitstring_party_order": "1111111",
-        "count": 68,
-        "probability": 0.0166,
+        "count": 61,
+        "probability": 0.0149,
         "coalition": [
           "National",
           "Labour",
@@ -854,28 +888,12 @@
         ],
         "seats": 122,
         "feasible": true,
-        "objective": -5.2125
-      },
-      {
-        "bitstring_party_order": "1110111",
-        "count": 68,
-        "probability": 0.0166,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "NZFirst",
-          "TePatiMaori",
-          "TOP"
-        ],
-        "seats": 110,
-        "feasible": true,
-        "objective": -2.2437
+        "objective": -5.2
       },
       {
         "bitstring_party_order": "0111111",
-        "count": 63,
-        "probability": 0.0154,
+        "count": 60,
+        "probability": 0.0146,
         "coalition": [
           "Labour",
           "Green",
@@ -886,73 +904,12 @@
         ],
         "seats": 87,
         "feasible": true,
-        "objective": -3.2375
-      },
-      {
-        "bitstring_party_order": "1111101",
-        "count": 62,
-        "probability": 0.0151,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "ACT",
-          "NZFirst",
-          "TOP"
-        ],
-        "seats": 118,
-        "feasible": true,
-        "objective": -3.1062
-      },
-      {
-        "bitstring_party_order": "1101100",
-        "count": 60,
-        "probability": 0.0146,
-        "coalition": [
-          "National",
-          "Labour",
-          "ACT",
-          "NZFirst"
-        ],
-        "seats": 93,
-        "feasible": true,
-        "objective": -0.1375
-      },
-      {
-        "bitstring_party_order": "1110110",
-        "count": 60,
-        "probability": 0.0146,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "NZFirst",
-          "TePatiMaori"
-        ],
-        "seats": 102,
-        "feasible": true,
-        "objective": -1.525
-      },
-      {
-        "bitstring_party_order": "1111110",
-        "count": 58,
-        "probability": 0.0142,
-        "coalition": [
-          "National",
-          "Labour",
-          "Green",
-          "ACT",
-          "NZFirst",
-          "TePatiMaori"
-        ],
-        "seats": 114,
-        "feasible": true,
-        "objective": -3.8375
+        "objective": -3.225
       },
       {
         "bitstring_party_order": "1101111",
-        "count": 55,
-        "probability": 0.0134,
+        "count": 60,
+        "probability": 0.0146,
         "coalition": [
           "National",
           "Labour",
@@ -963,26 +920,70 @@
         ],
         "seats": 105,
         "feasible": true,
-        "objective": -3.1437
+        "objective": -3.1313
       },
       {
-        "bitstring_party_order": "1111011",
-        "count": 55,
-        "probability": 0.0134,
+        "bitstring_party_order": "1111100",
+        "count": 59,
+        "probability": 0.0144,
         "coalition": [
           "National",
           "Labour",
           "Green",
           "ACT",
-          "TePatiMaori",
-          "TOP"
+          "NZFirst"
         ],
         "seats": 110,
         "feasible": true,
-        "objective": -3.1813
+        "objective": -1.9375
+      },
+      {
+        "bitstring_party_order": "1110101",
+        "count": 57,
+        "probability": 0.0139,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
+          "NZFirst",
+          "TOP"
+        ],
+        "seats": 106,
+        "feasible": true,
+        "objective": -0.975
+      },
+      {
+        "bitstring_party_order": "0111101",
+        "count": 57,
+        "probability": 0.0139,
+        "coalition": [
+          "Labour",
+          "Green",
+          "ACT",
+          "NZFirst",
+          "TOP"
+        ],
+        "seats": 83,
+        "feasible": true,
+        "objective": -1.7625
+      },
+      {
+        "bitstring_party_order": "1111001",
+        "count": 56,
+        "probability": 0.0137,
+        "coalition": [
+          "National",
+          "Labour",
+          "Green",
+          "ACT",
+          "TOP"
+        ],
+        "seats": 106,
+        "feasible": true,
+        "objective": -1.6625
       }
     ],
-    "tvd_vs_ideal_coalition_marginal": 0.2314,
+    "tvd_vs_ideal_coalition_marginal": 0.2457,
     "ideal_prob_optimum_exact_bitstring_at_this_p": 0.00208,
     "ideal_prob_majority_coalition_at_this_p": 0.8826,
     "backend_label": "IBM Quantum ibm_fez"
@@ -1001,7 +1002,7 @@
     "objective_score": 1.2125,
     "matches_classical_optimum": true
   },
-  "runtime_seconds": 493.5,
+  "runtime_seconds": 137.0,
   "versions": {
     "qiskit": "2.5.2",
     "qiskit_aer": "0.17.2",
