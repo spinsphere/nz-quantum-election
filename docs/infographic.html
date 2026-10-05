@@ -58,6 +58,12 @@
   .friction { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 4px; }
   .pair { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14.5px; color: var(--ink-2); }
   .pair b { display: block; font-size: 22px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .circuit { margin-top: 6px; }
+  .circuit .strip { width: 100%; height: 230px; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #fff; position: relative; }
+  .circuit .strip img { height: 230px; width: auto; max-width: none; display: block; }
+  .circuit .fade { position: absolute; top: 0; right: 0; bottom: 0; width: 140px; background: linear-gradient(to right, rgba(255,255,255,0), #fff 85%); }
+  .circuit .more { position: absolute; right: 16px; bottom: 12px; font-size: 14px; color: var(--ink-3); font-weight: 600; }
+  .circuit p { margin: 12px 0 0; font-size: 15px; color: var(--ink-2); line-height: 1.45; }
   .foot { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid var(--line); padding-top: 18px; font-size: 14.5px; color: var(--ink-3); line-height: 1.5; }
   .foot b { color: var(--ink-2); }
 </style>
@@ -151,6 +157,12 @@
     <div class="caveat"><div class="k">5%</div><p><b>The whole result hinges on TOP clearing the threshold.</b> It polls between 4.5% and 9.5% (5.5% in the 6 October RNZ-Reid poll). If it misses 5%, its votes drop out of the seat allocation and National, ACT and NZ First reach 63.</p></div>
     <div class="caveat"><div class="k">0.5–1.5</div><p><b>The answer is robust to how much disagreement is penalised.</b> The same four parties win across this range of the friction coefficient. Only at twice the baseline does a National–Labour grand coalition take over.</p></div>
     <div class="caveat"><div class="k">+1</div><p><b>A one-seat buffer is fragile.</b> With Te Pāti Māori's recent splits and a candidate-vote-only strategy, confidence and supply from outside cabinet is more likely than a formal four-party deal. National and TOP, and Labour and NZ First, have ruled each other out.</p></div>
+  </section>
+
+  <section class="card circuit">
+    <h2>The quantum circuit that executed this project</h2>
+    <div class="strip"><img src="ibm-quantum-circuit.svg" alt="Opening section of the transpiled QAOA circuit: 11 qubit wires with single-qubit rotations and CZ gates"><div class="fade"></div><div class="more">continues for ~40 page widths →</div></div>
+    <p>This is the depth-2 QAOA circuit, transpiled for IBM Quantum's <b>ibm_fez</b> processor and run with 4,096 shots, as rendered by the IBM Quantum Platform for the hardware job. Eleven qubit wires carry the seven party variables and four slack variables; the 405 two-qubit CZ gates (vertical links) encode the seat constraint and the friction between every pair of parties. Only the opening section fits here; the full circuit is 587 layers deep and is in the repository as <b>docs/ibm-quantum-circuit.svg</b>.</p>
   </section>
 
   <footer class="foot">

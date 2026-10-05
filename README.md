@@ -102,6 +102,7 @@ research/                sourced research files: polling.md and one per party, e
 research/raw/            raw page text captured by the Playwright crawl (news, Wikipedia, official pages)
 docs/REPORT.md           executive report from the recorded run
 docs/infographic.png     one-page infographic of the result (source: docs/infographic.html)
+docs/ibm-quantum-circuit.svg  the transpiled depth-2 QAOA circuit as rendered by the IBM Quantum Platform for the ibm_fez job
 docs/run_log.txt         console log of the recorded run
 METHODOLOGY.md           every modelling choice, with limitations
 linkedin_article.md      write-up for publication
