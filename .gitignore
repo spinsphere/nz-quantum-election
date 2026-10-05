@@ -1,0 +1,16 @@
+# Secrets — never commit
+.env
+*.token
+qiskit-ibm.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

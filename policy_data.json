@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "election_date": "2026-11-07",
+    "parliament_size": 123,
+    "majority_threshold": 62,
+    "data_as_of": "2026-10-04",
+    "scoring_methodology": "Empirical scoring 1-10 based on alignment with OECD/Treasury/Reserve Bank projections for stability, growth, and equality across 8 policy domains. Higher score = stronger evidence-based policy stance for that domain.",
+    "scoring_criteria": {
+      "health": "Adequacy of funding, access, wait-time reduction, mental health investment, preventative care alignment with WHO benchmarks",
+      "education": "Evidence-based literacy/numeracy outcomes, infrastructure investment, teacher retention, ECE quality, NCEA coherence",
+      "crime_justice": "Recidivism reduction, rehabilitation investment, police resourcing, youth justice efficacy (Justice Dept data)",
+      "housing_rental": "Housing supply creation, affordability metrics, social housing targets, RMA efficiency",
+      "economy_col": "Grocery competition, inflation management, fiscal sustainability, tax equity, OECD productivity alignment",
+      "employment": "Job creation, wage growth above inflation, worker protections, benefit adequacy",
+      "transport_infra": "Active/public transport investment, emissions reduction, regional connectivity",
+      "tiriti_maori": "Constitutional honour of Te Tiriti, Maori health/education equity, self-determination provisions"
+    }
+  },
+  "parties": {
+    "National": {
+      "full_name": "New Zealand National Party",
+      "leader": "Christopher Luxon",
+      "bloc": "right",
+      "polling_pct": 28.0,
+      "seat_estimate": 35,
+      "scores": {
+        "health": 5,
+        "education": 6,
+        "crime_justice": 5,
+        "housing_rental": 6,
+        "economy_col": 6,
+        "employment": 5,
+        "transport_infra": 4,
+        "tiriti_maori": 3
+      },
+      "score_rationale": {
+        "health": "Redirecting to frontline is positive but Pharmac funding flat in real terms; private delivery risk. Score 5.",
+        "education": "Structured literacy evidence-based; teacher bonding scheme positive; but charter school expansion increases fragmentation. Score 6.",
+        "crime_justice": "Three Strikes restoration contradicted by evidence on recidivism; gang legislation has some deterrent value. Score 5.",
+        "housing_rental": "Going-for-housing-growth supply focus is evidence-aligned; 90-day no-cause eviction restoration reduces tenant security. Score 6.",
+        "economy_col": "No new taxes maintains stability; grocery separation policy addresses duopoly; fiscal discipline sound. Score 6.",
+        "employment": "No fair pay agreements reduces worker protections; wage growth tied to GDP growth forecast. Score 5.",
+        "transport_infra": "Road-heavy; limited public transport investment; active transport deprioritised vs OECD sustainability norms. Score 4.",
+        "tiriti_maori": "Abolished Maori Health Authority; limited Treaty commitments; reduced co-governance. Score 3."
+      },
+      "key_policies": {
+        "health": "Frontline investment, hospital builds, local doctors/nurses, life-saving medicines",
+        "education": "Structured literacy/math, teacher bonding, school builds, screen-free ECE",
+        "crime_justice": "Three Strikes restored, 40% sentence discount cap, gang dispersal orders, Auckland transport police",
+        "housing_rental": "Going for Housing Growth, 5% first-home deposit, 90-day no-cause eviction, community housing providers",
+        "economy_col": "No new taxes, return to surplus 2028/29, grocery separation (New World/PAK'nSAVE), 2.7% GDP growth target",
+        "employment": "KiwiSaver enhancement, Back Pocket Boost for graduates, Apprenticeship pathways",
+        "transport_infra": "Road building focus, fast-track consenting, Auckland transport police",
+        "tiriti_maori": "Repealed Maori Health Authority, reduced co-governance, limited Treaty commitments"
+      }
+    },
+    "Labour": {
+      "full_name": "New Zealand Labour Party",
+      "leader": "Chris Hipkins",
+      "bloc": "left",
+      "polling_pct": 28.0,
+      "seat_estimate": 35,
+      "scores": {
+        "health": 7,
+        "education": 6,
+        "crime_justice": 5,
+        "housing_rental": 6,
+        "economy_col": 6,
+        "employment": 7,
+        "transport_infra": 7,
+        "tiriti_maori": 6
+      },
+      "score_rationale": {
+        "health": "Free GP visits reduce ED overcrowding (evidence-strong); maternity/cervical screening expansions align with preventative care. Score 7.",
+        "education": "Curriculum continuity; investment in ECE; but less specific on structured literacy vs National. Score 6.",
+        "crime_justice": "Moderate rehabilitation focus; balanced sentencing; youth justice emphasis but limited police resourcing details. Score 5.",
+        "housing_rental": "Social housing targets strong; CGT revenue helps fund; but housing supply delivery historically slow. Score 6.",
+        "economy_col": "Targeted CGT evidence-based for equity; dual RB mandate positive for employment; $20 PT fare cap reduces cost of living. Score 6.",
+        "employment": "Restoring dual RB mandate, Apprenticeship Boost, job creation focus. Score 7.",
+        "transport_infra": "$20 weekly PT cap; multi-modal investment; rail integration. Score 7.",
+        "tiriti_maori": "Mana Whakahono a Rohe restoration; active Treaty support; some co-governance willingness. Score 6."
+      },
+      "key_policies": {
+        "health": "Free GP/prescriptions, free maternity scans, cervical screening, Family Doctor Loan Scheme",
+        "education": "ECE investment, curriculum continuity, teacher support",
+        "crime_justice": "Balanced sentencing, youth justice, rehabilitation",
+        "housing_rental": "Social housing build, CGT to fund services, affordability focus",
+        "economy_col": "Targeted CGT, return to surplus 2029/30, net debt ~20% GDP, Parliamentary Budget Office",
+        "employment": "Apprenticeship Boost, dual RB mandate restoration, job creation, emigration stemming",
+        "transport_infra": "$20 weekly PT fare cap, NZ Future Fund for infrastructure, rail+active transport",
+        "tiriti_maori": "Mana Whakahono a Rohe, Stand Up for Te Tiriti campaign, reclaim Maori seats"
+      }
+    },
+    "Green": {
+      "full_name": "Green Party of Aotearoa New Zealand",
+      "leader": "Chloe Swarbrick / Francisco Hernandez",
+      "bloc": "left",
+      "polling_pct": 16.0,
+      "seat_estimate": 20,
+      "scores": {
+        "health": 7,
+        "education": 6,
+        "crime_justice": 7,
+        "housing_rental": 7,
+        "economy_col": 7,
+        "employment": 7,
+        "transport_infra": 9,
+        "tiriti_maori": 8
+      },
+      "score_rationale": {
+        "health": "10-year cross-party health plan commitment; preventative care investment; strong mental health focus. Score 7.",
+        "education": "Progressive curriculum; but less structured literacy specificity. Score 6.",
+        "crime_justice": "Rehabilitation-focused; restorative justice alignment with recidivism reduction evidence. Score 7.",
+        "housing_rental": "LVT-adjacent policies address speculation; public housing investment; rent affordability focus. Score 7.",
+        "economy_col": "Wealth tax on assets >$10M evidence-supported for redistribution; $10K tax-free threshold aids low income; grocery competition strong. Score 7.",
+        "employment": "Worker protection focus, tax cuts for 96%, UBI adjacent. Score 7.",
+        "transport_infra": "Intercity rail investment; active transport champion; climate-aligned. Score 9.",
+        "tiriti_maori": "Tino rangatiratanga commitment; freshwater Maori rights; marae resourcing. Score 8."
+      },
+      "key_policies": {
+        "health": "10-year health plan, preventative care, primary care investment",
+        "education": "Progressive, equitable curriculum, ECE investment",
+        "crime_justice": "Restorative justice, rehabilitation, addressing root causes",
+        "housing_rental": "Affordable housing expansion, anti-speculation, public funding",
+        "economy_col": "2.5% wealth tax on >$10M assets, inheritance tax, 45% top rate, $10K tax-free threshold, corporate tax increase",
+        "employment": "Tax cuts for 96%, worker protections, fair wages",
+        "transport_infra": "Auckland-Wellington overnight rail, Christchurch-Dunedin rail, active transport, climate transport",
+        "tiriti_maori": "Tino rangatiratanga over freshwater, marae resourcing, Te Waonui a Tane programme, Tiriti-based governance"
+      }
+    },
+    "ACT": {
+      "full_name": "ACT New Zealand",
+      "leader": "David Seymour",
+      "bloc": "right",
+      "polling_pct": 11.0,
+      "seat_estimate": 14,
+      "scores": {
+        "health": 4,
+        "education": 6,
+        "crime_justice": 4,
+        "housing_rental": 5,
+        "economy_col": 5,
+        "employment": 4,
+        "transport_infra": 3,
+        "tiriti_maori": 2
+      },
+      "score_rationale": {
+        "health": "Market-driven health risks two-tier access; spending cuts reduce universal coverage. Score 4.",
+        "education": "Charter schools have mixed evidence; classroom discipline authority positive; core skills focus evidence-based. Score 6.",
+        "crime_justice": "Harsh sentencing contradicted by recidivism evidence; limited rehabilitation investment. Score 4.",
+        "housing_rental": "Deregulation supports supply; but reduced tenant protections. Score 5.",
+        "economy_col": "No new taxes maintains business confidence; but lacks redistribution mechanism for inequality. Score 5.",
+        "employment": "Worker protection rollback; smaller government reduces public sector jobs. Score 4.",
+        "transport_infra": "Road focus, minimal active/public transport investment. Score 3.",
+        "tiriti_maori": "Treaty Principles Bill (defeated); new Constitution Act provisions negate Treaty partnership; Tribunal abolition proposal. Score 2."
+      },
+      "key_policies": {
+        "health": "Market-driven, spending restraint, private delivery",
+        "education": "Charter schools, classroom discipline authority, freedom of expression, core skills",
+        "crime_justice": "Tough sentencing, less rehabilitation, personal responsibility",
+        "housing_rental": "Deregulation, reduced tenant protections, supply focus",
+        "economy_col": "No new taxes, fastest return to surplus, $14B savings, smaller government",
+        "employment": "Smaller government, deregulation, reduce public sector",
+        "transport_infra": "Road focus, minimal PT investment",
+        "tiriti_maori": "One Law for All, Constitution Act principles, restrict Waitangi Tribunal to pre-2008 historical claims"
+      }
+    },
+    "NZFirst": {
+      "full_name": "New Zealand First",
+      "leader": "Winston Peters",
+      "bloc": "right",
+      "polling_pct": 9.0,
+      "seat_estimate": 11,
+      "scores": {
+        "health": 5,
+        "education": 4,
+        "crime_justice": 5,
+        "housing_rental": 4,
+        "economy_col": 5,
+        "employment": 5,
+        "transport_infra": 5,
+        "tiriti_maori": 2
+      },
+      "score_rationale": {
+        "health": "Preventative health emphasis positive; but citizenry-only NZ Super risks equity. Score 5.",
+        "education": "Less detailed; nationalist framing limits equity focus. Score 4.",
+        "crime_justice": "'Smart on crime' rhetoric; limited detail on rehabilitation. Score 5.",
+        "housing_rental": "Limited specific housing supply policies; immigration restriction may reduce demand pressure. Score 4.",
+        "economy_col": "SME tax reduction positive for small business; $100B Future Fund ambitious but speculative. Score 5.",
+        "employment": "Infrastructure fund creates jobs; immigration restriction protects existing workers. Score 5.",
+        "transport_infra": "$100B infrastructure fund if realised significant; but details sparse. Score 5.",
+        "tiriti_maori": "Abolish Waitangi Tribunal; Treaty Completion Commission; nationalistic framing. Score 2."
+      },
+      "key_policies": {
+        "health": "Preventative health (Make NZ Healthy), Kiwi Kids Grant",
+        "education": "Nationalist curriculum, limited detail",
+        "crime_justice": "Smart on crime, community protection",
+        "housing_rental": "Immigration restriction to reduce demand, limited supply policies",
+        "economy_col": "SME tax 20% (under $30M), $100B Future Fund, dairy value-add investment",
+        "employment": "Infrastructure jobs, immigration restriction, SME support",
+        "transport_infra": "$100B infrastructure fund (multi-decade)",
+        "tiriti_maori": "Abolish Waitangi Tribunal, Treaty Completion Commission, citizens-only benefits"
+      }
+    },
+    "TePatiMaori": {
+      "full_name": "Te Pāti Māori",
+      "leader": "Debbie Ngarewa-Packer / Rawiri Waititi",
+      "bloc": "left",
+      "polling_pct": 1.2,
+      "seat_estimate": 6,
+      "scores": {
+        "health": 8,
+        "education": 8,
+        "crime_justice": 8,
+        "housing_rental": 7,
+        "economy_col": 7,
+        "employment": 7,
+        "transport_infra": 6,
+        "tiriti_maori": 10
+      },
+      "score_rationale": {
+        "health": "Maori-led health system targets the most under-served; equity-focused outcomes strong per health inequity data. Score 8.",
+        "education": "Maori-led education authority; te reo and culture integration; equity outcomes focus. Score 8.",
+        "crime_justice": "Maori-led justice programmes reduce Maori over-representation in prison (evidence-strong). Score 8.",
+        "housing_rental": "Safe secure housing for whanau; energy sovereignty fund reduces cost burden. Score 7.",
+        "economy_col": "Fair tax support; wealth redistribution; energy sovereignty. Score 7.",
+        "employment": "Maori economic development; energy fund jobs. Score 7.",
+        "transport_infra": "Less detailed; regional connectivity emphasis. Score 6.",
+        "tiriti_maori": "Treaty entrenchment, binding Tribunal recommendations, constitutional transformation. Score 10."
+      },
+      "key_policies": {
+        "health": "Maori-led health system, health inequity reduction, $200M Takatapui commission",
+        "education": "Maori education authority, te reo integration, equity outcomes",
+        "crime_justice": "Maori-led justice programmes, reduce prison over-representation",
+        "housing_rental": "Whanau housing, Maori-led solutions, safe secure housing",
+        "economy_col": "Energy Sovereignty Fund $1B, fair tax, wealth redistribution",
+        "employment": "Energy fund jobs, Maori economic development",
+        "transport_infra": "Regional connectivity, less detailed",
+        "tiriti_maori": "Treaty entrenchment, binding Tribunal recommendations, Te Tiriti Commission, Matike Mai Fund, Treaty impact statements"
+      }
+    },
+    "TOP": {
+      "full_name": "The Opportunity Party (Opportunity)",
+      "leader": "Qiulae Wong",
+      "bloc": "centre",
+      "polling_pct": 6.0,
+      "seat_estimate": 7,
+      "scores": {
+        "health": 8,
+        "education": 6,
+        "crime_justice": 6,
+        "housing_rental": 8,
+        "economy_col": 9,
+        "employment": 7,
+        "transport_infra": 6,
+        "tiriti_maori": 5
+      },
+      "score_rationale": {
+        "health": "10-year cross-party health plan as bottom line; primary/preventative care investment; evidence-based systemic approach. Score 8.",
+        "education": "Less detailed but evidence-based governance approach. Score 6.",
+        "crime_justice": "Root-cause focus; systemic approach to crime via economic reform. Score 6.",
+        "housing_rental": "Land Value Tax cools speculation, improves affordability for renters per modelling; evidence-strong. Score 8.",
+        "economy_col": "LVT + Citizens Income = structural reform; grocery Commerce Commission powers; anti-monopoly action. Score 9.",
+        "employment": "Citizens Income supports workers; LVT reduces speculative wealth; balanced. Score 7.",
+        "transport_infra": "Climate commitment; EV and clean transport support. Score 6.",
+        "tiriti_maori": "Less specific on Treaty; pragmatic centrist; some equity commitments. Score 5."
+      },
+      "key_policies": {
+        "health": "10-year cross-party health plan (non-negotiable bottom line), primary/preventative care",
+        "education": "Evidence-based, long-term systemic approach",
+        "crime_justice": "Root-cause analysis, systemic economic reform reduces crime drivers",
+        "housing_rental": "Land Value Tax (1.75% on land value excl. buildings), infrastructure funding reform",
+        "economy_col": "Tax Reset (LVT + Citizens Income), Commerce Commission separation powers for supermarkets/banks, lobbying register",
+        "employment": "Citizens Income (UBI-style), tax cuts for 70%, compulsory KiwiSaver 2.0",
+        "transport_infra": "Paris Agreement recommitment, Climate Change Commission strengthening, EV support",
+        "tiriti_maori": "Equity focus; less specific Treaty commitments; pragmatic centrist"
+      }
+    }
+  }
+}
