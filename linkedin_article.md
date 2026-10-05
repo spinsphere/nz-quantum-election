@@ -2,6 +2,8 @@
 
 *SpinSphere, 6 October 2026. Everything described here is open source: github.com/spinsphere/nz-quantum-election*
 
+*(Attach docs/infographic.png as the post image.)*
+
 Every election, pundits argue about who will go into coalition with whom. This year I tried something different. Instead of asking who *wants* to govern together, I asked which combination of parties *should*, if the only things that counted were the published evidence on their policies, how far apart they sit from one another, and the seat maths from the latest polls. Then I handed the question to a quantum computer.
 
 ## The answer

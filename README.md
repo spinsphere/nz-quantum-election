@@ -11,6 +11,9 @@ This repository answers that question with a Quantum Approximate Optimization Al
 
 ## Result
 
+![One-page infographic of the result](docs/infographic.png)
+
+
 **Labour + Green + Te Pāti Māori + TOP: 63 of 122 seats (majority 62), objective 1.2125.**
 
 Sampled from the QAOA circuit on `ibm_fez` (job `db21nrs7f06c73ap7g1g`, 3 seconds of QPU time; earlier runs on `ibm_fez` (`db20ak47f06c73ap5s10`) and `ibm_marrakesh` (`db1u21hmmimc73fnvhk0`) gave the same answer) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without TOP, which National has ruled out; NZ First has in turn ruled out Labour. The answer hinges on TOP staying above the 5% threshold: it polls between 4.5% and 9.5%, and every September projection with TOP under 5% produces a National-led majority instead.
@@ -98,6 +101,7 @@ quantum_results.json     output of the recorded run (6 Oct 2026, ibm_fez)
 research/                sourced research files: polling.md and one per party, each with a 6 Oct update section
 research/raw/            raw page text captured by the Playwright crawl (news, Wikipedia, official pages)
 docs/REPORT.md           executive report from the recorded run
+docs/infographic.png     one-page infographic of the result (source: docs/infographic.html)
 docs/run_log.txt         console log of the recorded run
 METHODOLOGY.md           every modelling choice, with limitations
 linkedin_article.md      write-up for publication

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NZ Quantum Election: the result on one page</title>
+<style>
+  :root {
+    --surface: #fcfcfb; --panel: #ffffff; --line: #e6e5e1;
+    --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #8a897f;
+    --lab: #e34948; --grn: #008300; --tpm: #4a3aa7; --top: #2a78d6; --out: #c9c8c2;
+    --accent: #0b0b0b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--surface); color: var(--ink);
+         font-family: "Inter", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .page { width: 1200px; min-height: 1500px; padding: 56px 64px 48px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+  .eyebrow { font-size: 15px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+  h1 { font-size: 44px; line-height: 1.1; margin: 8px 0 10px; font-weight: 800; letter-spacing: -.01em; }
+  .sub { font-size: 20px; color: var(--ink-2); line-height: 1.4; max-width: 980px; }
+  .hero { display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: stretch; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 24px 26px; }
+  .card h2 { font-size: 17px; margin: 0 0 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); font-weight: 700; }
+  .result { font-size: 30px; font-weight: 800; line-height: 1.2; margin: 0 0 16px; }
+  .chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); font-weight: 600; font-size: 17px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; }
+  .seatbar { position: relative; height: 54px; margin: 10px 0 30px; }
+  .seatbar .seg { position: absolute; top: 0; height: 54px; }
+  .seatbar .seg span { position: absolute; left: 0; right: 0; top: 16px; text-align: center; font-weight: 700; font-size: 16px; color: #fff; }
+  .seatbar .seg.out span { color: var(--ink-2); }
+  .maj { position: absolute; top: -10px; bottom: -22px; width: 3px; background: var(--ink); border-radius: 2px; }
+  .maj-label { position: absolute; bottom: -46px; transform: translateX(-50%); font-size: 15px; font-weight: 700; white-space: nowrap; background: var(--panel); padding: 0 6px; }
+  .axis { display: flex; justify-content: space-between; font-size: 14px; color: var(--ink-3); margin-top: 6px; }
+  .legend { display: flex; gap: 18px; font-size: 15px; color: var(--ink-2); margin-top: 10px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .stat { text-align: center; display: flex; flex-direction: column; justify-content: center; }
+  .stat .big { font-size: 96px; font-weight: 800; line-height: .95; letter-spacing: -.03em; }
+  .stat .of { font-size: 26px; color: var(--ink-2); margin-top: 6px; }
+  .stat .need { font-size: 18px; color: var(--ink-3); margin-top: 14px; }
+  .stat .buffer { margin-top: 18px; font-size: 17px; font-weight: 700; padding: 8px 14px; border-radius: 10px; background: #f3f2ee; display: inline-block; align-self: center; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .step .num { width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; margin-bottom: 12px; }
+  .step h3 { margin: 0 0 8px; font-size: 20px; }
+  .step p { margin: 0; font-size: 16px; color: var(--ink-2); line-height: 1.45; }
+  .two { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; }
+  .bars { display: grid; grid-template-columns: 150px 1fr 52px; row-gap: 11px; column-gap: 12px; align-items: center; font-size: 16px; }
+  .bars .name { font-weight: 600; }
+  .bars .track { height: 18px; position: relative; }
+  .bars .fill { height: 18px; border-radius: 0 4px 4px 0; }
+  .bars .val { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  .bars .muted { color: var(--ink-3); font-weight: 500; }
+  .caveat { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-top: 1px solid var(--line); }
+  .caveat:first-of-type { border-top: 0; padding-top: 0; }
+  .caveat .k { font-size: 30px; font-weight: 800; min-width: 128px; line-height: 1; letter-spacing: -.02em; white-space: nowrap; }
+  .caveat p { margin: 0; font-size: 15.5px; color: var(--ink-2); line-height: 1.4; }
+  .caveat p b { color: var(--ink); }
+  .friction { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 4px; }
+  .pair { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14.5px; color: var(--ink-2); }
+  .pair b { display: block; font-size: 22px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .foot { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid var(--line); padding-top: 18px; font-size: 14.5px; color: var(--ink-3); line-height: 1.5; }
+  .foot b { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="eyebrow">New Zealand General Election · 7 November 2026 · analysis as at 6 October</div>
+    <h1>We asked a quantum computer which coalition <em>should</em> govern New Zealand</h1>
+    <div class="sub">Not who wants to work together, but which combination of parties scores highest on the published evidence for their policies, loses least to internal disagreement, and still reaches a majority on the latest polls.</div>
+  </header>
+
+  <section class="hero">
+    <div class="card">
+      <h2>The answer</h2>
+      <p class="result">Labour + Greens + Te Pāti Māori + TOP</p>
+      <div class="chips">
+        <span class="chip"><i class="dot" style="background:var(--lab)"></i>Labour · 34 seats</span>
+        <span class="chip"><i class="dot" style="background:var(--grn)"></i>Green · 17</span>
+        <span class="chip"><i class="dot" style="background:var(--tpm)"></i>Te Pāti Māori · 4</span>
+        <span class="chip"><i class="dot" style="background:var(--top)"></i>TOP · 8</span>
+      </div>
+      <!-- 122 seats; 1 seat = 100/122 % ; 2px surface gaps between segments -->
+      <div class="seatbar">
+        <div class="seg" style="left:0%;width:27.87%;background:var(--lab)"><span>34</span></div>
+        <div class="seg" style="left:28.0%;width:13.8%;background:var(--grn)"><span>17</span></div>
+        <div class="seg" style="left:42.0%;width:3.1%;background:var(--tpm)"><span>4</span></div>
+        <div class="seg" style="left:45.3%;width:6.4%;background:var(--top)"><span>8</span></div>
+        <div class="seg out" style="left:52.0%;width:28.5%;background:var(--out)"><span>National 35</span></div>
+        <div class="seg out" style="left:80.7%;width:9.6%;background:var(--out)"><span>ACT 12</span></div>
+        <div class="seg out" style="left:90.5%;width:9.5%;background:var(--out)"><span>NZF 12</span></div>
+        <div class="maj" style="left:50.82%"></div>
+        <div class="maj-label" style="left:50.82%">62 = majority</div>
+      </div>
+      <div class="axis" style="margin-top:14px"><span>0</span><span>122 seats in the House (120 + 2 overhang)</span></div>
+      <div class="legend">
+        <span><i class="dot" style="background:var(--lab)"></i><i class="dot" style="background:var(--grn);margin-left:-4px"></i><i class="dot" style="background:var(--tpm);margin-left:-4px"></i><i class="dot" style="background:var(--top);margin-left:-4px"></i> in the optimal coalition</span>
+        <span><i class="dot" style="background:var(--out)"></i> outside it</span>
+      </div>
+    </div>
+    <div class="card stat">
+      <div class="big">63</div>
+      <div class="of">of 122 seats</div>
+      <div class="need">62 needed for a majority</div>
+      <div class="buffer">Buffer: 1 seat</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>How it works, in three steps (no physics required)</h2>
+    <div class="grid3">
+      <div class="step"><div class="num">1</div><h3>Score the policies</h3><p>Each party rated 1 to 10 in eight areas (health, education, justice, housing, economy, jobs, transport, Te Tiriti) on independent evidence: Treasury, Reserve Bank, OECD, Ministry evaluations, the Waitangi Tribunal.</p></div>
+      <div class="step"><div class="num">2</div><h3>Measure the friction</h3><p>Every pair of parties gets a distance score for how far apart their positions sit. Like staffing a company: skill matters, but people who fight over everything burn the team's energy.</p></div>
+      <div class="step"><div class="num">3</div><h3>Find the best team that can govern</h3><p>Highest total score minus friction, subject to reaching 62 seats on the six latest polls. The quantum computer searched the 128 possible coalitions; a classical check confirmed its answer.</p></div>
+    </div>
+  </section>
+
+  <section class="two">
+    <div class="card">
+      <h2>Policy evidence score, out of 80</h2>
+      <div class="bars">
+        <div class="name">TOP</div><div class="track"><div class="fill" style="width:66.25%;background:var(--top)"></div></div><div class="val">53</div>
+        <div class="name">Labour</div><div class="track"><div class="fill" style="width:55%;background:var(--lab)"></div></div><div class="val">44</div>
+        <div class="name">Green</div><div class="track"><div class="fill" style="width:55%;background:var(--grn)"></div></div><div class="val">44</div>
+        <div class="name muted">National</div><div class="track"><div class="fill" style="width:51.25%;background:var(--out)"></div></div><div class="val muted">41</div>
+        <div class="name">Te Pāti Māori</div><div class="track"><div class="fill" style="width:48.75%;background:var(--tpm)"></div></div><div class="val">39</div>
+        <div class="name muted">ACT</div><div class="track"><div class="fill" style="width:42.5%;background:var(--out)"></div></div><div class="val muted">34</div>
+        <div class="name muted">NZ First</div><div class="track"><div class="fill" style="width:32.5%;background:var(--out)"></div></div><div class="val muted">26</div>
+      </div>
+      <p style="margin:16px 0 0;font-size:14.5px;color:var(--ink-3);line-height:1.45">Scores measure evidence-based effectiveness toward stability, growth and equality, not desirability. Incumbents are judged on outcomes, challengers on plans. Every number has a written rationale in the repository.</p>
+    </div>
+    <div class="card">
+      <h2>Friction between partners (0 = identical, 1 = opposite)</h2>
+      <div class="friction">
+        <div class="pair"><b>0.09</b>Labour – TOP</div>
+        <div class="pair"><b>0.06</b>Green – Te Pāti Māori</div>
+        <div class="pair"><b>0.24</b>Labour – Green</div>
+        <div class="pair"><b>0.22</b>Te Pāti Māori – TOP</div>
+        <div class="pair"><b>0.19</b>National – ACT</div>
+        <div class="pair"><b>0.41</b>National – Labour</div>
+        <div class="pair"><b>0.66</b>National – Green</div>
+        <div class="pair"><b>0.85</b>Green – ACT</div>
+      </div>
+      <p style="margin:14px 0 0;font-size:14.5px;color:var(--ink-3);line-height:1.45">Low friction inside the winning four is why it beats bigger coalitions. The biggest internal gaps are justice, Te Tiriti and tax, where only Labour's capital gains tax is costed inside a fiscal plan.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Three things to know before you share this</h2>
+    <div class="caveat"><div class="k">5%</div><p><b>The whole result hinges on TOP clearing the threshold.</b> It polls between 4.5% and 9.5%. In every September projection with TOP under 5%, National, ACT and NZ First win a majority instead.</p></div>
+    <div class="caveat"><div class="k">0.5–1.5</div><p><b>The answer is robust to how much disagreement is penalised.</b> The same four parties win across this range of the friction coefficient. Only at twice the baseline does a National–Labour grand coalition take over.</p></div>
+    <div class="caveat"><div class="k">+1</div><p><b>A one-seat buffer is fragile.</b> With Te Pāti Māori's recent splits and a candidate-vote-only strategy, confidence and supply from outside cabinet is more likely than a formal four-party deal. National and TOP, and Labour and NZ First, have ruled each other out.</p></div>
+  </section>
+
+  <footer class="foot">
+    <div><b>Quantum run:</b> QAOA, 11 qubits (7 parties + 4 slack), depth-2 circuit, 405 two-qubit gates, IBM Quantum <b>ibm_fez</b>, 4,096 shots, 3 s of QPU time. Best hardware sample = classical optimum.<br><b>Data:</b> party policy papers, Treasury PREFU 2026, Ministry evaluations, six national polls to 1 Oct 2026, Sainte-Laguë seat allocation.</div>
+    <div style="text-align:right;white-space:nowrap;padding-left:24px"><b>github.com/spinsphere/nz-quantum-election</b><br>SpinSphere · open source, MIT</div>
+  </footer>
+
+</div>
+</body>
+</html>
