@@ -322,7 +322,7 @@ def build_report(results: dict, data: dict) -> str:
             blocs2.setdefault(data["parties"][q]["bloc"], 0)
             blocs2[data["parties"][q]["bloc"]] += s2[q]
         P(wrap(f"If {DISPLAY[p]}, at {votes[p]:.1f}% in the poll average, fell below the 5% threshold with no electorate seat, "
-               f"its votes would be redistributed: House of {tot2}, majority {maj2}; the optimal coalition without it would hold "
+               f"its party vote would no longer take part in the Sainte-Lague allocation: House of {tot2}, majority {maj2}; the optimal coalition without it would hold "
                f"{coal2} seats ({'still a majority' if coal2 >= maj2 else 'no longer a majority'}); bloc totals "
                f"{', '.join(f'{b} {s}' for b, s in blocs2.items())}.", indent="    "))
     P(wrap("Every published September 2026 seat projection in which Opportunity falls under 5% (Taxpayers' Union-Curia, 1-3 Sep) "

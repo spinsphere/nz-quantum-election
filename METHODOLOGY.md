@@ -90,7 +90,7 @@ The brief asked for `maximise sum_i w_i x_i` subject to the seat constraint. On 
 
 ## 8. What the quantum part does and does not show
 
-QAOA learns the majority constraint well: at `p = 2` more than 85% of the probability sits on majority coalitions, against 60% for uniform sampling. It resolves the policy objective only weakly at these depths: the exact optimum bitstring carries a few tenths of a percent of the probability, a few times the uniform baseline. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is solved by brute force in the same script as a check. The value of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
+QAOA learns the majority constraint well: at `p = 2` more than 85% of the probability sits on majority coalitions, against 50% for uniform sampling (64 of the 128 coalitions reach a majority). It resolves the policy objective only weakly at these depths: the exact optimum bitstring carries a few tenths of a percent of the probability, 5.8 times the uniform baseline in the ideal depth-4 simulation and 2.5 times on the depth-2 hardware run. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is solved by brute force in the same script as a check. The value of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
 
 ## 9. Limitations
 
