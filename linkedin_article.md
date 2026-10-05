@@ -1,175 +1,61 @@
-# 🇳🇿 I Used a Quantum Computer to Find New Zealand's Optimal Government
+# I asked a quantum computer which coalition should govern New Zealand. Here is what it said, and what it couldn't.
 
-## What happens when you let qubits decide who should run a country?
+*SpinSphere, October 2026. Code, data and sources: github.com/spinsphere/nz-quantum-election*
 
-*October 2026 | SpinSphere Quantum Research*
+Five weeks before New Zealand votes on 7 November, the polls describe a stalemate. National and Labour are tied near 29%. The governing National–ACT–NZ First bloc projects to 59 seats, three short of a majority. The Labour–Green–Te Pāti Māori bloc projects to 55. The eight seats in between belong to TOP, which National has ruled out working with.
 
----
+So I did something slightly unusual with that arithmetic. I turned the coalition question into a binary optimisation problem, encoded it as a quantum Hamiltonian, and ran it through the Quantum Approximate Optimization Algorithm (QAOA) on an IBM Quantum processor. No punditry, no preferred outcome: just published policy evidence, measured ideological distance, and the seat maths.
 
-With New Zealand's 2026 General Election just over a month away (November 7), I decided to do something a little unusual: use a **Quantum Approximate Optimization Algorithm (QAOA)** — the same class of algorithm being tested by Google, IBM, and major research institutions for drug discovery and logistics — to find the mathematically optimal governing coalition.
+## The answer
 
-No punditry. No political bias. Just physics and policy data.
+**Labour + Green + Te Pāti Māori + TOP. 63 seats of 122. One seat to spare.**
 
-Here's what the quantum computer found. 🧵
+The quantum circuit's best sample on IBM's `ibm_marrakesh` processor matched the classical brute-force optimum exactly. The runner-up, well behind, was a National + Labour + TOP arrangement, then a National + Labour grand coalition.
 
----
+Before anyone celebrates or despairs, read the next two sections. The interesting part is how the answer was produced, and what it depends on.
 
-### The Problem: Why Quantum?
+## How I scored the parties
 
-Coalition formation in MMP electoral systems is a classic **combinatorial optimization problem**. With 7 parties and 123 seats, you're asking: *which subset of parties maximizes policy effectiveness while securing a parliamentary majority (≥62 seats)?*
+Each of the seven parties was researched across eight domains: health, education, crime and justice, housing, cost of living and the economy, employment, transport and infrastructure, and Te Tiriti o Waitangi. For each domain I asked one question: based on independent evidence (Treasury, the Reserve Bank, OECD, Ministry evaluations, the Waitangi Tribunal, peer-reviewed research), how effectively would this party's stated 2026 policies, and its record where it has governed, advance stability, growth and equality? Scores run from 1 to 10 and every cell has a written rationale in the repository.
 
-That's 2⁷ = 128 possible combinations. Trivial classically. But it's the *structure* of the problem — a **Binary Quadratic Program** with a hard constraint — that makes it a perfect testbed for QAOA, the leading near-term quantum optimization algorithm.
+Some of those scores will annoy people on both sides. National's structured-literacy programme scores well because the phonics data is real. Its sentencing laws score poorly because the Ministry of Justice projects a 35% rise in the prison population with weak deterrence evidence. The Greens' rent cap scores poorly because the economics literature on rent control is close to unanimous. TOP scores highest overall (53/80) partly because a land value tax and ten-year cross-party plans are what the evidence recommends, and partly because a party that has never governed is never contradicted by its own outcome data. I flag that asymmetry in the methodology rather than pretend it away.
 
-QAOA encodes the problem as a quantum Hamiltonian, runs the circuit on a quantum processor (or simulator), and exploits quantum superposition and interference to find optimal solutions faster than classical approaches for larger problem instances.
+Totals out of 80: TOP 53, Labour 44, Green 43, National 41, Te Pāti Māori 38, ACT 33, NZ First 26.
 
----
+## Why the obvious model gives a stupid answer
 
-### The Data: 8 Domains, 7 Parties, Zero Ideology
+The naive formulation is: pick the set of parties that maximises total policy score subject to holding 62 seats. That problem has a trivial answer. Every party has a positive score, so the "optimal" coalition is all seven of them. A model that recommends a seven-party government has told you nothing.
 
-I scored every major NZ party across **8 empirical policy domains**, based solely on alignment with OECD benchmarks, Treasury/Reserve Bank projections, and peer-reviewed social policy research:
+What actually limits coalitions under MMP is ideological distance. So each party is also placed on a -1 to +1 position axis per domain (market versus state in health, punitive versus rehabilitative in justice, single standard versus Treaty partnership, and so on), and every pair of coalition partners is charged a friction cost proportional to how far apart they sit. National and ACT are 0.19 apart. Labour and TOP are 0.09 apart. Green and ACT are 0.85 apart. That friction term is what turns a trivial knapsack into a genuine quadratic program, and it is what makes QAOA the right tool class rather than a gimmick.
 
-| Domain | What I measured |
-|--------|----------------|
-| 🏥 Health | Evidence-based outcomes: ED pressure, Pharmac access, preventative care |
-| 📚 Education | Literacy/numeracy evidence, teacher retention, ECE quality |
-| ⚖️ Crime & Justice | Recidivism reduction, rehabilitation ROI, youth justice efficacy |
-| 🏠 Housing | Supply creation, LVT/CGT effectiveness, rental affordability |
-| 💰 Economy | Tax equity, grocery competition, fiscal sustainability |
-| 💼 Employment | Wage growth, worker protections, job creation |
-| 🚆 Transport | Active transport, rail investment, emissions reduction |
-| 📜 Te Tiriti | Treaty honour, Māori equity outcomes, self-determination |
+The result is robust: the same coalition wins for any friction coefficient between half and one-and-a-half times the baseline. Push friction above twice the baseline and the model switches to a National + Labour grand coalition, because two parties generate less friction than four. That switch point is worth knowing about: it is the quantitative version of "if the small parties are impossible, the big two will have to talk".
 
-Every score is 1–10. Every score has a citation. No vibes.
+## The quantum part, honestly
 
----
+The seat constraint was encoded with binary slack variables, after rescaling seats to six-seat units (verified to reproduce the exact feasible set for all 128 possible coalitions), giving an 11-qubit problem. QAOA angles were optimised on an exact simulator for circuit depths 1 to 4, and the depth-2 circuit was transpiled to 405 two-qubit gates and run on `ibm_marrakesh` with 4,096 shots. Zero queue, 12 seconds wall time, 3 seconds of QPU time on IBM's free Open plan.
 
-### The Scores (out of 80)
+What QAOA did well: it learned the majority constraint. 88% of ideal samples and 68% of hardware samples were majority coalitions, against 60% for random guessing.
 
-| Party | Total Score | Normalised | Est. Seats |
-|-------|-------------|------------|------------|
-| **Te Pāti Māori** | **61/80** | **1.000** | 6 |
-| **Green Party** | **58/80** | **0.951** | 20 |
-| **TOP** | **55/80** | **0.902** | 7 |
-| Labour | 50/80 | 0.820 | 35 |
-| NZ First | 35/80 | 0.574 | 11 |
-| National | 40/80 | 0.656 | 35 |
-| ACT | 33/80 | 0.541 | 14 |
+What it did weakly: it barely resolved the policy objective at these depths. The exact optimum bitstring had about six times the probability of a random guess, which with thousands of shots is enough to find it reliably, but the most frequently sampled coalitions were large, low-scoring ones. The penalty term that enforces the seat constraint dominates the energy landscape even after rescaling, which is a well-known limitation of penalty-based QAOA on knapsack-type constraints. The optimum was recovered by post-selecting the best feasible sample, which is standard practice.
 
-Interesting, right? Te Pāti Māori scores highest on empirical policy effectiveness — driven by strong scores on health equity, restorative justice, and Māori-led service delivery (all backed by outcome data). But they only hold ~6 seats.
+And the obvious caveat: with 128 possible coalitions this problem is classically trivial. The same script brute-forces it in milliseconds as a check. There is no quantum speed-up here, and anyone who tells you otherwise about a 7-party coalition problem is selling something. The value is in the pipeline: an auditable path from policy evidence to a quantum circuit on real hardware, where every input can be changed and the whole thing re-run.
 
-This is exactly the quantum optimization problem: **you can't just pick the highest-scoring party — you need to hit 62 seats.**
+## What the result means politically
 
----
+The model says the coalition with the best evidence-weighted policy programme and the least internal friction is a four-party centre-left arrangement with a one-seat buffer. Three things follow.
 
-### The Quantum Result 🔮
+First, the one-seat buffer is the whole story. A single by-election, defection or waka-jumping dispute removes the majority. Te Pāti Māori's recent instability (two MPs expelled in 2025, a breakaway Te Tai Tokerau Party in 2026) makes a confidence-and-supply arrangement from outside cabinet more likely than a formal four-party coalition.
 
-**IBM Quantum connection: ✅ ibm_fez found (0 job queue)**  
-**Sessions on open plan: ❌ (graceful fallback to Aer statevector simulator)**
+Second, the friction points the model identifies are the ones you would expect from the campaign: justice (Te Pāti Māori's prison-abolition goal against Labour's near-silence), Te Tiriti (binding Tribunal recommendations against Treaty impact analysis), and tax (four different philosophies, only one of which, Labour's narrow capital gains tax, is costed inside a fiscal plan). The concessions needed to hold the centre are spelled out in the report.
 
-The QAOA circuit ran with:
-- 14 qubits (7 party variables + 7 slack bits for the constraint)
-- p=2 layers (two rounds of cost and mixer operators)
-- COBYLA classical optimizer, 300 iterations
-- 8,192 measurement shots
+Third, the right bloc's problem is arithmetic, not policy. At 59 seats it needs TOP, and both sides have said no. If the polls move two points toward National, the whole picture changes, and the repository lets you test exactly that by editing one line.
 
-**The quantum optimizer's answer:**
+## Try it
 
-> ### 🏆 Labour + Green + TOP = 62 seats, score 2.6721
+Everything is open: the research files with sources, the scoring matrix with its rationale, the Sainte-Laguë seat model, the QAOA code, the IBM job ID, and the report generator. Disagree with a score? Change it and re-run. Think Te Pāti Māori will hold six electorates rather than four? Change it and re-run. The code will give you a different government and tell you how robust it is.
 
-This is the **Pareto-optimal coalition**: the highest-scoring feasible combination using the minimum number of parties.
+What the quantum computer cannot do is tell you what you value. That part is still yours, on 7 November.
 
----
+*This is a mathematical exercise using publicly available policy information. It is not an endorsement of any party. The scoring is an expert judgement, documented cell by cell so it can be challenged.*
 
-### Why This Specific Coalition?
-
-The algorithm found something that pure polling analysis often misses: **policy complementarity.**
-
-**🏥 Health:** Labour's free GP visits + TOP's 10-year cross-party health plan (their non-negotiable bottom line #3) + Green's primary care investment = the most coherent long-term health strategy of any feasible coalition.
-
-**🏠 Housing:** TOP's Land Value Tax is the only policy modelled to structurally reduce land speculation (15-25% price reduction over 10 years, per Productivity Commission modelling). Labour's targeted CGT funds social housing. Green prevents sprawl. Three-vector housing reform that no right-bloc coalition can match.
-
-**🛒 Cost of Living:** TOP's Commerce Commission structural separation powers (their bottom line #1 — explicitly targeting the Woolworths/Foodstuffs duopoly) + Labour's $20/week PT fare cap + Green's $10,000 tax-free income threshold = three direct attack vectors on household costs.
-
-**🚆 Transport:** Green's Auckland-Wellington overnight rail + Labour's PT fare caps + TOP's climate transport commitments = strongest active transport investment of any feasible coalition.
-
-**📜 Te Tiriti:** Labour's Mana Whakahono ā Rohe restoration + Green's tino rangatiratanga commitments provide meaningful Treaty partnership. Te Pāti Māori would likely provide confidence-and-supply externally — critical, because...
-
----
-
-### ⚠️ The Critical Vulnerability
-
-Labour (35) + Green (20) + TOP (7) = **exactly 62 seats. Zero buffer.**
-
-One by-election loss, one defection, one waka-jumping dispute — and the government falls.
-
-**Te Pāti Māori confidence-and-supply is not optional — it's existential.** TPM's 6 seats push the coalition to 68 seats, a +6 buffer. That's the difference between a stable government and a crisis election.
-
-The policy math actually supports this: TPM's 61/80 score means their bottom lines (Treaty entrenchment, Māori-led health system, binding Tribunal recommendations) are empirically well-evidenced. Incorporating their C&S demands improves policy outcomes, not just stability.
-
----
-
-### The Main Friction Points
-
-The algorithm is optimistic about policy scores. Reality is messier:
-
-**1. Tax Sequencing War:**  
-Green wants wealth tax + inheritance tax + 45% top rate NOW.  
-Labour wants only targeted CGT, cautiously.  
-TOP wants Land Value Tax as a *replacement* for complex taxes, revenue-neutral.  
-These three tax philosophies are theoretically compatible if staged: CGT first (year 1-2) → LVT design (year 2-3) → wealth tax review (year 4).
-
-**2. Growth vs. Wellbeing:**  
-Green's "steady-state economy" framing clashes with Labour's GDP growth targets. Solution: Adopt Treasury's Living Standards Framework (wellbeing metrics) — lets each party claim their preferred indicator.
-
-**3. Housing Supply vs. Environment:**  
-Labour's housing build ambitions can conflict with Green's fast-track consenting opposition. Solution: brownfield, medium-density, green building standards.
-
----
-
-### What About the Right Bloc?
-
-National (35) + ACT (14) + NZ First (11) = 60 seats. Below 62. They need TOP.
-
-But National has previously signalled reluctance to work with TOP due to the Land Value Tax. And ACT's constitutional Treaty policies are incompatible with TOP's equity commitments.
-
-The **right-bloc faces a structural mathematical problem that the left-bloc doesn't** — their policy-optimal partners (National and TOP) are in active ideological conflict. The quantum optimizer simply reflects this reality: the left-centre bloc has more policy-compatible combinations that hit 62.
-
----
-
-### Is This the Future of Political Analysis?
-
-QAOA is still in the NISQ (Noisy Intermediate-Scale Quantum) era — the 14-qubit problem I ran here is classically verifiable, and the brute-force check confirms the answer. But the technique scales.
-
-For 2029, with more parties, more complex multi-policy interactions modeled as a proper **Quadratic Unconstrained Binary Optimization (QUBO)** with dozens of policy correlation terms, quantum approaches will genuinely outperform classical search.
-
-More importantly: **the discipline of quantifying policy empirically** — scoring parties on measurable outcomes rather than rhetoric — is itself valuable regardless of the quantum wrapper. 
-
-The qubits just make it more fun.
-
----
-
-### 📂 Open Source
-
-Everything is on GitHub:
-- Full policy scoring methodology with citations
-- Complete QAOA circuit code (Qiskit 2.5.2)
-- IBM Quantum connection logs
-- All 128 coalition combinations evaluated
-
-If you're a quantum engineer, political scientist, or just curious — fork it, improve the scoring, run it on real IBM hardware, challenge the assumptions.
-
-**GitHub:** [spinsphere/nz-quantum-election](https://github.com/spinsphere/nz-quantum-election)
-
----
-
-### 🗳️ One Final Note
-
-This is a mathematical exercise, not a political endorsement. The scores reflect empirical policy effectiveness metrics, not my personal preferences. A different set of empirical weightings (e.g., weighting fiscal discipline over redistribution) would produce different results — and the code lets you change them.
-
-What the quantum computer can't do is tell you *what you value*. That's still your job on November 7.
-
----
-
-*Enjoyed this? Follow me for more quantum computing applied to real-world problems. And if you work in quantum algorithms or NZ politics, I'd love to hear your critique of the scoring methodology.*
-
-*[#QuantumComputing](https://linkedin.com/search/results/content/?keywords=QuantumComputing) [#NewZealand](https://linkedin.com/search/results/content/?keywords=NewZealand) [#QAOA](https://linkedin.com/search/results/content/?keywords=QAOA) [#Election2026](https://linkedin.com/search/results/content/?keywords=Election2026) [#OpenSource](https://linkedin.com/search/results/content/?keywords=OpenSource) [#Qiskit](https://linkedin.com/search/results/content/?keywords=Qiskit) [#IBMQuantum](https://linkedin.com/search/results/content/?keywords=IBMQuantum)*
+#QuantumComputing #Qiskit #IBMQuantum #QAOA #NewZealand #NZElection2026 #MMP #PublicPolicy #OpenSource

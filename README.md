@@ -1,184 +1,112 @@
-# 🇳🇿 NZ Quantum Election Coalition Optimizer
+# NZ Quantum Election: QAOA coalition optimiser for the 2026 MMP election
 
-> **Using Quantum Approximate Optimization Algorithm (QAOA) to find the mathematically optimal governing coalition for the 2026 New Zealand MMP General Election.**
+[![Qiskit](https://img.shields.io/badge/Qiskit-2.5-6929C4)](https://qiskit.org)
+[![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-ibm__marrakesh-1C6FEB)](https://quantum.cloud.ibm.com)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-[![Qiskit](https://img.shields.io/badge/Qiskit-2.5.2-6929C4?logo=ibm)](https://qiskit.org)
-[![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-ibm_fez-1C6FEB?logo=ibm)](https://quantum.ibm.com)
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+Which coalition of New Zealand's seven parliamentary parties would form the policy-optimal majority government after the 7 November 2026 election, if the only inputs were the published evidence on each party's policies, their ideological distance from one another, and the September 2026 polls?
 
----
+This repository answers that question with a Quantum Approximate Optimization Algorithm (QAOA) built in Qiskit, run on an IBM Quantum Heron processor, and verified against classical brute force. It also contains the complete policy research, the scoring matrix with a written rationale for every number, and an executive report generator.
 
-## 🎯 What This Does
+## Result
 
-This project applies **quantum computing** — specifically the Quantum Approximate Optimization Algorithm (QAOA) — to the real-world political science problem of coalition formation in New Zealand's Mixed Member Proportional (MMP) electoral system.
+**Labour + Green + Te Pāti Māori + TOP: 63 of 122 seats (majority 62), objective 1.1875.**
 
-The 2026 New Zealand General Election (7 November 2026) presents a classic **combinatorial optimization problem**: which subset of parties forms the coalition that:
-1. **Achieves a parliamentary majority** (≥62 seats out of 123), and
-2. **Maximizes an empirical aggregate policy score** across 8 key domains?
+Sampled from the QAOA circuit on `ibm_marrakesh` (job `db1u21hmmimc73fnvhk0`, 3 seconds of QPU time) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without a partner it has ruled out (TOP) or one that has ruled it out.
 
-This is a Binary Quadratic Program (BQP) — the canonical problem class for QAOA.
+The answer holds for every friction coefficient between 0.5 and 1.5. At 2.0 and above the optimiser prefers the National + Labour grand coalition because it has the fewest partners. See the full executive report in [`docs/REPORT.md`](docs/REPORT.md).
 
----
+| Party | Vote % (6-poll mean) | Seats | Policy score /80 |
+|---|---|---|---|
+| National | 29.0 | 35 | 41 |
+| Labour | 28.2 | 34 | 44 |
+| Green | 13.6 | 17 | 43 |
+| ACT | 9.5 | 12 | 33 |
+| NZ First | 10.0 | 12 | 26 |
+| Te Pāti Māori | 2.0 | 4 | 38 |
+| TOP | 6.4 | 8 | 53 |
 
-## 🧪 Methodology
+Seats are Sainte-Laguë allocations from the poll average, with Te Pāti Māori holding 4 Māori electorates (2 overhang seats).
 
-### Step 1: Policy Research
-Exhaustive web research on all 7 major NZ parties' stated 2026 policies across:
-1. Health & Mental Health
-2. Education  
-3. Crime & Justice
-4. Housing & Rental Costs
-5. Cost of Living & Economy
-6. Employment
-7. Transport & Infrastructure
-8. Te Tiriti o Waitangi / Māori Issues
-
-### Step 2: Empirical Scoring Matrix
-Each party scored **1–10** per domain based on alignment with:
-- OECD policy outcome benchmarks
-- NZ Treasury / Reserve Bank projections
-- Independent policy analysis (Productivity Commission, health ministry data)
-
-**Scoring criteria:** Evidence-based effectiveness for stability, growth, and equality — *not* ideological preference.
-
-### Step 3: QAOA Circuit
-```
-Problem: Maximize Σ(w_i × x_i)  subject to: Σ(s_i × x_i) ≥ 62
-Variables: x_i ∈ {0,1} (include party i in coalition?)
-```
-
-Pipeline:
-```
-BQP → QUBO (QuadraticProgramToQubo) → Ising Hamiltonian → QAOA Circuit → COBYLA optimizer
-```
-
-**Quantum Hardware:**
-- IBM Quantum `ibm_fez` connected (0 queue) via `ibm_quantum_platform`
-- Open plan doesn't permit Sessions → graceful fallback to Aer StatevectorSimulator
-- 14 qubits (7 party binary variables + 7 slack bits for constraint encoding)
-- p=2 QAOA layers, 4 variational parameters
-
-### Step 4: Report Generation
-
----
-
-## 📊 Results Summary
-
-### Party Policy Scores (aggregate /80)
-
-| Party | Seats | Score /80 | Norm Weight |
-|-------|-------|-----------|-------------|
-| National | 35 | 40 | 0.6557 |
-| Labour | 35 | 50 | 0.8197 |
-| **Green** ★ | **20** | **58** | **0.9508** |
-| ACT | 14 | 33 | 0.5410 |
-| NZ First | 11 | 35 | 0.5738 |
-| Te Pāti Māori | 6 | 61 | 1.0000 |
-| **TOP** ★ | **7** | **55** | **0.9016** |
-| **Labour** ★ | **35** | **50** | **0.8197** |
-
-★ = QAOA-optimal coalition member
-
-### 🏆 Optimal Coalition: Labour + Green + TOP
-
-| Metric | Value |
-|--------|-------|
-| Total Seats | 62 / 123 |
-| Majority Required | 62 |
-| Seat Buffer | 0 (exactly at threshold) |
-| Objective Score | 2.6721 |
-| Majority Achieved | ✅ YES |
-
-**Why this coalition?** Labour (35) + Green (20) + TOP (7) = exactly 62 seats, with the highest aggregate policy score of any feasible 3-party combination. The quantum optimizer identified this as the Pareto-optimal trade-off between seat count minimization and policy score maximization.
-
----
-
-## ⚡ Key Policy Highlights of the Optimal Coalition
-
-### 🏥 Health
-Labour's free GP visits + Greens' 10-year health plan + TOP's primary care investment = strongest multi-decade preventative health strategy.
-
-### 🏠 Housing  
-TOP's **Land Value Tax** (most evidence-backed housing affordability tool) + Labour's social housing + Green's anti-speculation policies = three-vector housing reform.
-
-### 🛒 Cost of Living
-TOP's **Commerce Commission structural separation** of supermarket duopoly + Labour's $20/week PT fare cap + Green's $10K tax-free threshold = comprehensive household cost relief.
-
-### 🚆 Transport
-Green's intercity rail (Auckland-Wellington overnight) + Labour's PT fare caps + TOP's climate transport = strongest active/public transport investment of any coalition.
-
-### 📜 Te Tiriti
-Labour's Mana Whakahono ā Rohe restoration + Green's tino rangatiratanga commitments = strong Treaty partnership. TPM likely provides confidence-and-supply (essential for stability given zero seat buffer).
-
----
-
-## ⚠️ Stability Analysis
-
-**Critical vulnerability:** Zero seat buffer (exactly 62 seats). Any by-election loss or defection collapses the government. **Te Pāti Māori confidence-and-supply is essential** (adds 6 seats → 68 total, +6 buffer).
-
-**Main friction points:**
-1. Tax sequencing (Labour's CGT vs. Green's wealth tax vs. TOP's LVT)  
-2. Growth vs. wellbeing metrics (Labour/TOP GDP focus vs. Green steady-state)
-3. Housing supply vs. environmental protection
-4. Te Tiriti implementation pace
-
----
-
-## 🔬 Technical Details
+## How it works
 
 ```
-Algorithm:        QAOA (Quantum Approximate Optimization Algorithm)
-QAOA layers p:    2
-Qubits:           14 (7 party + 7 slack)
-Optimizer:        COBYLA (SciPy)
-Shots:            8192
-IBM Quantum:      ibm_fez (connected, open plan fallback)
-Execution:        Aer StatevectorSimulator
-Framework:        Qiskit 2.5.2, qiskit-optimization 0.7.0
+research/*.md  ──►  policy_data.json  ──►  seat_model.py (Sainte-Laguë)
+                      (scores, positions,          │
+                       polls, electorates)         ▼
+                                   quantum_nz_election.py
+                                     objective + friction  ──►  QUBO (slack, scaled)  ──►  Ising H
+                                     QAOA angles (Aer statevector, p = 1..4)
+                                     SamplerV2 (Aer, 8192 shots)  +  IBM Quantum (job mode, 4096 shots)
+                                     brute-force verification  ──►  quantum_results.json
+                                                                          │
+                                                             generate_report.py  ──►  terminal / docs/REPORT.md
 ```
 
----
+1. **Research.** One research pass per party and one for polling, each writing a sourced markdown file in `research/`.
+2. **Scoring.** Each party gets a 1 to 10 effectiveness score in eight domains (health, education, crime and justice, housing, cost of living and economy, employment, transport and infrastructure, Te Tiriti o Waitangi and Māori issues). Each party is also placed on a -1 to +1 policy-position axis per domain. Both are in `policy_data.json` with a rationale per cell.
+3. **Objective.** Maximise the sum of member policy weights minus a friction cost for every pair of partners proportional to their ideological distance, subject to a parliamentary majority. The brief's pure-linear objective is degenerate (every party has positive value, so the grand coalition always wins); friction is the term that makes the problem a real binary quadratic program and models what actually constrains coalition size under MMP.
+4. **Encoding.** The seat constraint is written with binary slack variables after rescaling seats to the coarsest unit that reproduces the exact feasible set for all 128 coalitions (6 seats per unit, verified in code). Result: 7 party qubits + 4 slack qubits = 11 qubits, and a tenfold reduction in the penalty's dynamic range.
+5. **QAOA.** `QAOAAnsatz` with COBYLA on an exact Aer statevector expectation for depths 1 to 4, then `qiskit_aer.primitives.SamplerV2` sampling. The depth-2 circuit is transpiled and run on the least-busy IBM Quantum backend with a 10-minute queue and wall-clock fallback to the local sampler.
+6. **Report.** `generate_report.py` prints the executive summary, policy-impact analysis, MMP stability assessment and quantum breakdown from the two JSON files.
 
-## 📁 Repository Structure
+Full details, including every modelling choice and its limitations, are in [`METHODOLOGY.md`](METHODOLOGY.md).
 
-```
-nz-quantum-election/
-├── quantum_nz_election.py    # Main QAOA script
-├── generate_report.py        # Executive report generator
-├── policy_data.json          # Party policy scores & polling data
-├── quantum_results.json      # QAOA output results
-├── linkedin_article.md       # LinkedIn article for publication
-└── README.md                 # This file
-```
+## What the quantum part does and does not show
 
----
+QAOA learns the majority constraint well: 88% of ideal samples and 68% of hardware samples are majority coalitions, against 60% for uniform random sampling. At depths 1 to 4 it only weakly resolves the policy objective (the optimum bitstring carries about six times the uniform probability), because the penalty term dominates the energy spectrum even after rescaling. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is brute-forced in the same script as a check. The point of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
 
-## 🚀 Run It Yourself
+Hardware run summary (depth 2, 11 qubits, `ibm_marrakesh`):
+
+| Metric | Hardware | Ideal simulation |
+|---|---|---|
+| Two-qubit (CZ) gates after transpilation | 405 | – |
+| P(majority coalition) | 0.684 | 0.883 |
+| P(exact optimum bitstring) | 0.0024 | 0.0021 |
+| Total variation distance of coalition marginal | 0.227 | 0 |
+| Best feasible sample | Lab + Grn + TPM + TOP | Lab + Grn + TPM + TOP |
+
+## Run it yourself
 
 ```bash
-# Install dependencies
-pip install qiskit qiskit-ibm-runtime qiskit-optimization qiskit-aer numpy scipy
+git clone https://github.com/spinsphere/nz-quantum-election.git
+cd nz-quantum-election
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
 
-# Run the quantum optimizer
-python quantum_nz_election.py
+# optional: IBM Quantum hardware run (free Open plan is enough; ~3 s of QPU time)
+cp .env.example .env            # then paste your IBM Quantum Platform API key into .env
 
-# Generate the executive report
-python generate_report.py
+python seat_model.py            # seat allocation from the poll average
+python quantum_nz_election.py   # full pipeline; add --no-hardware to stay local
+python generate_report.py       # executive report in the terminal
 ```
 
----
+Useful flags: `--mu 1.5` changes the friction coefficient, `--max-p 6` deepens the QAOA sweep, `--hw-p 1` sends a shallower circuit to hardware, `--shots`, `--hw-shots`, `--queue-limit`.
 
-## ⚖️ Disclaimer
+To test your own view of the parties, edit the `scores` or `positions` in `policy_data.json` and re-run. To test a different election night, edit `metadata.polling_average` and `metadata.electorate_assumptions`.
 
-This project is a **mathematical and computational exercise** in quantum optimization applied to publicly available policy data. It maintains strict **political neutrality** — all scores are based on empirical economic, social, and demographic projections, not ideological preference. The results reflect optimization of stated measurable outcomes, not endorsement of any party or coalition.
+## Repository layout
 
----
+```
+quantum_nz_election.py   main pipeline: objective, QUBO, Ising, QAOA, Aer and IBM sampling, verification
+generate_report.py       executive report from quantum_results.json + policy_data.json
+seat_model.py            Sainte-Laguë MMP seat allocation
+policy_data.json         scores, positions, rationale, polls, electorate assumptions, declared rule-outs
+quantum_results.json     output of the recorded run (6 Oct 2026, ibm_marrakesh)
+research/                sourced research files: polling.md and one per party
+docs/REPORT.md           executive report from the recorded run
+docs/run_log.txt         console log of the recorded run
+METHODOLOGY.md           every modelling choice, with limitations
+linkedin_article.md      write-up for publication
+.env.example             template for the IBM token (the real .env is git-ignored)
+```
 
-## 📜 License
+## Neutrality and limitations
 
-MIT License — see [LICENSE](LICENSE)
+Scores measure evidence-based effectiveness toward stability, growth and equality, not desirability. They are expert judgements and are documented cell by cell so they can be challenged. Three limitations matter most: the research for six of the seven parties was done without web search (official pages and Wikipedia only) because the session's search quota was exhausted, so independent-evidence coverage is uneven; incumbents are judged on outcomes while opposition parties are judged on plans, which likely flatters TOP; and the seat model is one polling scenario. None of this is an endorsement of any party. Change the inputs and the optimiser will give you a different government.
 
----
+## Credits
 
-*Built with ❤️ and qubits by [SpinSphere](https://spinsphere.ai) using [Antigravity CLI](https://antigravity.ai)*
+Started with Google Antigravity, which ran out of budget; research, model, quantum pipeline, hardware run and documentation completed with Claude Code (Claude Fable 5.1). Built by [SpinSphere](https://github.com/spinsphere). MIT licence.
