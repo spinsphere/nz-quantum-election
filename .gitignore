@@ -14,3 +14,6 @@ venv/
 .vscode/
 .idea/
 .DS_Store
+
+# Playwright/Chrome profile used by the research crawler (contains browser cache and cookies)
+.pw_profile/

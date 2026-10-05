@@ -123,3 +123,8 @@ Compiled 2026-10-06 for the 7 November 2026 general election.
 - https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election
 - https://en.wikipedia.org/wiki/Fast-track_Approvals_Act_2024
 - https://www.rnz.co.nz/news/political
+
+## Update 6 Oct 2026 (Wikipedia election page, policy pages supplied by the project owner)
+- Peters ruled out working with Labour at NZ First's campaign launch, 19 July 2026 (Wikipedia election page, citing RNZ). Shane Jones contests Northland.
+- NZ First will repeal the Regulatory Standards Act 2025 if re-elected (announced 20 Nov 2025) despite having voted for it, and will reinstate ministerial decision powers over fast-track projects (Feb 2026).
+- Policy index confirms the campaign list; SME tax page estimates ~$1b initial annual cost offset "in the medium term" by growth (no modelling cited); Future Fund page gives no funding source beyond tax incentives for international investors.

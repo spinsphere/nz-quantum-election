@@ -82,3 +82,11 @@ Search-dependent items not covered: independent analysis (NZIER, Infometrics, Tr
 - https://www.rnz.co.nz/news/political/1739653/labour-promises-right-to-repair-for-cars
 - https://www.rnz.co.nz/news/politics_election-2026/1734660/as-it-happened-election-campaign-5-october
 - https://en.wikipedia.org/wiki/2026_New_Zealand_general_election ; https://en.wikipedia.org/wiki/New_Zealand_Labour_Party
+
+## Update 6 Oct 2026 (pages supplied by the project owner; Wikipedia election page)
+- Fiscal plan page confirms: OBEGAL (not OBEGALx) surplus 2028/29; net debt toward 20% of GDP over time; $2.4b operating allowance; $12b capital allowances with $4.1b used; $15.5b additional health over the forecast period; fare cap funded by reprioritising 1% of the National Land Transport Fund; Hall Chadwick review commissioned by Labour. RNZ (5 Oct): Labour says it holds $10.5b of unallocated funding against National's $8.5b pay-equity gap claim.
+- CGT page confirms 28%, investment and commercial property only, gains after 1 July 2027, exemptions as listed; no revenue estimate is published on the page.
+- Medicard page confirms cost schedule ($393.3m in 2027/28 rising to $553m) and the Independent Pricing Authority (GP underfunding 7.6%, ~$137m, per 2022 analysis).
+- 1News (21 Sep 2026): Labour ruled out changing interest deductibility for landlords.
+- Wikipedia election page: Labour will repeal the Regulatory Standards Act within 100 days; reinstate school boards' Treaty obligations and reverse the coalition's curriculum changes and mandated testing (April 2026); Labour and the Greens announced at Waitangi (Feb 2026) that they would work together in the campaign and in government; Labour contests all seven Māori electorates.
+- PREFU 2026 (Treasury, 29 Sep): OBEGALx -$6.8b 2026/27, -$0.8b 2027/28, +$4.0b 2028/29; OBEGAL +$2.1b in 2028/29; net core Crown debt peaks 43.9% of GDP in 2027/28; CPI 4.1% June 2026 falling to 1.9%; unemployment peak 5.6%.

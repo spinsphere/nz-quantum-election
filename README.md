@@ -1,7 +1,7 @@
 # NZ Quantum Election: QAOA coalition optimiser for the 2026 MMP election
 
 [![Qiskit](https://img.shields.io/badge/Qiskit-2.5-6929C4)](https://qiskit.org)
-[![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-ibm__marrakesh-1C6FEB)](https://quantum.cloud.ibm.com)
+[![IBM Quantum](https://img.shields.io/badge/IBM_Quantum-ibm__fez-1C6FEB)](https://quantum.cloud.ibm.com)
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
@@ -11,23 +11,23 @@ This repository answers that question with a Quantum Approximate Optimization Al
 
 ## Result
 
-**Labour + Green + Te Pāti Māori + TOP: 63 of 122 seats (majority 62), objective 1.1875.**
+**Labour + Green + Te Pāti Māori + TOP: 63 of 122 seats (majority 62), objective 1.2125.**
 
-Sampled from the QAOA circuit on `ibm_marrakesh` (job `db1u21hmmimc73fnvhk0`, 3 seconds of QPU time) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without a partner it has ruled out (TOP) or one that has ruled it out.
+Sampled from the QAOA circuit on `ibm_fez` (job `db20ak47f06c73ap5s10`, 3 seconds of QPU time; an earlier run on `ibm_marrakesh`, job `db1u21hmmimc73fnvhk0`, gave the same answer) and identical to the classical optimum. The classical ranking of the next best feasible coalitions is National + Labour + TOP (0.76), National + Labour (0.65) and National + Labour + NZ First (0.49). The incumbent National + ACT + NZ First bloc polls at 59 seats and cannot reach 62 without TOP, which National has ruled out; NZ First has in turn ruled out Labour. The answer hinges on TOP staying above the 5% threshold: it polls between 4.5% and 9.5%, and every September projection with TOP under 5% produces a National-led majority instead.
 
 The answer holds for every friction coefficient between 0.5 and 1.5. At 2.0 and above the optimiser prefers the National + Labour grand coalition because it has the fewest partners. See the full executive report in [`docs/REPORT.md`](docs/REPORT.md).
 
 | Party | Vote % (6-poll mean) | Seats | Policy score /80 |
 |---|---|---|---|
-| National | 29.0 | 35 | 41 |
-| Labour | 28.2 | 34 | 44 |
-| Green | 13.6 | 17 | 43 |
-| ACT | 9.5 | 12 | 33 |
-| NZ First | 10.0 | 12 | 26 |
-| Te Pāti Māori | 2.0 | 4 | 38 |
+| National | 28.5 | 35 | 41 |
+| Labour | 28.0 | 34 | 44 |
+| Green | 14.4 | 17 | 44 |
+| ACT | 9.7 | 12 | 33 |
+| NZ First | 9.8 | 12 | 26 |
+| Te Pāti Māori | 1.8 | 4 | 39 |
 | TOP | 6.4 | 8 | 53 |
 
-Seats are Sainte-Laguë allocations from the poll average, with Te Pāti Māori holding 4 Māori electorates (2 overhang seats).
+Seats are Sainte-Laguë allocations from the mean of the six most recent polls (RNZ-Reid Research 24 Sep-1 Oct, Verian, Freshwater, Anacta, Curia, Roy Morgan), with Te Pāti Māori holding 4 Māori electorates (2 overhang seats), the assumption every published projection uses.
 
 ## How it works
 
@@ -44,7 +44,7 @@ research/*.md  ──►  policy_data.json  ──►  seat_model.py (Sainte-Lag
                                                              generate_report.py  ──►  terminal / docs/REPORT.md
 ```
 
-1. **Research.** One research pass per party and one for polling, each writing a sourced markdown file in `research/`.
+1. **Research.** One research pass per party and one for polling, each writing a sourced markdown file in `research/`; supplemented on 6 October 2026 with the full policy PDFs of TOP, the Greens and Te Pāti Māori, 28 primary pages supplied by the project owner, and a Playwright crawl of news coverage (raw text in `research/raw/`).
 2. **Scoring.** Each party gets a 1 to 10 effectiveness score in eight domains (health, education, crime and justice, housing, cost of living and economy, employment, transport and infrastructure, Te Tiriti o Waitangi and Māori issues). Each party is also placed on a -1 to +1 policy-position axis per domain. Both are in `policy_data.json` with a rationale per cell.
 3. **Objective.** Maximise the sum of member policy weights minus a friction cost for every pair of partners proportional to their ideological distance, subject to a parliamentary majority. The brief's pure-linear objective is degenerate (every party has positive value, so the grand coalition always wins); friction is the term that makes the problem a real binary quadratic program and models what actually constrains coalition size under MMP.
 4. **Encoding.** The seat constraint is written with binary slack variables after rescaling seats to the coarsest unit that reproduces the exact feasible set for all 128 coalitions (6 seats per unit, verified in code). Result: 7 party qubits + 4 slack qubits = 11 qubits, and a tenfold reduction in the penalty's dynamic range.
@@ -55,16 +55,16 @@ Full details, including every modelling choice and its limitations, are in [`MET
 
 ## What the quantum part does and does not show
 
-QAOA learns the majority constraint well: 88% of ideal samples and 68% of hardware samples are majority coalitions, against 60% for uniform random sampling. At depths 1 to 4 it only weakly resolves the policy objective (the optimum bitstring carries about six times the uniform probability), because the penalty term dominates the energy spectrum even after rescaling. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is brute-forced in the same script as a check. The point of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
+QAOA learns the majority constraint well: 88% of ideal samples and 67% of hardware samples are majority coalitions, against 60% for uniform random sampling. At depths 1 to 4 it only weakly resolves the policy objective (the optimum bitstring carries about six times the uniform probability), because the penalty term dominates the energy spectrum even after rescaling. The optimum is recovered by post-selecting the best feasible sample, which is how QAOA is used in practice. With 128 coalitions the problem is classically trivial and is brute-forced in the same script as a check. The point of the exercise is an auditable, end-to-end pipeline from policy evidence to a quantum circuit on real hardware, not a speed-up.
 
-Hardware run summary (depth 2, 11 qubits, `ibm_marrakesh`):
+Hardware run summary (depth 2, 11 qubits, `ibm_fez`; the `ibm_marrakesh` run is in the git history):
 
 | Metric | Hardware | Ideal simulation |
 |---|---|---|
 | Two-qubit (CZ) gates after transpilation | 405 | – |
-| P(majority coalition) | 0.684 | 0.883 |
-| P(exact optimum bitstring) | 0.0024 | 0.0021 |
-| Total variation distance of coalition marginal | 0.227 | 0 |
+| P(majority coalition) | 0.673 | 0.883 |
+| P(exact optimum bitstring) | 0.0002 | 0.0021 |
+| Total variation distance of coalition marginal | 0.231 | 0 |
 | Best feasible sample | Lab + Grn + TPM + TOP | Lab + Grn + TPM + TOP |
 
 ## Run it yourself
@@ -94,8 +94,9 @@ quantum_nz_election.py   main pipeline: objective, QUBO, Ising, QAOA, Aer and IB
 generate_report.py       executive report from quantum_results.json + policy_data.json
 seat_model.py            Sainte-Laguë MMP seat allocation
 policy_data.json         scores, positions, rationale, polls, electorate assumptions, declared rule-outs
-quantum_results.json     output of the recorded run (6 Oct 2026, ibm_marrakesh)
-research/                sourced research files: polling.md and one per party
+quantum_results.json     output of the recorded run (6 Oct 2026, ibm_fez)
+research/                sourced research files: polling.md and one per party, each with a 6 Oct update section
+research/raw/            raw page text captured by the Playwright crawl (news, Wikipedia, official pages)
 docs/REPORT.md           executive report from the recorded run
 docs/run_log.txt         console log of the recorded run
 METHODOLOGY.md           every modelling choice, with limitations
@@ -105,7 +106,7 @@ linkedin_article.md      write-up for publication
 
 ## Neutrality and limitations
 
-Scores measure evidence-based effectiveness toward stability, growth and equality, not desirability. They are expert judgements and are documented cell by cell so they can be challenged. Three limitations matter most: the research for six of the seven parties was done without web search (official pages and Wikipedia only) because the session's search quota was exhausted, so independent-evidence coverage is uneven; incumbents are judged on outcomes while opposition parties are judged on plans, which likely flatters TOP; and the seat model is one polling scenario. None of this is an endorsement of any party. Change the inputs and the optimiser will give you a different government.
+Scores measure evidence-based effectiveness toward stability, growth and equality, not desirability. They are expert judgements and are documented cell by cell so they can be challenged. Three limitations matter most: independent-evidence coverage is uneven (strong for National, which is judged on outcome data; thinner for NZ First); incumbents are judged on outcomes while opposition parties are judged on plans, which likely flatters TOP; and the seat model is one polling scenario in which TOP sits half a point above the threshold that decides the result. None of this is an endorsement of any party. Change the inputs and the optimiser will give you a different government.
 
 ## Credits
 

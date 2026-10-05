@@ -2,7 +2,7 @@
 
 *SpinSphere, October 2026. Code, data and sources: github.com/spinsphere/nz-quantum-election*
 
-Five weeks before New Zealand votes on 7 November, the polls describe a stalemate. National and Labour are tied near 29%. The governing National–ACT–NZ First bloc projects to 59 seats, three short of a majority. The Labour–Green–Te Pāti Māori bloc projects to 55. The eight seats in between belong to TOP, which National has ruled out working with.
+A month before New Zealand votes on 7 November, the polls describe a stalemate. National and Labour are tied near 28%, and this morning's RNZ-Reid Research poll put National at 25.9%, its worst since 2020. Averaged over the six most recent polls, the governing National–ACT–NZ First bloc projects to 59 seats, three short of a majority. The Labour–Green–Te Pāti Māori bloc projects to 55. The eight seats in between belong to TOP, which National has ruled out working with, while NZ First has ruled out Labour.
 
 So I did something slightly unusual with that arithmetic. I turned the coalition question into a binary optimisation problem, encoded it as a quantum Hamiltonian, and ran it through the Quantum Approximate Optimization Algorithm (QAOA) on an IBM Quantum processor. No punditry, no preferred outcome: just published policy evidence, measured ideological distance, and the seat maths.
 
@@ -10,7 +10,7 @@ So I did something slightly unusual with that arithmetic. I turned the coalition
 
 **Labour + Green + Te Pāti Māori + TOP. 63 seats of 122. One seat to spare.**
 
-The quantum circuit's best sample on IBM's `ibm_marrakesh` processor matched the classical brute-force optimum exactly. The runner-up, well behind, was a National + Labour + TOP arrangement, then a National + Labour grand coalition.
+The quantum circuit's best sample on IBM's `ibm_fez` processor matched the classical brute-force optimum exactly, as did an earlier run on `ibm_marrakesh`. The runner-up, well behind, was a National + Labour + TOP arrangement, then a National + Labour grand coalition.
 
 Before anyone celebrates or despairs, read the next two sections. The interesting part is how the answer was produced, and what it depends on.
 
@@ -20,7 +20,7 @@ Each of the seven parties was researched across eight domains: health, education
 
 Some of those scores will annoy people on both sides. National's structured-literacy programme scores well because the phonics data is real. Its sentencing laws score poorly because the Ministry of Justice projects a 35% rise in the prison population with weak deterrence evidence. The Greens' rent cap scores poorly because the economics literature on rent control is close to unanimous. TOP scores highest overall (53/80) partly because a land value tax and ten-year cross-party plans are what the evidence recommends, and partly because a party that has never governed is never contradicted by its own outcome data. I flag that asymmetry in the methodology rather than pretend it away.
 
-Totals out of 80: TOP 53, Labour 44, Green 43, National 41, Te Pāti Māori 38, ACT 33, NZ First 26.
+Totals out of 80: TOP 53, Labour 44, Green 44, National 41, Te Pāti Māori 39, ACT 33, NZ First 26. The Greens' score rose a point when their full tax paper turned out to be modelled by the Parliamentary Library and reviewed by Infometrics; Te Pāti Māori's health score rose and its housing score fell once its manifesto chapters (free primary and dental care for all; a universal rent freeze) replaced the one-paragraph summaries.
 
 ## Why the obvious model gives a stupid answer
 
@@ -32,9 +32,9 @@ The result is robust: the same coalition wins for any friction coefficient betwe
 
 ## The quantum part, honestly
 
-The seat constraint was encoded with binary slack variables, after rescaling seats to six-seat units (verified to reproduce the exact feasible set for all 128 possible coalitions), giving an 11-qubit problem. QAOA angles were optimised on an exact simulator for circuit depths 1 to 4, and the depth-2 circuit was transpiled to 405 two-qubit gates and run on `ibm_marrakesh` with 4,096 shots. Zero queue, 12 seconds wall time, 3 seconds of QPU time on IBM's free Open plan.
+The seat constraint was encoded with binary slack variables, after rescaling seats to six-seat units (verified to reproduce the exact feasible set for all 128 possible coalitions), giving an 11-qubit problem. QAOA angles were optimised on an exact simulator for circuit depths 1 to 4, and the depth-2 circuit was transpiled to 405 two-qubit gates and run on `ibm_fez` with 4,096 shots. Zero queue, 12 seconds wall time, 3 seconds of QPU time on IBM's free Open plan.
 
-What QAOA did well: it learned the majority constraint. 88% of ideal samples and 68% of hardware samples were majority coalitions, against 60% for random guessing.
+What QAOA did well: it learned the majority constraint. 88% of ideal samples and 67% of hardware samples were majority coalitions, against 60% for random guessing.
 
 What it did weakly: it barely resolved the policy objective at these depths. The exact optimum bitstring had about six times the probability of a random guess, which with thousands of shots is enough to find it reliably, but the most frequently sampled coalitions were large, low-scoring ones. The penalty term that enforces the seat constraint dominates the energy landscape even after rescaling, which is a well-known limitation of penalty-based QAOA on knapsack-type constraints. The optimum was recovered by post-selecting the best feasible sample, which is standard practice.
 
@@ -48,7 +48,7 @@ First, the one-seat buffer is the whole story. A single by-election, defection o
 
 Second, the friction points the model identifies are the ones you would expect from the campaign: justice (Te Pāti Māori's prison-abolition goal against Labour's near-silence), Te Tiriti (binding Tribunal recommendations against Treaty impact analysis), and tax (four different philosophies, only one of which, Labour's narrow capital gains tax, is costed inside a fiscal plan). The concessions needed to hold the centre are spelled out in the report.
 
-Third, the right bloc's problem is arithmetic, not policy. At 59 seats it needs TOP, and both sides have said no. If the polls move two points toward National, the whole picture changes, and the repository lets you test exactly that by editing one line.
+Third, the whole result hinges on a party sitting half a point above the 5% threshold. TOP polls between 4.5% and 9.5%. In every September projection where it clears 5%, it holds the balance of power; in the one where it does not, National, ACT and NZ First win a majority outright. The right bloc's problem is arithmetic, not policy: at 59 seats it needs TOP, and both sides have said no. If the polls move two points, or TOP slips under the line, the picture changes, and the repository lets you test exactly that by editing one line.
 
 ## Try it
 

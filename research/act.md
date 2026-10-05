@@ -77,3 +77,8 @@
 - https://en.wikipedia.org/wiki/Regulatory_Standards_Bill
 - https://en.wikipedia.org/wiki/Charter_schools_in_New_Zealand
 - https://en.wikipedia.org/wiki/Arms_Act_1983
+
+## Update 6 Oct 2026
+- ACT supermarket policy (28 Sep 2026): one-stop consenting for new supermarkets and default acceptance of overseas food labels; Seymour ruled out the other parties' interventionist (structural separation) policies.
+- Energy policy (18 Sep): retain gentailers, market-based lines cost control, residential solar sold back at market rates. Also: 20 noise cameras in Tāmaki; Crown purchase of the former Epsom education campus for a school; ban on compulsory karakia in resource consents (4 Oct).
+- ACT sub-page detail retrieved by crawl is recorded in research/raw (see manifest.json).

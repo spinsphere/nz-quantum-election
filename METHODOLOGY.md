@@ -6,7 +6,7 @@ This document explains every modelling choice in the project so that the result 
 
 Eight research passes were run on 6 October 2026, one for polling and one per party (National, Labour, Green, ACT, NZ First, Te Pāti Māori, TOP). Each pass was asked for stated 2026 policy, numbers and dates across the eight domains, with a URL for every claim, plus independent assessments (Treasury, Reserve Bank, OECD, Ministry of Justice, ERO, Waitangi Tribunal and so on). The outputs are the files in `research/`.
 
-**Coverage is uneven and this matters.** The National file is complete (373 lines, ~90 sources including Treasury's PREFU, ERO, Ministry of Justice projections and the boot-camp evaluation). The other six passes ran after the session's web-search quota was exhausted, so they could only fetch pages by URL: official party policy pages, RNZ, and Wikipedia. Their independent-evidence sections are mostly marked UNVERIFIED. Where the research files lack independent evidence, the rationale text in `policy_data.json` draws on published work known to the author (OECD tax reviews, the 2019 Tax Working Group, Productivity Commission, Ministry of Justice programme evaluations) and says so. Anyone re-running this project should re-run the six thin passes with a working search budget.
+**Coverage was uneven in the first pass and was then patched.** The National file was complete from the start (~90 sources including Treasury's PREFU, ERO, Ministry of Justice projections and the boot-camp evaluation). The other six passes ran after the session's web-search quota was exhausted and could only fetch official pages and Wikipedia. On 6 October 2026 the project owner supplied the text of 28 primary pages, the full policy PDFs of TOP, the Greens and Te Pāti Māori were downloaded and converted, and a Playwright crawl (DuckDuckGo plus direct pages, raw text in `research/raw/`) added news coverage: the RNZ-Reid Research poll of 6 October, the Infometrics review of the Greens' tax plan, the Wikipedia seat-projection table, coalition rule-outs and more. Each research file ends with an 'Update 6 Oct 2026' section recording what changed. Where independent evidence is still missing, the rationale text in `policy_data.json` draws on published work known to the author (OECD tax reviews, the 2019 Tax Working Group, Productivity Commission, Ministry of Justice programme evaluations) and says so.
 
 ## 2. Scoring matrix
 
@@ -26,10 +26,10 @@ The aggregate weight is `w_i = sum of domain scores / 80`, so `w_i` lies in (0, 
 |---|---|---|---|---|---|---|---|---|---|
 | National | 6 | 7 | 5 | 5 | 6 | 4 | 5 | 3 | **41** |
 | Labour | 7 | 5 | 4 | 5 | 6 | 6 | 5 | 6 | **44** |
-| Green | 6 | 5 | 5 | 4 | 4 | 5 | 6 | 8 | **43** |
+| Green | 6 | 5 | 5 | 4 | 5 | 5 | 6 | 8 | **44** |
 | ACT | 5 | 5 | 4 | 5 | 5 | 3 | 4 | 2 | **33** |
 | NZ First | 4 | 3 | 4 | 3 | 3 | 3 | 4 | 2 | **26** |
-| Te Pāti Māori | 5 | 5 | 4 | 5 | 4 | 4 | 3 | 8 | **38** |
+| Te Pāti Māori | 6 | 5 | 4 | 4 | 4 | 4 | 4 | 8 | **39** |
 | TOP | 7 | 6 | 7 | 8 | 6 | 6 | 7 | 6 | **53** |
 
 Every cell has a one-paragraph rationale with the evidence relied on in `policy_data.json` under `score_rationale`.
@@ -56,13 +56,13 @@ Resulting matrix (0 = identical, 1 = opposite on every axis):
 
 ## 4. Seats
 
-Party-vote shares are the unweighted mean of the six most recent polls retrieved (Verian, Freshwater, Anacta, Curia, Roy Morgan, Reid Research; fieldwork August to late September 2026): National 29.0, Labour 28.2, Green 13.6, ACT 9.5, NZ First 10.0, Te Pāti Māori 2.0, TOP 6.4. Seats are allocated with the Sainte-Laguë method in `seat_model.py` (120 nominal seats, 5% threshold or an electorate seat, overhang retained). Te Pāti Māori is assumed to win 4 Māori electorates (the Verian September projection), giving a 2-seat overhang and a 122-seat House with a 62-seat majority:
+Party-vote shares are the unweighted mean of the six most recent polls (RNZ-Reid Research 24 Sep-1 Oct, 1News-Verian 23-27 Sep, Post/Freshwater 4-11 Sep, Anacta 4-10 Sep, Taxpayers' Union-Curia 1-3 Sep, Roy Morgan 27 Jul-23 Aug 2026): National 28.5, Labour 28.0, Green 14.4, ACT 9.7, NZ First 9.8, Te Pāti Māori 1.8, TOP 6.4. The Herald-Motu poll of polls on 28 September had National 29.4, Labour 26.9, Green 12.1, NZ First 11.8, TOP 8.5, ACT 8.3, Te Pāti Māori 2.0. Seats are allocated with the Sainte-Laguë method in `seat_model.py` (120 nominal seats, 5% threshold or an electorate seat, overhang retained). Te Pāti Māori is assumed to win 4 Māori electorates (Hauraki-Waikato, Tāmaki Makaurau, Te Tai Hauāuru, Waiariki, the assumption used by every published projection now that the Te Tai Tokerau and Te Tai Tonga MPs have left the party), giving a 2-seat overhang and a 122-seat House with a 62-seat majority:
 
 | National | Labour | Green | ACT | NZ First | Te Pāti Māori | TOP | House | Majority |
 |---|---|---|---|---|---|---|---|---|
 | 35 | 34 | 17 | 12 | 12 | 4 | 8 | 122 | 62 |
 
-Right bloc (National, ACT, NZ First) 59; left bloc (Labour, Green, Te Pāti Māori) 55; TOP 8. Neither bloc has a majority without TOP, which is exactly the situation the September polls describe.
+Right bloc (National, ACT, NZ First) 59; left bloc (Labour, Green, Te Pāti Māori) 55; TOP 8. Neither bloc has a majority without TOP, which is exactly the situation the September polls describe. The one published September projection with TOP under 5% (Curia, 1-3 Sep) gives National-ACT-NZ First 64 of 121; the report's threshold scenario quantifies this.
 
 ## 5. The optimisation problem
 
@@ -97,6 +97,6 @@ QAOA learns the majority constraint well: at `p = 2` more than 85% of the probab
 1. Six of seven party research files lack independent evidence because of the search-quota problem; their scores lean on official policy pages plus the author's knowledge of the published evidence.
 2. Scores and positions are expert judgements. They are documented cell by cell, but another analyst would produce different numbers. Change them in `policy_data.json` and re-run.
 3. The incumbent/opposition asymmetry (Section 2) likely flatters TOP.
-4. Seat numbers depend on one polling scenario (six-poll mean, Te Pāti Māori with 4 electorates). A 2-point swing changes bloc arithmetic materially.
+4. Seat numbers depend on one polling scenario (six-poll mean, Te Pāti Māori with 4 electorates). A 2-point swing changes bloc arithmetic materially, and TOP falling under 5% flips the result to a National-led majority.
 5. The friction model treats every domain equally; in reality tax and Te Tiriti dominate coalition talks.
-6. Hardware results from an 11-qubit, depth-2 circuit with roughly a hundred two-qubit gates are noisy; they are reported next to the ideal distribution, not in place of it.
+6. Hardware results from an 11-qubit, depth-2 circuit with about 405 two-qubit gates after routing are noisy (total variation distance 0.23 from the ideal coalition distribution); they are reported next to the ideal distribution, not in place of it.

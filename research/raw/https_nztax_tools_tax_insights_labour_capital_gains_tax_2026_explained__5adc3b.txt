@@ -1,0 +1,258 @@
+URL: https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/
+TAG: result:Treasury estimate Labour capital gains tax 28 percent revenue 2026
+TITLE: Labour's Capital Gains Tax 2026: 28% Rate Explained
+FETCHED: 2026-10-06 09:05
+
+Search
+/
+Home
+Calculators
+Insights
+Glossary
+Deadlines
+About
+Home
+/
+Tax Insights
+/
+Labour's Capital Gains Tax 2026: 28% Rate Explained
+Election-2026
+Capital-Gains-Tax
+Labour-Policy
+Cgt-Explainer
+Property
+Labour's Capital Gains Tax 2026: 28% Rate Explained
+
+Labour's proposed 28% capital gains tax explained: what's taxed, what's exempt, the 1 July 2027 valuation day, and how it compares to today's rules.
+
+Published 2 August 2026 · Reviewed by NZ Tax Tools Editorial Desk · 4 min read
+
+AT A GLANCE
+28%
+Proposed flat CGT rate
+
+Individual level, no inflation indexation
+
+1 July 2027
+Valuation day / start date
+$700m
+Average forecast annual revenue
+7 Nov 2026
+Election day
+
+Labour's 28% Capital Gains Tax Calculator →
+
+Estimate Labour's proposed 28% CGT on a property sale vs today's bright-line test — 2026 election proposal, not current law
+
+Open
+
+ON THIS PAGE
+
+The core mechanics
+What would be taxed
+What would stay untaxed
+The valuation-day start date
+How it compares to today’s rules
+Losses, deductions and death
+What still isn’t specified
+Where this sits in the campaign
+Estimate your own number
+
+This is an election proposal, not current law. Labour announced a 28% capital gains tax (CGT) policy on 28 October 2025, ahead of the 7 November 2026 general election. It would only take effect if Labour forms the next government and passes legislation through Parliament. New Zealand’s current tax rules — including the fact that there is no general capital gains tax — remain exactly as they are today (2 August 2026) unless and until that happens.
+
+This explainer sets out what Labour has actually proposed, sourced from the party’s own policy document, and flags the handful of details it has not yet specified. To see what it could mean for your own numbers, try the Labour capital gains tax calculator, which compares Labour’s proposed 28% CGT with what you would owe under today’s bright-line test.
+
+The core mechanics
+
+Labour’s CGT would tax gains on sale — a realisation basis, not an annual valuation — at a flat 28% rate for New Zealand tax resident individuals and entities, and would also tax non-residents on New Zealand-sourced gains. There is no inflation indexation built into the rate.
+
+Tax applies per owner, on their share of the gain. Labour’s own worked example: if two business partners each own 50% of an investment property and it is sold with a net gain of $100,000, each partner pays 28% on their $50,000 share — $14,000 each, not $28,000 split some other way.
+
+What would be taxed
+
+Only two asset classes are in scope, per Labour’s policy document:
+
+Residential investment property — rentals and holiday homes/baches that are not the family home
+Commercial property
+
+For the detail on what happens with rentals and commercial premises specifically, see Labour’s CGT and property investors.
+
+What would stay untaxed
+
+Labour describes “everything else” as exempt: the family home (including lifestyle blocks), farms, KiwiSaver, shares, business assets, inheritances and gifts, and personal items such as cars, boats, art, furniture and jewellery. The full exempt list, with the sourcing behind each item, is covered in what’s exempt from Labour’s CGT.
+
+The valuation-day start date
+
+Labour’s CGT is explicitly forward-looking, not applied retroactively to gains already made. Every in-scope property gets a value as at 1 July 2027, and only the gain from that date forward is ever taxed — no matter when the property was originally bought. Labour’s Chris Hipkins has drawn a specific distinction here: this is a “valuation date” mechanism, not “grandfathering” of existing assets out of the regime. The full mechanics, including Labour’s own worked example, are in the 1 July 2027 valuation day explained.
+
+How it compares to today’s rules
+
+New Zealand does not currently have a general capital gains tax. The closest existing rule is the bright-line test, which taxes residential property gains at the seller’s marginal income tax rate (10.5%–39%) if sold within 2 years of purchase, and taxes nothing if held longer (subject to intention/dealer rules). Labour’s CGT would work very differently — a flat 28% rate, applied to both residential investment and commercial property, regardless of how long the property was held. Media reporting on Labour’s policy documents describes the bright-line test as being replaced by the CGT, though Labour’s own primary materials do not state this explicitly. See Labour’s CGT vs the bright-line test for the full side-by-side.
+
+Losses, deductions and death
+
+If a sale produces a loss rather than a gain, that loss can be carried forward and used against future capital gains from the same type of asset — it cannot offset salary or other income. Capital improvement costs are deductible from the gain; holding costs such as rates and interest are not. An inheritance is not a taxable event under the proposal — tax is not triggered by someone’s death, only on a later sale.
+
+What still isn’t specified
+
+Labour’s policy document leaves several mechanical details to be worked out later, following the 2019 Tax Working Group’s recommendations: the exact valuation methodology (rateable value, registered valuation, self-assessment, or a hybrid — only “different options” are mentioned), treatment of trusts holding property, treatment of overseas property owned by NZ residents, and compliance/reporting mechanics such as whether there’s a new IR form. IRD is the obvious administering agency but is not named explicitly in Labour’s materials.
+
+Where this sits in the campaign
+
+The election is on 7 November 2026. Labour is the only party to have released a costed, detailed CGT proposal. National, ACT and New Zealand First have not published comprehensive 2026 tax-policy documents and have generally opposed new capital or wealth taxes; the Greens have proposed a different mix (a wealth tax and an extended bright-line test, not a flat-rate CGT); Te Pāti Māori has proposed income-tax and wealth-tax changes with some figures of uncertain vintage. See the full neutral comparison of every party’s 2026 tax policy for the detail on each.
+
+Estimate your own number
+
+The Labour capital gains tax calculator lets you enter a property’s expected value and sale price and see the estimated CGT under Labour’s proposal side by side with what you’d owe under today’s bright-line test — including the “if enacted as announced” caveats that apply to any pre-election policy.
+
+Frequently asked questions
+Is Labour's capital gains tax law right now?
+What rate would Labour's CGT charge?
+What property is exempt from Labour's proposed CGT?
+When would the tax start?
+How much revenue would it raise?
+
+Primary sources
+
+Labour CGT policy summary — labour.org.nz
+Labour CGT policy PDF — Targeted Tax Changes to Grow the Economy and Invest in Health
+Labour policy announcement — Targeted Tax to Grow the Economy and Fund Free Doctor's Visits
+General election to be held 7 November — Beehive.govt.nz
+IRD — the bright-line test
+← All Tax Insights
+
+Last updated 2 August 2026 · Tax year 2025-26 / 2026-27
+
+Data sources: Inland Revenue: Tax codes and tax rates for individuals
+
+This tool is general information only, not financial advice.
+
+Reviewed by NZ Tax Tools Editorial Desk
+
+Read our methodology →
+
+Free tax calculators for New Zealanders.
+
+Reviewed against IRD and ACC materials. For general educational use only.
+
+CALCULATORS
+
+Take-Home Pay
+PAYE Calculator
+Income Tax
+ACC Levy
+KiwiSaver
+GST Calculator
+All calculators →
+
+INFORMATION
+
+About
+Contact
+Corrections
+Methodology
+Editorial Policy
+Privacy
+Cookies
+Disclaimer
+Terms
+Tax Deadlines
+Tax Glossary
+Tax Changes 2025-26
+
+NZ Tax Tools is part of the TaxTools Network
+
+ALSO AVAILABLE FOR
+
+Australia
+Canada
+United Kingdom
+United States
+
+© 2026 NZ Tax Tools · 59 calculators · 2025-26 & 2026-27
+
+For general guidance only. Not tax advice. Consult a qualified tax professional or IRD.
+
+--- LINKS ---
+ | https://nztax.tools/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Tax Insights | https://nztax.tools/tax-insights/
+Labour's 28% Capital Gains Tax Calculator →
+
+Estimate Labour's proposed 28% CGT on a property sale vs today's bright-lin | https://nztax.tools/labour-capital-gains-tax-calculator/
+The core mechanics | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#the-core-mechanics
+What would be taxed | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-would-be-taxed
+What would stay untaxed | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-would-stay-untaxed
+The valuation-day start date | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#the-valuation-day-start-date
+How it compares to today’s rules | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#how-it-compares-to-todays-rules
+Losses, deductions and death | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#losses-deductions-and-death
+What still isn’t specified | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-still-isnt-specified
+Where this sits in the campaign | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#where-this-sits-in-the-campaign
+Estimate your own number | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#estimate-your-own-number
+The core mechanics | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#the-core-mechanics
+What would be taxed | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-would-be-taxed
+What would stay untaxed | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-would-stay-untaxed
+The valuation-day start date | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#the-valuation-day-start-date
+How it compares to today’s rules | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#how-it-compares-to-todays-rules
+Losses, deductions and death | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#losses-deductions-and-death
+What still isn’t specified | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#what-still-isnt-specified
+Where this sits in the campaign | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#where-this-sits-in-the-campaign
+Estimate your own number | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/#estimate-your-own-number
+Labour capital gains tax calculator | https://nztax.tools/labour-capital-gains-tax-calculator/
+Labour’s CGT and property investors | https://nztax.tools/tax-insights/labour-cgt-property-investors-2027/
+what’s exempt from Labour’s CGT | https://nztax.tools/tax-insights/labour-cgt-family-home-farms-kiwisaver-exempt/
+the 1 July 2027 valuation day explained | https://nztax.tools/tax-insights/labour-cgt-valuation-day-1-july-2027/
+Labour’s CGT vs the bright-line test | https://nztax.tools/tax-insights/labour-cgt-vs-bright-line-test/
+full neutral comparison of every party’s 2026 tax policy | https://nztax.tools/tax-insights/nz-election-2026-tax-policies-compared/
+Labour capital gains tax calculator | https://nztax.tools/labour-capital-gains-tax-calculator/
+Labour CGT policy summary — labour.org.nz | https://www.labour.org.nz/election-policy-pages/capital-gains-tax
+Labour CGT policy PDF — Targeted Tax Changes to Grow the Economy and Invest in Health | https://www.labour.org.nz/media/pfvguai5/labour-cgt.pdf
+Labour policy announcement — Targeted Tax to Grow the Economy and Fund Free Doctor's Visits | https://www.labour.org.nz/news/release-targeted-tax-to-grow-the-economy-and-fund-free-doctor-s-visits
+General election to be held 7 November — Beehive.govt.nz | https://www.beehive.govt.nz/release/general-election-be-held-7-november
+IRD — the bright-line test | https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test
+← All Tax Insights | https://nztax.tools/tax-insights/
+Inland Revenue: Tax codes and tax rates for individuals | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals
+Read our methodology → | https://nztax.tools/methodology/
+Take-Home Pay | https://nztax.tools/take-home-pay-calculator/
+PAYE Calculator | https://nztax.tools/paye-calculator/
+Income Tax | https://nztax.tools/income-tax-calculator/
+ACC Levy | https://nztax.tools/acc-levy-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+GST Calculator | https://nztax.tools/gst-calculator/
+All calculators → | https://nztax.tools/calculators/
+About | https://nztax.tools/about/
+Contact | https://nztax.tools/contact/
+Corrections | https://nztax.tools/corrections/
+Methodology | https://nztax.tools/methodology/
+Editorial Policy | https://nztax.tools/editorial-policy/
+Privacy | https://nztax.tools/privacy/
+Cookies | https://nztax.tools/cookies/
+Disclaimer | https://nztax.tools/disclaimer/
+Terms | https://nztax.tools/terms/
+Tax Deadlines | https://nztax.tools/tax-deadlines/
+Tax Glossary | https://nztax.tools/tax-glossary/
+Tax Changes 2025-26 | https://nztax.tools/tax-changes-2025-26/
+TaxTools Network | https://taxtools.network/
+Australia | https://austax.tools/
+Canada | https://catax.tools/
+United Kingdom | https://uktax.tools/
+United States | https://ustax.tools/
+Income tax | https://nztax.tools/income-tax-calculator/
+Take-home pay | https://nztax.tools/take-home-pay-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+PAYE calculator | https://nztax.tools/paye-calculator/
+GST calculator | https://nztax.tools/gst-calculator/
+Working for Families | https://nztax.tools/working-for-families-calculator/
+browse all → | https://nztax.tools/calculators/

@@ -1,0 +1,272 @@
+URL: https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/
+TAG: result:Opportunity Party land value tax citizens income economist assessment 2026
+TITLE: TOP (Opportunity) 2026 Tax Policy: Land Value Tax Explained
+FETCHED: 2026-10-06 09:07
+
+Search
+/
+Home
+Calculators
+Insights
+Glossary
+Deadlines
+About
+Home
+/
+Tax Insights
+/
+TOP (Opportunity) 2026 Tax Policy: Land Value Tax Explained
+Election-2026
+Land-Value-Tax
+Opportunity-Policy
+Top-Policy
+Citizens-Income
+Tax-Policy-Comparison
+Kiwisaver
+TOP (Opportunity) 2026 Tax Policy: Land Value Tax Explained
+
+Opportunity, formerly TOP, proposes a 1.75% land value tax, a $19,400 Citizen's Income and three income tax brackets of 28%, 34% and 39%.
+
+Published 21 September 2026 · Reviewed by NZ Tax Tools Editorial Desk · 8 min read
+
+AT A GLANCE
+1.75%
+Land value tax, urban land (0.5% rural)
+$19,400
+Citizen's Income, every adult, tax-free
+28 / 34 / 39%
+Proposed three income tax brackets
+$24b
+Annual land value tax revenue claimed
+
+ON THIS PAGE
+
+First, the name
+Three income tax brackets
+The Citizen’s Income
+The land value tax
+KiwiSaver 2.0
+What it costs and what it raises
+What the policy does not propose
+Where this sits in the campaign
+
+This is an election proposal, not current law. Opportunity published its “Tax Reset” policy document in May 2026, ahead of the 7 November 2026 general election. It would only take effect if the party were part of the next government and the legislation passed through Parliament. New Zealand’s tax settings remain exactly as they are today unless and until that happens.
+
+Opportunity’s plan is the most structurally different of any party’s this election. Labour proposes a capital gains tax, the Greens and Te Pāti Māori propose wealth taxes, and National, ACT and New Zealand First campaign on not adding new taxes. Opportunity proposes something none of the others do: taxing land annually, and paying every adult a flat income out of the proceeds. Understanding it means treating the three pieces as one package, because the party’s own case rests on them offsetting each other.
+
+First, the name
+
+The Opportunities Party now presents itself as Opportunity. Its policy documents are published under the Opportunity Party name, and its website has moved from top.org.nz to opportunity.org.nz — the old address issues a permanent (301) redirect to the new one.
+
+The abbreviation “TOP” remains in wide use in search, in commentary, and throughout the material written about the party before the change. Both names refer to the same party, and this article uses both for that reason.
+
+Three income tax brackets
+
+The Tax Reset replaces New Zealand’s current income tax scale with three brackets. From the policy document:
+
+28% for income up to $50,000 a year
+34% for income between $50,001 and $200,000 a year
+39% for income at $200,001 and above
+
+The bottom rate is the number that most surprises people, because 28% is well above today’s 10.5% starting rate. The party’s argument is that the rate cannot be read on its own. Because every adult also receives a tax-free Citizen’s Income, the document states the combination “represents a reduction in total income tax at all income levels, with the largest reductions at lower income levels where it is most needed”, and that “those earning less than $60,000 per year will pay less income tax than the Citizens’ Income they receive”.
+
+The document also claims two structural side effects of a three-rate scale: it “eliminate[s] secondary tax rates and bracket creep”. Secondary tax disappears because a single flat rate applies across a whole band regardless of which job the income comes from.
+
+The Citizen’s Income
+
+Every New Zealand citizen and resident aged 18 and over would receive “an annual amount equivalent to the Jobseeker benefit; currently $19,400 annually, paid fortnightly into their bank account”. It is tax-free, and the document is emphatic about the absence of conditions: “No forms to fill in, no Work and Income appointments, no relationship status checks.”
+
+It replaces several main benefits outright — Jobseeker Support, Sole Parent Support, Student Allowance and Supported Living Allowance — and sits underneath a simplified layer of supplementary payments rather than beside the existing one. Those supplementary supports include tax-free Child Support Incomes (first child $18,250 in the first year, $7,750 a year from years 4 to 18, with lower amounts for subsequent children), an additional $9,500 a year for sole parents, a $6,000 disability allowance, superannuitant top-ups of $10,000 for a single person or $5,250 in total for a couple, and Housing Support Income averaging $10,500 for families.
+
+Those supplementary payments abate: each “will gradually reduce by 10 cents for every extra dollar earnt, starting from household income between $50,000 and $75,000”. The Citizen’s Income itself does not abate — that is the point of it, and the document frames it as the fix for “effective marginal tax rates of up to 90%” that it says currently trap beneficiaries out of part-time work.
+
+The land value tax
+
+This is the revenue engine, and the part with the widest reach. From section 2.1: “An annual tax on the unimproved value of all urban land set at 1.75%. Critically, this does not include the value of buildings or other improvements.” Rural land is taxed at a lower rate — “a lower land value tax rate of 0.5% is therefore appropriate” — on the reasoning that rural valuations are harder and farm revenue is exposed to global prices and weather.
+
+Taxing land but not buildings is a deliberate design choice, and the document is direct about the behaviour it is meant to produce: land banking “becomes expensive”, dense development “pays off, as the tax is on land value, not improvements”, and speculation “becomes less profitable, as annual holding costs increase”. The valuation problem is addressed by pointing at infrastructure that already exists: “We already know the land value of much of our land: it’s included in Council rating valuations.”
+
+Exemptions apply to communally-owned Māori land, conservation land (public and private), land owned by clubs, societies and non-commercial religious organisations, local and central government land, and Treaty settlement land “subject to consultation with iwi”.
+
+Deferrals, not exemptions, are the protection offered to two groups who would otherwise face a bill against an illiquid asset. For superannuitants, “all LVT will be deferrable until the property is sold”. Farmers get “more limited LVT deferral”. This distinction matters when comparing parties: the Greens exempt the family home from their wealth tax outright, whereas Opportunity taxes the land under every urban home and lets older owners postpone paying.
+
+KiwiSaver 2.0
+
+The third component converts New Zealand Superannuation from a pay-as-you-go system to a contributory one. KiwiSaver 2.0 would be “fully compulsory for all eligible workers”, with contributions reaching 12% of gross earnings — 6% employer and 6% employee — phased in at 0.5 percentage points a year for each side.
+
+Two details are easy to miss. First, it is a separate scheme: existing voluntary KiwiSaver “will remain in place as a supplementary savings vehicle”, and holders “will be able to transition funds to the new account if they wish”. Second, the new account is materially less accessible than the current one — KiwiSaver 2.0 “will not be able to be withdrawn for hardship or first-home deposits”, though the party says it would “enable bank loans over balances to support first home buyers”. Once fully phased in, the entire 12% contribution would be exempt from income tax.
+
+One inconsistency is worth noting because it appears within the party’s own document: the executive summary describes the phase-in as “over 6-7 years”, while section 3.1 says contributions reach 12% “after 8 years”. At 0.5 percentage points a year for each of employer and employee, eight years is the arithmetic that produces 6% each.
+
+What it costs and what it raises
+
+The document publishes a costing table, based on 2024 numbers:
+
+	$m
+Land value tax	24,323
+Administration savings (MSD, IRD)	1,742
+Total revenue	25,997
+Net cost of Citizen’s Income	13,637
+Net supplementary support cost	8,279
+Total cost	21,916
+
+That leaves roughly $4 billion — the party states the land value tax “pays for the Citizen’s Income with around $4 billion extra annually in net Crown revenue”. The headline Citizen’s Income cost is $69,648 million before a $23,381 million income tax clawback and a $32,630 million reduction from replacing student loans, Jobseeker, NZ Super, Supported Living, Sole Parent Support and Student Allowance; the $13,637 million figure is what remains.
+
+The party notes that “previous versions of this table used incorrect data that did not materially alter the overall balance”, most recently amended on 7 August 2026. The figures above are from the amended version.
+
+The $24 billion land value tax figure rests on “an estimated total land value of approximately $1.7 trillion nationally”. That estimate is doing a great deal of work in the costing, and it is the number to watch if the policy is scrutinised during the campaign.
+
+What the policy does not propose
+
+The Tax Reset contains no capital gains tax and no net wealth tax. It is also silent on GST and on the company tax rate — silence that should not be read as a position either way.
+
+This makes Opportunity’s approach genuinely distinct rather than a variation on Labour’s or the Greens’. A capital gains tax charges the profit when an asset is sold. A wealth tax charges net assets above a threshold each year. A land value tax charges land value annually whether or not anything is sold, ignores everything built on the land, and has no threshold at all — every square metre of non-exempt urban land is in scope from the first dollar.
+
+Where this sits in the campaign
+
+Opportunity has not been in Parliament, so the practical question for a voter weighing this policy is the 5% party-vote threshold rather than coalition arithmetic. The policy is nonetheless the most fully specified of the smaller parties’ offerings, with published rates, thresholds, exemptions, a phase-in schedule, a costing table and a separate transition plan document.
+
+For how the Tax Reset compares with what every other party is proposing, see every party’s 2026 tax policy compared. For the two parties proposing to tax accumulated wealth directly rather than land, see the Green Party’s 2026 tax plan and, for the capital gains tax proposal specifically, Labour’s capital gains tax explained.
+
+Frequently asked questions
+Is TOP still called TOP?
+Is the Tax Reset law right now?
+Would the land value tax apply to my family home?
+Would income tax rates go up under the Tax Reset?
+Does Opportunity propose a capital gains tax or a wealth tax?
+
+Primary sources
+
+Opportunity — Tax Reset policy overview (PDF, May 2026)
+Opportunity — Tax Reset policy page
+Opportunity — Tax Reset Transition Plan (PDF)
+IRD — the bright-line test
+General election to be held 7 November — Beehive.govt.nz
+← All Tax Insights
+
+Last updated 21 September 2026 · Tax year 2025-26 / 2026-27
+
+Data sources: Inland Revenue: Tax codes and tax rates for individuals
+
+This tool is general information only, not financial advice.
+
+Reviewed by NZ Tax Tools Editorial Desk
+
+Read our methodology →
+
+Free tax calculators for New Zealanders.
+
+Reviewed against IRD and ACC materials. For general educational use only.
+
+CALCULATORS
+
+Take-Home Pay
+PAYE Calculator
+Income Tax
+ACC Levy
+KiwiSaver
+GST Calculator
+All calculators →
+
+INFORMATION
+
+About
+Contact
+Corrections
+Methodology
+Editorial Policy
+Privacy
+Cookies
+Disclaimer
+Terms
+Tax Deadlines
+Tax Glossary
+Tax Changes 2025-26
+
+NZ Tax Tools is part of the TaxTools Network
+
+ALSO AVAILABLE FOR
+
+Australia
+Canada
+United Kingdom
+United States
+
+© 2026 NZ Tax Tools · 59 calculators · 2025-26 & 2026-27
+
+For general guidance only. Not tax advice. Consult a qualified tax professional or IRD.
+
+--- LINKS ---
+ | https://nztax.tools/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Tax Insights | https://nztax.tools/tax-insights/
+First, the name | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#first-the-name
+Three income tax brackets | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#three-income-tax-brackets
+The Citizen’s Income | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#the-citizens-income
+The land value tax | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#the-land-value-tax
+KiwiSaver 2.0 | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#kiwisaver-20
+What it costs and what it raises | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#what-it-costs-and-what-it-raises
+What the policy does not propose | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#what-the-policy-does-not-propose
+Where this sits in the campaign | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#where-this-sits-in-the-campaign
+First, the name | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#first-the-name
+Three income tax brackets | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#three-income-tax-brackets
+The Citizen’s Income | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#the-citizens-income
+The land value tax | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#the-land-value-tax
+KiwiSaver 2.0 | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#kiwisaver-20
+What it costs and what it raises | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#what-it-costs-and-what-it-raises
+What the policy does not propose | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#what-the-policy-does-not-propose
+Where this sits in the campaign | https://nztax.tools/tax-insights/opportunity-top-2026-tax-reset-explained/#where-this-sits-in-the-campaign
+every party’s 2026 tax policy compared | https://nztax.tools/tax-insights/nz-election-2026-tax-policies-compared/
+the Green Party’s 2026 tax plan | https://nztax.tools/tax-insights/greens-2026-tax-policy-explained/
+Labour’s capital gains tax explained | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/
+Opportunity — Tax Reset policy overview (PDF, May 2026) | https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset.pdf
+Opportunity — Tax Reset policy page | https://www.opportunity.org.nz/tax-reset
+Opportunity — Tax Reset Transition Plan (PDF) | https://cdn.opportunity.org.nz/documents/policy/Opportunity%20Policy%20-%20Tax%20Reset%20Transition%20Plan.pdf
+IRD — the bright-line test | https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test
+General election to be held 7 November — Beehive.govt.nz | https://www.beehive.govt.nz/release/general-election-be-held-7-november
+← All Tax Insights | https://nztax.tools/tax-insights/
+Inland Revenue: Tax codes and tax rates for individuals | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals
+Read our methodology → | https://nztax.tools/methodology/
+Take-Home Pay | https://nztax.tools/take-home-pay-calculator/
+PAYE Calculator | https://nztax.tools/paye-calculator/
+Income Tax | https://nztax.tools/income-tax-calculator/
+ACC Levy | https://nztax.tools/acc-levy-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+GST Calculator | https://nztax.tools/gst-calculator/
+All calculators → | https://nztax.tools/calculators/
+About | https://nztax.tools/about/
+Contact | https://nztax.tools/contact/
+Corrections | https://nztax.tools/corrections/
+Methodology | https://nztax.tools/methodology/
+Editorial Policy | https://nztax.tools/editorial-policy/
+Privacy | https://nztax.tools/privacy/
+Cookies | https://nztax.tools/cookies/
+Disclaimer | https://nztax.tools/disclaimer/
+Terms | https://nztax.tools/terms/
+Tax Deadlines | https://nztax.tools/tax-deadlines/
+Tax Glossary | https://nztax.tools/tax-glossary/
+Tax Changes 2025-26 | https://nztax.tools/tax-changes-2025-26/
+TaxTools Network | https://taxtools.network/
+Australia | https://austax.tools/
+Canada | https://catax.tools/
+United Kingdom | https://uktax.tools/
+United States | https://ustax.tools/
+Income tax | https://nztax.tools/income-tax-calculator/
+Take-home pay | https://nztax.tools/take-home-pay-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+PAYE calculator | https://nztax.tools/paye-calculator/
+GST calculator | https://nztax.tools/gst-calculator/
+Working for Families | https://nztax.tools/working-for-families-calculator/
+browse all → | https://nztax.tools/calculators/

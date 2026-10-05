@@ -1,0 +1,436 @@
+URL: https://election2026.nz/
+TAG: result:1News Verian poll September 2026 seats National Labour Te Pati Maori Opportunity
+TITLE: NZ Election 2026 Poll Tracker — Seats, Coalitions & Forecast
+FETCHED: 2026-10-06 09:16
+
+Election2026.nz
+32 DAYS TO GO
+updated 6 Oct 2026
+
+POLLING AVERAGE · 27 SEPT 2026 · 21 POLLS
+
+Only the left can reach 62 — with TOP, whom National has ruled out.
+56
+Left bloc
+GRN · TPM · LAB
+62 TO GOVERN
+8
+UNALIGNED
+58
+Right bloc
+NZF · NAT · ACT
+
+Left 56 · unaligned 8 · right 58 — 62 needed to command the 122-seat Parliament (incl. 2 overhang seats).
+
+ASSUMING
+⇄
+TPM holds the Māori seats
++
+TOP wins a seat
+Share this scenario
+TRY
+TOP kingmaker
+Winston unaligned
+Left bloc + TOP
+Full right overhang
+7 AUG
+Spending limits begin
+1 OCT
+Parliament dissolved
+4 OCT
+Writ day
+25 OCT
+Enrolment deadline
+26 OCT
+Advance voting opens
+7 NOV
+Election day
+The parties — and whose side they're on
+
+Polling average and projected seats for every party in Parliament's race. Coalition lines aren't fixed until the votes are counted — drag the wildcards yourself. TOP starts unaligned and says it's open to any party. Or enter your own party votes and electorate seats — the total seats recompute with the real MMP maths (Sainte-Laguë, the 5%-or-one-seat threshold, and overhang).
+
+27 JUL
+National has ruled out working with TOP. TOP says it stays open to any party — so if TOP holds the balance, only the left can realistically use it. Applied to the seat maths below and to 75% of forecast simulations — the rest allow for a National leadership change or a post-election reversal reopening the door, a risk the failed 12 Aug leadership challenge against Luxon made concrete. source
+Apply
+Enter your own numbers
+GRN
+Green Party
+12.8%
+16 seats
+10–21 in sims
+LEFT
+CENTRE
+RIGHT
+TPM
+Te Pāti Māori
+2.1%
+5 seats
+3–5 in sims
+Under 5% — in on 5 electorate seats
+LEFT
+CENTRE
+RIGHT
+LAB
+Labour
+29.1%
+35 seats
+28–44 in sims
+LEFT
+CENTRE
+RIGHT
+TOP
+The Opportunities Party
+6.2%
+8 seats
+0–11 in sims
+LEFT
+CENTRE
+RIGHT
+NZF
+NZ First
+10.2%
+12 seats
+8–18 in sims
+LEFT
+CENTRE
+RIGHT
+NAT
+National
+29.2%
+35 seats
+28–44 in sims
+LEFT
+CENTRE
+RIGHT
+ACT
+ACT
+8.9%
+11 seats
+6–16 in sims
+LEFT
+CENTRE
+RIGHT
+
+10,000 SIMULATED ELECTIONS · 32 DAYS TO 7 NOV 2026 · HOUSE-EFFECT-ADJUSTED POLLS
+
+The chances on election day
+
+Polls will move and polls can be wrong. Ten thousand simulated elections, each drawing a plausible 7 November result around the adjusted polling average — wider the further out we are — and running the full seat maths. Your alignment and electorate settings above feed straight in.
+
+Left bloc wins outright
+15%
+Right bloc wins outright
+LIKELIEST
+36%
+TOP decides who governs
+11%
+Left, but only with TOP
+34%
+Right, but only with TOP
+<1%
+No majority combination
+4%
+HOW THE ODDS HAVE MOVED · WEEKLY RECONSTRUCTION · LIVE FROM 5 JUL 2026
+0%
+20%
+40%
+60%
+Feb ’24
+Jul ’24
+Dec ’24
+May ’25
+Oct ’25
+Mar ’26
+Aug ’26
+live
+Right outright 36%
+Left outright 16%
+TOP decides 11%
+NZ First makes it into Parliament
+98%
+The Opportunities Party makes it into Parliament
+76%
+Wildcard watch
+SPECULATIVE
+Grand coalition — National and Labour govern together to shut the minor parties out
+2.1%
+STILL POSSIBLE? YES — NATIONAL + LABOUR 70 SEATS · 62 NEEDED
+50
+60
+70
+80
+90
+Nov ’23
+Apr ’24
+Sept ’24
+Feb ’25
+Jul ’25
+Dec ’25
+May ’26
+GRAND COALITION IMPOSSIBLE BELOW THIS LINE
+NAT + LAB 70
+needed 62
+
+Never done under MMP. The odds rise when a kingmaker gets expensive or no bloc can reach a majority — but a pact to exclude the minors needs National and Labour to hold 62 seats between them, so a big enough minor-party surge makes it impossible rather than likely. The chart tracks that arithmetic on the polling average since 2023; in 98% of today's simulations the two still clear the line. Luxon's August-2026 call for an MMP referendum doesn't move this either way — rewriting the rules to shrink the minor parties is an alternative to governing with Labour, not a step toward it, and Labour opposed the idea.
+
+DAILY REPORT
+
+Yesterday on the campaign
+
+What moved in the election the previous day — the campaign, the polls, the parties, the money and the process. Compiled each morning by an AI research pass over published NZ reporting; every item links to its sources.
+
+DAY
+5 Oct
+4 Oct
+3 Oct
+2 Oct
+1 Oct
+30 Sept
+29 Sept
+28 Sept
+
+5 OCT 2026
+
+Labour and National opened the campaign's second week duelling over motorists, with Labour pledging a fuel-price crackdown and 'right to repair' for cars while National committed $800 million to extend the Christchurch Northern Motorway.
+
+Both major parties targeted drivers on Monday: Labour unveiled a 'Fair Go for Kiwi Drivers' package of fuel-market competition measures and a right to repair, while National promised to fully fund the Belfast to Pegasus Motorway and Woodend Bypass in its first Budget. The weekend's fiscal-plan fight escalated, with Labour finance spokesperson Barbara Edmonds directly accusing Nicola Willis of lying over the alleged $8.5b pay-equity hole. The Greens' Auckland level-crossing announcement was dramatically interrupted by a near miss between a car and a train, and a catch-up MATA-Horizon poll showed the Greens edging Labour for the Māori-roll party vote — a potential problem for Te Pāti Māori's candidate-vote-only strategy.
+
+ISSUES
+Labour targets fuel prices and pledges 'right to repair' for cars
+
+Labour announced a cost-of-living package for motorists: car manufacturers would be required to give independent mechanics fair access to the manuals, software, tools and information needed to fix modern cars; the Commerce Commission would report weekly on fuel prices and whether falling costs are passed on; Labour's proposed price-gouging law would apply to wholesale and retail fuel; and independent petrol stations would get fairer access to fuel supplies. Hipkins framed the policy around the cost of living, with commerce spokesperson Arena Williams saying independent workshops currently turn away work they cannot access information to do.
+
+Why it matters. This keeps Labour's campaign anchored on cost-of-living retail politics rather than the fiscal-credibility fight National wants to have. It also sets up a direct contrast with NZ First's fuel-subsidy pitch for the same driving-cost-sensitive voters.
+
+1News · interest.co.nz · RNZ
+
+CAMPAIGN
+National pledges $800m for Christchurch Northern Motorway extension — but tolls still possible
+
+Announcing near Kaiapoi with Luxon, transport spokesperson Chris Bishop said National would fully fund the Belfast to Pegasus Motorway and Woodend Bypass — an 11km extension of the Christchurch Northern Motorway — in the next government's first Budget, with construction starting next year. Bishop said tolling is being considered through a separate statutory process, with a decision likely in the new year; NZTA consulted on two toll points ($1.25 per light vehicle each), and Waimakariri mayor Dan Gordon pushed for the road to be toll-free. Newsroom noted the project was once estimated at $270m — roughly a quarter of the new price tag.
+
+Why it matters. National is stacking regional roading commitments (after Mill Road on Sunday) to contrast with the Greens' rail platform and anchor its infrastructure-and-growth pitch in Canterbury. The unresolved tolling question and cost escalation give opponents an immediate line of attack.
+
+RNZ · ODT · Newsroom
+
+ISSUES
+Edmonds fires back at Willis over pay-equity 'hole': 'The only liar there is Nicola Willis'
+
+The fight over Labour's fiscal plan escalated as finance spokesperson Barbara Edmonds directly accused Nicola Willis of lying about the alleged $8.5 billion pay-equity gap. Edmonds argued neither governments nor oppositions should put a figure on pay equity because it is a bargaining envelope, and said the cost would come from Labour's $10.5 billion of unallocated funding. Winston Peters separately said of Labour's plan that it 'doesn't add up'.
+
+Why it matters. The costings dispute has moved from technical disagreement to a direct credibility contest between the two would-be finance ministers. How this exchange is adjudicated by commentators and voters will shape whether the pay-equity hole becomes National's defining attack line for the final month.
+
+PMN · RNZ
+
+CAMPAIGN
+Near miss with train interrupts Greens' level-crossing removal pledge
+
+The Greens announced they would fund the removal of level crossings along Auckland's Western Line — enabling more than 12 trains an hour on the line and allowing the City Rail Link to run at its full 48-trains-an-hour capacity — when a car drove across a crossing in front of an approaching train mid-announcement. Swarbrick called it 'one of those very near misses' and said it proved the case for removal; she contrasted the investment with National's roading announcements. The pledge caps a Greens transport platform that also included a $4b intercity passenger rail plan announced 3 October (overnight Auckland–Wellington services, Christchurch–Dunedin trains, Te Huia extended to Tauranga).
+
+Why it matters. The near miss gave the Greens a rare made-for-TV moment that dramatised their own policy argument. The party is running transport as its signature cost-of-living and infrastructure wedge against National's road-heavy programme.
+
+RNZ · 1News · RNZ (rail plan, 3 Oct)
+
+POLLS
+CATCH-UP (1 Oct): MATA-Horizon poll has Greens edging Labour for the Māori-roll party vote
+
+A MATA-Horizon poll released 1 October found the Greens leading the party vote among voters on the Māori roll with 28%, ahead of Labour (27%), Te Pāti Māori (16%) and Opportunity (6%); among Māori on the general roll, Labour led on 38% with the Greens at 17%, National 11% and NZ First 10%. Commentators including Tau Henare described the shift as 'massive'. On 5 October, Green co-leader Marama Davidson discussed the result on Waatea's Ata Tū alongside the party's rail announcements.
+
+Why it matters. A Green lead on the Māori roll is historically unusual and complicates Te Pāti Māori's one-person-list, candidate-vote-only strategy, which depends on its supporters giving their party vote elsewhere. It also sharpens competition inside the left bloc for the same voters Labour needs to win the seven Māori electorates.
+
+The Spinoff · RNZ · Waatea News
+
+AI-compiled from published reporting — check the linked sources before relying on any item · updated 6 Oct 2026
+
+Party vote since the 2023 election
+
+Every published poll (dots) with a recency-weighted average (lines). Parties need 5% of the party vote — or an electorate seat — to enter Parliament.
+
+RANGE
+6 mo
+12 mo
+Full term
+0
+10
+20
+30
+40
+5% THRESHOLD
+Nov ’23
+Mar ’24
+Jul ’24
+Nov ’24
+Mar ’25
+Jul ’25
+Nov ’25
+Mar ’26
+Jul ’26
+2023 election
+National 28.7
+Labour 28.4
+Green Party 13.8
+NZ First 10.1
+ACT 9.5
+Green Party
+Te Pāti Māori
+Labour
+The Opportunities Party
+NZ First
+National
+ACT
+The polls themselves
+
+Party-vote results from every major New Zealand pollster, newest first. Figures are percentages.
+
+DATES	POLL	N	GRN	TPM	LAB	TOP	NZF	NAT	ACT	LEAD
+23–27 Sep 2026	1 News–Verian	1,004	16.0	1.2	28.0	6.0	9.0	28.0	11.0	LAB +0.0
+4–11 Sep 2026	The Post/Freshwater Strategy	1,011	14.0	2.0	28.0	6.0	13.0	27.0	9.0	LAB +1.0
+4–10 Sep 2026	Anacta	1,701	12.0	2.0	31.0	7.0	10.0	30.0	8.0	LAB +1.0
+1–3 Sep 2026	Taxpayers' Union–Curia	1,000	13.9	2.0	25.9	4.5	8.4	29.0	10.5	NAT +3.1
+27 Jul – 23 Aug 2026	Roy Morgan	858	15.5	1.5	24.0	9.5	7.5	31.0	10.5	NAT +7.0
+14–21 Aug 2026	RNZ–Reid Research	1,000	10.2	3.0	32.2	5.3	11.9	29.1	7.7	LAB +3.1
+8–11 Aug 2026	1 News–Verian	847	12.0	1.1	30.0	8.0	8.0	29.0	9.0	LAB +1.0
+1–11 Aug 2026	Talbot Mills	–	8.0	3.0	34.0	5.2	13.0	29.0	7.0	LAB +5.0
+1–4 Aug 2026	Taxpayers' Union–Curia	1,000	10.1	1.5	27.8	6.1	9.1	31.0	7.3	NAT +3.2
+29 Jun – 26 Jul 2026	Roy Morgan	881	13.5	2.0	25.5	8.0	8.5	32.0	8.5	NAT +6.5
+10–19 Jul 2026	Talbot Mills	–	9.0	3.0	33.0	4.7	12.0	31.0	7.0	LAB +2.0
+2–9 Jul 2026	RNZ–Reid Research	1,000	10.3	2.3	34.0	4.7	11.5	28.7	7.8	LAB +5.3
+Show the full record (122 polls)
+Preferred prime minister
+
+The latest poll to ask the open question: 1 News–Verian, 27 Sept 2026.
+
+Luxon
+National
+19.0%
+Hipkins
+Labour
+14.0%
+Swarbrick
+Green Party
+8.0%
+Seymour
+ACT
+7.0%
+Peters
+NZ First
+7.0%
+
+One poll, not an average: 1 News–Verian, 27 Sept 2026. “Who would you prefer as prime minister?”
+
+ALL POLLSTERS, SMOOTHED · SINCE THE 2023 ELECTION
+0
+10
+20
+30
+40
+Nov ’23
+Apr ’24
+Sept ’24
+Feb ’25
+Jul ’25
+Dec ’25
+May ’26
+Luxon 19.8
+Hipkins 16.1
+Peters 8.7
+Swarbrick 7.5
+Seymour 7.0
+
+Pollsters offering only a two-way Luxon–Hipkins choice are excluded throughout — a different question on a different scale.
+
+The money — donations over $20,000
+
+Any donation above $20,000 must be declared to the Electoral Commission within 20 working days; parties also file annual returns covering everything else.
+
+WINDOW
+2026 campaign
+Since the 2023 election
+ACT
+47 donations declared
+$2.35m
+National
+38 donations declared
+$2.29m
+Labour
+16 donations declared
+$890k
+NZ First
+13 donations declared
+$753k
+The Opportunities Party
+10 donations declared
+$492k
+Green Party
+8 donations declared
+$405k
+Te Pāti Māori
+2 donations declared
+$114k
+Other parties
+1 donation declared
+$50k
+RECEIVED	PARTY	DONOR	AMOUNT
+29 Sept 2026	GRN	Robert Morgan	$62,000
+29 Sept 2026	ACT	Van Den Brink Karaka Limited	$50,000
+28 Sept 2026	ACT	Rank Group Limited	$100,000
+28 Sept 2026	ACT	Nicholas Mowbray	$25,000
+25 Sept 2026	ACT	Troy Bowker	$50,000
+23 Sept 2026	NAT	Little Umbrella Limited	$26,666
+21 Sept 2026	NAT	Red Stag Timber Limited Waipa State Mill Road Whakarewarewa Rotorua	$25,000
+19 Sept 2026	LAB	Len Cook	$20,405
+Show every donation (135)
+
+$7,342,943 declared across 135 donations since 1 January 2026 · source: Electoral Commission, checked daily · updated 5 Oct 2026
+
+How the seats are worked out
+The average
+
+Each pollster's house effect — its systematic lean per party against the consensus of all pollsters over the past 18 months — is estimated and subtracted first. Adjusted polls are then combined with an exponential recency weight (half-life 30 days) scaled by sample size. Newer, larger polls count for more; pollsters that skip a party are left out of that party's average. The table below always shows the published numbers.
+
+The seats
+
+New Zealand uses MMP: the 120 seats are shared out by the Sainte-Laguë formula among parties that clear 5% of the party vote or win an electorate. A party that wins more electorates than its party vote would entitle it to keeps the extras, and Parliament grows — the overhang. The majority line moves with it.
+
+The simulations
+
+The forecast draws 10,000 possible election-day results around the adjusted average. Each party's error grows with its size and with the time left until 7 November, calibrated by replaying this exact method against the 2014, 2017, 2020 and 2023 elections — at this range, history says a major party's polling can miss by five points or more. Electorate seats are sampled too: an assumption switched on holds in 85% of simulations, one switched off still happens in 12%. Every draw runs through the same Sainte-Laguë maths, and the outcomes are counted.
+
+The grand-coalition wildcard
+
+No National–Labour government has ever formed under MMP, so its probability can't be measured from New Zealand data. Instead, each simulated parliament is classified by how cornered the majors are — a bloc governs outright (0.2% chance of a grand coalition), a kingmaker holds the balance (1% plus 0.15% per seat the kingmaker controls), or no aligned majority exists at all (20%, the situation that produced Germany's 2005 and Ireland's 2020 grand coalitions) — weighted by how evenly matched the majors are, and zeroed where they'd lack a majority together. Treat it as a structured hunch, not a measurement.
+
+Electorate assumptions
+
+Sub-5% parties live or die on electorate seats, so the switches under the seat map matter. Te Pāti Māori's five Māori electorates (down from six after Kapa-Kingi's departure) are a two-way switch — TPM holds them, or Labour sweeps them. ACT's Epsom is taken as read and is not a switch. Give TOP an electorate seat and the balance can flip. The Full right overhang preset loads the split-ticket play into the sandbox: National's party vote moved to ACT and NZ First, half each, with the 43 electorates it won in 2023 kept as pure overhang.
+
+Sources. Poll results are aggregated by Wikipedia from the published work of 1News–Verian, RNZ–Reid Research, Taxpayers' Union–Curia, Talbot Mills, The Post/Freshwater Strategy and Roy Morgan. Data refreshes automatically several times a day.
+
+Health warning. This is a projection of published polling, not a prediction. Polls carry margins of error of about ±3%, electorate outcomes are assumptions, and campaigns change minds.
+
+Published by Brian Cartmell. Contact: election2026@c.cc Personal project; not an election advertisement.
+
+Poll data refreshed 6/10/2026, 8:00:03 am · 122 polls on record
+
+Telemetry
+
+--- LINKS ---
+Election2026.nz | https://election2026.nz/
+source | https://www.rnz.co.nz/news/politics/809555/national-rules-out-working-with-opportunity-party
+1News | https://www.1news.co.nz/2026/10/05/labour-targets-fuel-prices-right-to-repair-for-drivers/
+interest.co.nz | https://www.interest.co.nz/public-policy/140546/labour-pledges-crack-down-%E2%80%98unfair%E2%80%99-fuel-prices-make-care-repairs-cheaper-and
+RNZ | https://www.rnz.co.nz/news/politics_election-2026/1739653/labour-promises-right-to-repair-for-cars
+RNZ | https://www.rnz.co.nz/news/politics_election-2026/1737541/national-promises-to-fund-800-million-christchurch-northern-motorway-extension-if-leading-next-government
+ODT | https://www.odt.co.nz/canterbury/christchurch/national-promises-to-fund-800m-christchurch-motorway-extension-s6xhoxr6
+Newsroom | https://newsroom.co.nz/2026/10/05/how-a-270m-highway-might-now-cost-four-times-that/
+PMN | https://pmn.co.nz/read/election/the-only-liar-there-is-nicola-willis-barbara-edmonds-hits-back-over-labour-s-election-plan
+RNZ | https://www.rnz.co.nz/news/politics_election-2026/1734660/as-it-happened-election-campaign-5-october
+RNZ | https://www.rnz.co.nz/news/politics_election-2026/1739813/near-miss-with-train-interrupts-greens-level-crossing-announcement
+1News | https://www.1news.co.nz/2026/10/05/watch-car-nearly-hit-by-train-as-greens-make-level-crossing-pledge/
+RNZ (rail plan, 3 Oct) | https://www.rnz.co.nz/news/politics_election-2026/1701879/green-party-announces-plan-for-passenger-rail-between-major-nz-cities
+The Spinoff | https://thespinoff.co.nz/atea/01-10-2026/poll-says-maori-are-turning-to-the-greens-for-their-party-vote
+RNZ | https://www.rnz.co.nz/news/politics_election-2026/1671964/poll-says-maori-are-turning-to-the-greens-for-their-party-vote
+Waatea News | https://waateanews.com/2026/10/05/greens-eye-maori-party-vote-as-rail-plan-hits-election-track/
+Electoral Commission | https://elections.nz/democracy-in-nz/political-parties-in-new-zealand/donations-exceeding-20000
+Wikipedia | https://en.wikipedia.org/wiki/Opinion_polling_for_the_2026_New_Zealand_general_election
+Telemetry | https://c.cc/telemetry/

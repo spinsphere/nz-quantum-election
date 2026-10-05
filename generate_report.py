@@ -27,6 +27,8 @@ import os
 import textwrap
 from datetime import datetime
 
+from seat_model import sainte_lague, majority_threshold
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 WIDTH = 78
 
@@ -303,6 +305,29 @@ def build_report(results: dict, data: dict) -> str:
            f"arrangement with Te Pāti Māori outside cabinet more likely than a four-party formal coalition."
            if "TePatiMaori" in members else
            "Verdict: " + ("no declared rule-out blocks this coalition." if not blocked else "; ".join(blocked) + ".")))
+
+    # threshold scenario: what happens if TOP misses 5% (or any member below 5% without an electorate)
+    P("")
+    P("  3.5 Threshold scenario")
+    votes = house["polling_average_pct"]
+    elect = house["electorate_assumptions"]
+    at_risk = [p for p in parties if votes[p] < 7.5 and elect.get(p, 0) == 0]
+    for p in at_risk:
+        v2 = dict(votes); v2[p] = 0.0
+        s2 = sainte_lague(v2, elect)
+        tot2 = sum(s2.values()); maj2 = majority_threshold(tot2)
+        coal2 = sum(s2[q] for q in members if q != p)
+        blocs2 = {}
+        for q in parties:
+            blocs2.setdefault(data["parties"][q]["bloc"], 0)
+            blocs2[data["parties"][q]["bloc"]] += s2[q]
+        P(wrap(f"If {DISPLAY[p]}, at {votes[p]:.1f}% in the poll average, fell below the 5% threshold with no electorate seat, "
+               f"its votes would be redistributed: House of {tot2}, majority {maj2}; the optimal coalition without it would hold "
+               f"{coal2} seats ({'still a majority' if coal2 >= maj2 else 'no longer a majority'}); bloc totals "
+               f"{', '.join(f'{b} {s}' for b, s in blocs2.items())}.", indent="    "))
+    P(wrap("Every published September 2026 seat projection in which Opportunity falls under 5% (Taxpayers' Union-Curia, 1-3 Sep) "
+           "produces a National-ACT-NZ First majority; every projection with Opportunity above 5% leaves it holding the balance. "
+           "The optimiser's answer therefore rests on a party polling within one margin of error of the threshold.", indent="    "))
 
     # ------------------------------------------------------------------ 4
     P(section("4. QUANTUM SIMULATION BREAKDOWN"))

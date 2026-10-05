@@ -1,0 +1,268 @@
+URL: https://nztax.tools/labour-capital-gains-tax-calculator/
+TAG: result:Treasury estimate Labour capital gains tax 28 percent revenue 2026
+TITLE: Labour's 28% Capital Gains Tax Calculator (2026)
+FETCHED: 2026-10-06 09:06
+
+Search
+/
+Home
+Calculators
+Insights
+Glossary
+Deadlines
+About
+Home
+/
+Labour Capital Gains Tax Calculator
+Labour's 28% Capital Gains Tax Calculator
+
+Estimate what Labour's proposed capital gains tax would mean for a property sale, and see how it compares to today's bright-line test. This models an election proposal ahead of the 7 November 2026 general election — not current New Zealand law.
+
+HOW MUCH WOULD I PAY UNDER LABOUR'S PROPOSED CAPITAL GAINS TAX?
+
+For an in-scope property (residential investment or commercial), Labour's proposal taxes the gain made after 1 July 2027 at a flat 28%, minus deductible capital improvement costs. The family home, farms, KiwiSaver, shares, business assets, inheritances and personal items are all exempt. Enter your figures below to compare the proposed CGT against what today's bright-line test would charge on the same sale.
+
+Formula:Proposed CGT = 28% × (sale price − 1 July 2027 valuation (or purchase price) − improvement costs)
+
+Election proposal — not current law
+
+This models Labour's announced 28% capital gains tax policy, one of several parties' positions ahead of the 7 November 2026 general election. It only applies if Labour forms government and enacts the policy as announced — the figures below are an estimate of that scenario, not a forecast of NZ tax law.
+
+Property details
+Asset type
+Residential investment property (incl. holiday home / bach)
+Bought before 1 July 2027
+Value at 1 July 2027 (valuation-day baseline)
+$
+
+Only the gain after 1 July 2027 is ever taxed — any increase in value before that date is not taxed, however long ago the property was bought.
+
+Expected sale price
+$
+Capital improvement costs (optional)
+$
+
+Improvement costs are deductible under the proposal. Holding costs like rates and interest are not deductible — leave those out.
+
+Compare with current law (bright-line test)
+The sale would fall within 2 years of purchase
+Your marginal tax rate
+30.0% ($53,501 – $78,100)
+
+Under today's law, a sale within 2 years of purchase is taxed under the bright-line test at your marginal income tax rate. Beyond 2 years, the bright-line test does not apply — though other IRD rules (the intention/dealer rules) can still make a gain taxable in some cases.
+
+Standing caveats
+
+This is Labour's proposed policy, not current law. It would only take effect if Labour forms government after the 7 November 2026 election and enacts the CGT as announced.
+
+The exact valuation method for the 1 July 2027 baseline has not yet been specified by Labour — this calculator assumes you supply that figure directly.
+
+Labour's policy documents are reported by media to replace the bright-line test with this CGT, but Labour's own primary materials do not explicitly confirm that mechanic — treat the current-law comparison above as bright-line under today's rules, which may or may not continue to exist alongside a CGT.
+
+Share
+Copy link
+Share to X
+WhatsApp
+Select an asset type and enter your figures above to see the estimate.
+How this calculator works
+
+This tool estimates the effect of Labour's proposed, not yet enacted capital gains tax — announced 28 October 2025 as part of the party's 2026 election platform. Read the full mechanics in the Labour CGT 2026 explainer.
+
+Scope — only residential investment property (incl. holiday homes/baches) and commercial property are in scope. Family home, farms, KiwiSaver, shares, business assets, inheritances and personal items are exempt.
+Valuation day, not grandfathering — every in-scope property is valued as at 1 July 2027, and only the gain from that date forward is ever taxed. Properties bought on or after 1 July 2027 use their purchase price instead.
+Flat 28% rate — applied to the net gain (sale price minus the valuation-day or purchase-price baseline, minus deductible improvement costs). Holding costs like rates and interest are not deductible.
+Losses — carried forward and ring-fenced against future gains on the same type of asset, not against salary or other income.
+Current-law comparison — uses the existing 2-year bright-line test, which taxes the full gain at your marginal income tax rate if the sale falls within 2 years of purchase, and does not apply beyond that (subject to IRD's separate intention/dealer rules). See how the two regimes compare in the Labour CGT vs bright-line test article.
+
+The valuation methodology for the 1 July 2027 baseline has not yet been specified by Labour — this calculator asks you to supply that figure directly, and the result is only as accurate as that estimate.
+
+Frequently asked questions
+Is Labour's capital gains tax current law?
+What would be taxed under Labour's proposed CGT?
+How would the tax be calculated?
+Does this replace the bright-line test?
+What happens if I sell at a loss?
+Related reading
+Labour's 2026 CGT explained
+
+The full policy mechanics, scope, and what's still unspecified.
+
+Labour CGT vs bright-line test
+
+How the proposal would interact with today's 2-year rule.
+
+Bright-line test calculator
+
+Check your property sale against today's current law.
+
+2026 election tax policies compared
+
+A neutral, party-by-party comparison of announced tax positions.
+
+Sources
+
+Figures sourced from Labour CGT policy PDF — Targeted Tax Changes to Grow the Economy and Invest in Health, Labour CGT policy summary page, IRD — the bright-line test (current law).
+
+Published 2 August 2026. Labour's CGT policy was announced 28 October 2025; last verified against primary sources on 2 August 2026. This calculator will be updated if the policy changes before the election.
+
+Related Calculators
+Mortgage refinance
+
+Break-even months after switching home loans
+
+Mortgage rate change
+
+Repayment impact when a fixed or floating rate changes
+
+DTI calculator
+
+Debt-to-income ratio for RBNZ lending caps
+
+Capital growth calculator
+
+Property capital growth projection by region
+
+Investment property cashflow
+
+Annual cashflow including interest deductibility
+
+All calculators
+
+Browse all NZ property and tax tools
+
+Last updated 9 September 2026 · Tax year 2025-26 / 2026-27
+
+Data sources: Inland Revenue: Tax codes and tax rates for individuals
+
+This tool is general information only, not financial advice.
+
+Reviewed by NZ Tax Tools Editorial Desk
+
+Read our methodology →
+
+Free tax calculators for New Zealanders.
+
+Reviewed against IRD and ACC materials. For general educational use only.
+
+CALCULATORS
+
+Take-Home Pay
+PAYE Calculator
+Income Tax
+ACC Levy
+KiwiSaver
+GST Calculator
+All calculators →
+
+INFORMATION
+
+About
+Contact
+Corrections
+Methodology
+Editorial Policy
+Privacy
+Cookies
+Disclaimer
+Terms
+Tax Deadlines
+Tax Glossary
+Tax Changes 2025-26
+
+NZ Tax Tools is part of the TaxTools Network
+
+ALSO AVAILABLE FOR
+
+Australia
+Canada
+United Kingdom
+United States
+
+© 2026 NZ Tax Tools · 59 calculators · 2025-26 & 2026-27
+
+For general guidance only. Not tax advice. Consult a qualified tax professional or IRD.
+
+--- LINKS ---
+ | https://nztax.tools/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Calculators | https://nztax.tools/calculators/
+Insights | https://nztax.tools/tax-insights/
+Glossary | https://nztax.tools/tax-glossary/
+Deadlines | https://nztax.tools/tax-deadlines/
+About | https://nztax.tools/about/
+Home | https://nztax.tools/
+Labour CGT 2026 explainer | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/
+bright-line test | https://nztax.tools/brightline-test-calculator/
+Labour CGT vs bright-line test | https://nztax.tools/tax-insights/labour-cgt-vs-bright-line-test/
+Labour's 2026 CGT explained
+
+The full policy mechanics, scope, and what's still unspecified. | https://nztax.tools/tax-insights/labour-capital-gains-tax-2026-explained/
+Labour CGT vs bright-line test
+
+How the proposal would interact with today's 2-year rule. | https://nztax.tools/tax-insights/labour-cgt-vs-bright-line-test/
+Bright-line test calculator
+
+Check your property sale against today's current law. | https://nztax.tools/brightline-test-calculator/
+2026 election tax policies compared
+
+A neutral, party-by-party comparison of announced tax positions. | https://nztax.tools/tax-insights/nz-election-2026-tax-policies-compared/
+Labour CGT policy PDF — Targeted Tax Changes to Grow the Economy and Invest in Health | https://www.labour.org.nz/media/pfvguai5/labour-cgt.pdf
+Labour CGT policy summary page | https://www.labour.org.nz/election-policy-pages/capital-gains-tax
+IRD — the bright-line test (current law) | https://www.ird.govt.nz/property/buying-and-selling/when-you-need-to-pay/the-brightline-test
+Mortgage refinance
+
+Break-even months after switching home loans | https://nztax.tools/mortgage-refinance-calculator/
+Mortgage rate change
+
+Repayment impact when a fixed or floating rate changes | https://nztax.tools/mortgage-rate-change-calculator/
+DTI calculator
+
+Debt-to-income ratio for RBNZ lending caps | https://nztax.tools/dti-calculator/
+Capital growth calculator
+
+Property capital growth projection by region | https://nztax.tools/capital-growth-calculator/
+Investment property cashflow
+
+Annual cashflow including interest deductibility | https://nztax.tools/investment-property-cashflow-calculator/
+All calculators
+
+Browse all NZ property and tax tools | https://nztax.tools/calculators/
+Inland Revenue: Tax codes and tax rates for individuals | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals
+Read our methodology → | https://nztax.tools/methodology/
+Take-Home Pay | https://nztax.tools/take-home-pay-calculator/
+PAYE Calculator | https://nztax.tools/paye-calculator/
+Income Tax | https://nztax.tools/income-tax-calculator/
+ACC Levy | https://nztax.tools/acc-levy-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+GST Calculator | https://nztax.tools/gst-calculator/
+All calculators → | https://nztax.tools/calculators/
+About | https://nztax.tools/about/
+Contact | https://nztax.tools/contact/
+Corrections | https://nztax.tools/corrections/
+Methodology | https://nztax.tools/methodology/
+Editorial Policy | https://nztax.tools/editorial-policy/
+Privacy | https://nztax.tools/privacy/
+Cookies | https://nztax.tools/cookies/
+Disclaimer | https://nztax.tools/disclaimer/
+Terms | https://nztax.tools/terms/
+Tax Deadlines | https://nztax.tools/tax-deadlines/
+Tax Glossary | https://nztax.tools/tax-glossary/
+Tax Changes 2025-26 | https://nztax.tools/tax-changes-2025-26/
+TaxTools Network | https://taxtools.network/
+Australia | https://austax.tools/
+Canada | https://catax.tools/
+United Kingdom | https://uktax.tools/
+United States | https://ustax.tools/
+Income tax | https://nztax.tools/income-tax-calculator/
+Take-home pay | https://nztax.tools/take-home-pay-calculator/
+KiwiSaver | https://nztax.tools/kiwisaver-calculator/
+PAYE calculator | https://nztax.tools/paye-calculator/
+GST calculator | https://nztax.tools/gst-calculator/
+Working for Families | https://nztax.tools/working-for-families-calculator/
+browse all → | https://nztax.tools/calculators/
